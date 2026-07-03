@@ -146,7 +146,7 @@ function renderProjects(projects) {
   grid.innerHTML = projects.map((p, i) => `
     <article class="project-card reveal visible" style="transition-delay:${i * 0.08}s">
       <div class="project-card__image">
-        <img src="${p.image}" alt="${p.title}" loading="lazy">
+        <img src="${resolveImage(p.image)}" alt="${p.title}" loading="lazy">
         <span class="project-card__category">${p.category}</span>
       </div>
       <div class="project-card__body">
@@ -193,19 +193,32 @@ function renderTestimonials(items) {
   `).join('');
 }
 
+function renderFaq(items) {
+  const list = document.getElementById('faq-list');
+  if (!items || !list) return;
+  list.innerHTML = items.map((item, i) => `
+    <details class="faq-item reveal visible" style="transition-delay:${i * 0.06}s">
+      <summary class="faq-item__question">${item.question}</summary>
+      <p class="faq-item__answer">${item.answer}</p>
+    </details>
+  `).join('');
+}
+
 async function loadApiContent() {
-  const [services, stats, projects, team, testimonials] = await Promise.all([
+  const [services, stats, projects, team, testimonials, faq] = await Promise.all([
     fetchJSON('/api/services'),
     fetchJSON('/api/stats'),
     fetchJSON('/api/projects'),
     fetchJSON('/api/team'),
     fetchJSON('/api/testimonials'),
+    fetchJSON('/api/faq'),
   ]);
   renderServices(services);
   renderStats(stats);
   renderProjects(projects);
   renderTeam(team);
   renderTestimonials(testimonials);
+  renderFaq(faq);
 }
 
 function observeReveal() {

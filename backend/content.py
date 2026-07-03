@@ -2,7 +2,12 @@
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 SUPPORTED_LANGS = ("uk", "en")
+_DATA_ROOT = Path(__file__).resolve().parent.parent / "data"
+_JSON_CACHE: dict[str, dict] = {}
 
 
 def normalize_lang(lang: str | None) -> str:
@@ -383,9 +388,23 @@ CONTENT: dict[str, dict] = {
 }
 
 
+def _json_bundle(lang: str) -> dict:
+    lang = normalize_lang(lang)
+    if lang not in _JSON_CACHE:
+        path = _DATA_ROOT / f"{lang}.json"
+        if path.is_file():
+            _JSON_CACHE[lang] = json.loads(path.read_text(encoding="utf-8"))
+        else:
+            _JSON_CACHE[lang] = {}
+    return _JSON_CACHE[lang]
+
+
 def get_content(lang: str | None, key: str):
-    locale = CONTENT[normalize_lang(lang)]
-    return locale[key]
+    lang = normalize_lang(lang)
+    bundle = _json_bundle(lang)
+    if key in bundle:
+        return bundle[key]
+    return CONTENT[lang][key]
 
 
 def get_message(lang: str | None, key: str) -> str:
