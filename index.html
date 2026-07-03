@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Partnerio — розробка, тестування ПЗ та ШІ-проєкти. Ваш надійний технологічний партнер.">
+  <meta name="theme-color" content="#1a56db">
+  <title>Partnerio | Розробка, тестування ПЗ та ШІ-рішення</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__contacts">
+        <a href="tel:+380441234567">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +38 (044) 123-45-67
+        </a>
+        <a href="mailto:hello@partnerio.ua">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          hello@partnerio.ua
+        </a>
+      </div>
+      <span class="topbar__note" data-i18n="topbar.hours">Пн–Пт · 9:00–18:00 · Київ та Львів</span>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="10" fill="#1a56db"/><path d="M11 18L18 11L25 18L18 25L11 18Z" stroke="#fff" stroke-width="1.5"/><circle cx="18" cy="18" r="2.5" fill="#fff"/></svg>
+        </span>
+        <span class="logo__text">Partner<span>io</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link" data-section="about" data-i18n="nav.about">Про нас</a></li>
+          <li><a href="#services" class="nav__link" data-section="services" data-i18n="nav.services">Послуги</a></li>
+          <li><a href="#projects" class="nav__link" data-section="projects" data-i18n="nav.projects">Проєкти</a></li>
+          <li><a href="#team" class="nav__link" data-section="team" data-i18n="nav.team">Команда</a></li>
+          <li><a href="#reviews" class="nav__link" data-section="reviews" data-i18n="nav.reviews">Відгуки</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta" data-i18n="nav.contact">Зв'язатися</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" id="lang-switch">
+          <button type="button" class="lang-switch__btn active" data-lang="uk" aria-label="Українська">UA</button>
+          <button type="button" class="lang-switch__btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+        <button class="burger" id="burger" data-i18n-aria="nav.menu" aria-label="Меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__wrap">
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">IT-компанія повного циклу · з 2010 року</p>
+          <h1 class="hero__title" data-i18n="hero.title">Інженерія програмного забезпечення та ШІ для бізнесу</h1>
+          <p class="hero__text" data-i18n="hero.text">Partnerio — технологічний партнер для компаній, яким потрібна надійна розробка, системне тестування та впровадження інтелектуальних рішень.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary" data-i18n="hero.cta1">Запросити консультацію</a>
+            <a href="#projects" class="btn btn--outline" data-i18n="hero.cta2">Переглянути кейси</a>
+          </div>
+          <ul class="hero__certs">
+            <li data-i18n="hero.cert1">ISO-сумісні процеси</li>
+            <li data-i18n="hero.cert2">Agile / Scrum</li>
+            <li data-i18n="hero.cert3">NDA та SLA</li>
+          </ul>
+        </div>
+        <div class="hero__visual">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" data-i18n-alt="hero.imgAlt" alt="Офіс Partnerio">
+          <div class="hero__stats">
+            <div><strong>250+</strong><span data-i18n="hero.stat1">проєктів</span></div>
+            <div><strong>120+</strong><span data-i18n="hero.stat2">експертів</span></div>
+            <div><strong>98%</strong><span data-i18n="hero.stat3">клієнтів</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div class="container trust-bar__inner">
+        <p class="trust-bar__title" data-i18n="trust.title">Галузі, з якими ми працюємо</p>
+        <div class="trust-bar__logos">
+          <span>FinTech</span><span>Retail</span><span>HealthTech</span><span>Logistics</span><span>EdTech</span><span>Manufacturing</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-strip">
+      <div class="container features-strip__grid">
+        <article class="feature-card reveal">
+          <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3 data-i18n="features.f1title">Міжнародний досвід</h3>
+          <p data-i18n="features.f1text">Клієнти з 15 країн. Понад 250 проєктів для компаній з України, ЄС та США.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <h3 data-i18n="features.f2title">Системний підхід</h3>
+          <p data-i18n="features.f2text">Від технічного аудиту до повного циклу розробки, тестування та підтримки.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3 data-i18n="features.f3title">Експертна команда</h3>
+          <p data-i18n="features.f3text">120+ розробників, QA-інженерів та ML-спеціалістів у 6 галузях.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__visual reveal">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" data-i18n-alt="about.imgAlt" alt="Команда Partnerio">
+          <div class="about__badge"><strong>15+</strong><span data-i18n="about.badge">років на ринку</span></div>
+        </div>
+        <div class="about__content reveal">
+          <span class="section-label" data-i18n="about.label">Про нас</span>
+          <h2 class="section-title" data-i18n="about.title">Провідна IT-компанія повного циклу</h2>
+          <div class="section-line"></div>
+          <p class="text-lead" data-i18n="about.lead">Ми допомагаємо бізнесу впроваджувати технології з вимірюваним результатом.</p>
+          <p class="text-body" data-i18n="about.body">Partnerio з офісами в Києві та Львові працює з 2010 року. Спеціалізуємося на розробці ПЗ, комплексному тестуванні та створенні ШІ-рішень для корпоративного та середнього бізнесу.</p>
+          <ul class="check-list">
+            <li data-i18n="about.check1">Enterprise та стартап-проєкти</li>
+            <li data-i18n="about.check2">Agile / Scrum методологія</li>
+            <li data-i18n="about.check3">Прозора звітність та SLA</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary" data-i18n="about.cta">Зв'язатися з нами</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gray" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="process.label">Процес</span>
+          <h2 class="section-title" data-i18n="process.title">Як ми працюємо</h2>
+          <div class="section-line section-line--center"></div>
+          <p class="text-body text-center" data-i18n="process.subtitle">Структурований підхід від аналізу до production</p>
+        </div>
+        <div class="process-row">
+          <div class="process-item reveal"><span class="process-item__num">01</span><h3 data-i18n="process.s1title">Аналіз</h3><p data-i18n="process.s1text">Дослідження цілей, аудит та формування roadmap.</p></div>
+          <div class="process-item reveal"><span class="process-item__num">02</span><h3 data-i18n="process.s2title">Розробка</h3><p data-i18n="process.s2text">Ітеративна реалізація з регулярними демо.</p></div>
+          <div class="process-item reveal"><span class="process-item__num">03</span><h3 data-i18n="process.s3title">Тестування</h3><p data-i18n="process.s3text">QA, автотести та контроль якості на кожному етапі.</p></div>
+          <div class="process-item reveal"><span class="process-item__num">04</span><h3 data-i18n="process.s4title">Запуск</h3><p data-i18n="process.s4text">Деплой, документація та технічна підтримка.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="services.label">Послуги</span>
+          <h2 class="section-title" data-i18n="services.title">Напрямки роботи</h2>
+          <div class="section-line section-line--center"></div>
+          <p class="text-body text-center" data-i18n="services.subtitle">Повний спектр IT-послуг для вашого бізнесу</p>
+        </div>
+        <div class="services-grid" id="services-grid"></div>
+      </div>
+    </section>
+
+    <section class="stats" id="stats">
+      <div class="container"><div class="stats__grid" id="stats-grid"></div></div>
+    </section>
+
+    <section class="section section--gray" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="projects.label">Портфоліо</span>
+          <h2 class="section-title" data-i18n="projects.title">Реалізовані проєкти</h2>
+          <div class="section-line section-line--center"></div>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="tech">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="tech.label">Технології</span>
+          <h2 class="section-title" data-i18n="tech.title">Технологічний стек</h2>
+          <div class="section-line section-line--center"></div>
+        </div>
+        <div class="tech-grid reveal">
+          <span>Python</span><span>React</span><span>TypeScript</span><span>Node.js</span><span>FastAPI</span><span>Docker</span><span>Kubernetes</span><span>TensorFlow</span><span>PyTorch</span><span>PostgreSQL</span><span>Playwright</span><span>AWS</span><span>Azure</span><span>Selenium</span><span>GraphQL</span><span>OpenAI</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gray" id="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="team.label">Команда</span>
+          <h2 class="section-title" data-i18n="team.title">Ключові експерти</h2>
+          <div class="section-line section-line--center"></div>
+        </div>
+        <div class="team-grid" id="team-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="reviews.label">Відгуки</span>
+          <h2 class="section-title" data-i18n="reviews.title">Рекомендації клієнтів</h2>
+          <div class="section-line section-line--center"></div>
+        </div>
+        <div class="reviews-grid" id="reviews-grid"></div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner reveal">
+        <div>
+          <h2 data-i18n="cta.title">Обговоримо ваш проєкт?</h2>
+          <p data-i18n="cta.text">Підготуємо комерційну пропозицію протягом 1–2 робочих днів.</p>
+        </div>
+        <a href="#contact" class="btn btn--white" data-i18n="cta.btn">Зв'язатися</a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info reveal">
+          <span class="section-label" data-i18n="contact.label">Контакти</span>
+          <h2 class="section-title" data-i18n="contact.title">Зв'яжіться з нами</h2>
+          <div class="section-line"></div>
+          <p class="text-body" data-i18n="contact.text">Опишіть задачу — наш менеджер зв'яжеться з вами для уточнення деталей.</p>
+          <div class="office-list">
+            <div class="office-item">
+              <h4 data-i18n="contact.kyiv">Київ</h4>
+              <p>вул. Хрещатик, 22 · <span data-i18n="contact.hours">Пн–Пт 9:00–18:00</span></p>
+              <a href="tel:+380441234567">+38 (044) 123-45-67</a>
+              <a href="mailto:kyiv@partnerio.ua">kyiv@partnerio.ua</a>
+            </div>
+            <div class="office-item">
+              <h4 data-i18n="contact.lviv">Львів</h4>
+              <p>пр. Свободи, 7 · <span data-i18n="contact.hours">Пн–Пт 9:00–18:00</span></p>
+              <a href="tel:+380321234567">+38 (032) 123-45-67</a>
+              <a href="mailto:lviv@partnerio.ua">lviv@partnerio.ua</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <h3 data-i18n="contact.formTitle">Заявка на консультацію</h3>
+          <div class="form-group">
+            <label for="name" data-i18n="contact.name">Ім'я та прізвище *</label>
+            <input type="text" id="name" name="name" required data-i18n-placeholder="contact.namePh" placeholder="Іван Петренко">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" data-i18n="contact.email">Email *</label>
+              <input type="email" id="email" name="email" required data-i18n-placeholder="contact.emailPh" placeholder="ivan@company.ua">
+            </div>
+            <div class="form-group">
+              <label for="phone" data-i18n="contact.phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" data-i18n-placeholder="contact.phonePh" placeholder="+38 (0__) ___-__-__">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service" data-i18n="contact.service">Послуга</label>
+            <select id="service" name="service">
+              <option value="" data-i18n="contact.serviceEmpty">Оберіть напрямок</option>
+              <option value="development" data-i18n="contact.serviceDev">Розробка ПЗ</option>
+              <option value="testing" data-i18n="contact.serviceTest">Тестування ПЗ</option>
+              <option value="ai" data-i18n="contact.serviceAi">ШІ-проєкти</option>
+              <option value="devops" data-i18n="contact.serviceDevops">DevOps</option>
+              <option value="consulting" data-i18n="contact.serviceConsult">IT-консалтинг</option>
+              <option value="support" data-i18n="contact.serviceSupport">Підтримка</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="contact.message">Опис проєкту *</label>
+            <textarea id="message" name="message" required rows="4" data-i18n-placeholder="contact.messagePh" placeholder="Коротко опишіть задачу або запитання..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" data-i18n="contact.submit">Надіслати заявку</button>
+          <p class="form-privacy" data-i18n="contact.privacy">Надсилаючи форму, ви погоджуєтесь на обробку персональних даних відповідно до політики конфіденційності.</p>
+          <div class="form-message" id="form-message"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="logo">
+            <span class="logo__mark sm"><svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="10" fill="#1a56db"/><path d="M11 18L18 11L25 18L18 25L11 18Z" stroke="#fff" stroke-width="1.5"/><circle cx="18" cy="18" r="2.5" fill="#fff"/></svg></span>
+            <span class="logo__text logo__text--dark">Partner<span>io</span></span>
+          </a>
+          <p data-i18n="footer.tagline">Розробка, тестування ПЗ та ШІ-рішення для бізнесу.</p>
+        </div>
+        <div class="footer__nav"><h4 data-i18n="footer.company">Компанія</h4><ul><li><a href="#about" data-i18n="nav.about">Про нас</a></li><li><a href="#services" data-i18n="nav.services">Послуги</a></li><li><a href="#projects" data-i18n="nav.projects">Проєкти</a></li><li><a href="#contact" data-i18n="contact.label">Контакти</a></li></ul></div>
+        <div class="footer__nav"><h4 data-i18n="footer.services">Послуги</h4><ul><li><a href="#services" data-i18n="footer.dev">Розробка</a></li><li><a href="#services" data-i18n="footer.testing">Тестування</a></li><li><a href="#services" data-i18n="footer.ai">ШІ-проєкти</a></li><li><a href="#services">DevOps</a></li></ul></div>
+        <div class="footer__contact">
+          <h4 data-i18n="footer.contacts">Контакти</h4>
+          <a href="mailto:kyiv@partnerio.ua">kyiv@partnerio.ua</a>
+          <a href="tel:+380441234567">+38 (044) 123-45-67</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Partnerio. <span data-i18n="footer.rights">Усі права захищені.</span></p>
+        <div class="footer__legal">
+          <a href="#" data-i18n="footer.privacy">Політика конфіденційності</a>
+          <a href="#" data-i18n="footer.terms">Умови використання</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="back-top" data-i18n-aria="backTop" aria-label="Нагору">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+{
+  "services": [
+    {"id":"development","title":"Software Development","description":"We build web, mobile, and enterprise systems of any complexity — from MVP to enterprise-grade solutions.","icon":"code","features":["Web apps and SaaS platforms","iOS and Android mobile apps","Microservices architecture","API and legacy system integrations"]},
+    {"id":"testing","title":"Software Testing","description":"We ensure product quality at every stage — from manual QA to fully automated testing.","icon":"shield","features":["Functional and regression testing","Test automation (Selenium, Playwright, Cypress)","Load and security testing","CI/CD test integration"]},
+    {"id":"ai","title":"AI Projects","description":"We develop intelligent solutions based on machine learning, NLP, and computer vision.","icon":"brain","features":["Chatbots and virtual assistants","Data analysis and forecasting","Computer vision and OCR","LLM fine-tuning for your business"]},
+    {"id":"devops","title":"DevOps & Cloud","description":"We set up infrastructure, CI/CD pipelines, and monitoring for reliable product operations.","icon":"cloud","features":["AWS, Azure, GCP","Docker and Kubernetes","Monitoring and logging","Infrastructure as Code"]},
+    {"id":"consulting","title":"IT Consulting","description":"We help you choose technologies, design architecture, and optimize development processes.","icon":"chart","features":["Technical code audit","Architecture design","Code review and mentoring","Timeline and budget estimation"]},
+    {"id":"support","title":"Support & Maintenance","description":"We keep your systems running after launch — 24/7 monitoring and rapid incident response.","icon":"support","features":["SLA-backed technical support","Security updates and patches","Scaling under load","Documentation and team training"]}
+  ],
+  "projects": [
+    {"id":"p1","category":"AI / NLP","title":"Smart call center assistant","description":"Built an LLM assistant that automates 60% of routine customer requests and integrates with CRM.","client":"FinTech Ukraine","date":"2025","image":"https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80"},
+    {"id":"p2","category":"Web Development","title":"E-commerce platform","description":"Full marketplace with payments, analytics, and admin panel for 50,000+ SKUs.","client":"Retail Group","date":"2024","image":"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"},
+    {"id":"p3","category":"QA / Automation","title":"Banking system test automation","description":"Built a test framework that reduced regression time from 5 days to 4 hours.","client":"NovaBank","date":"2024","image":"https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80"},
+    {"id":"p4","category":"Computer Vision","title":"Manufacturing quality control system","description":"AI model detects product defects in real time with 98.5% accuracy.","client":"IndustrialTech","date":"2025","image":"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"}
+  ],
+  "team": [
+    {"id":"t1","name":"Anton Fil","role":"CEO & Lead Architect","experience":"15 years of experience","bio":"Company founder. Expert in enterprise architecture and IT product strategy.","image":"https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"},
+    {"id":"t2","name":"Olga Korneva","role":"CTO","experience":"17 years of experience","bio":"Chief Technology Officer. Defines technology strategy, platform architecture, and drives innovation across products.","image":"images/olga-korneva.png"},
+    {"id":"t3","name":"Dmytro Bondarenko","role":"AI/ML Lead","experience":"8 years of experience","bio":"PhD in machine learning. Specializes in NLP and computer vision.","image":"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"},
+    {"id":"t4","name":"Anna Melnyk","role":"Senior Full-Stack Developer","experience":"7 years of experience","bio":"Expert in React, Node.js, and Python. Led development of 20+ successful projects.","image":"https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"}
+  ],
+  "testimonials": [
+    {"id":"r1","name":"Ihor Petrenko","company":"FinTech Ukraine","text":"Partnerio helped us launch an AI assistant in 3 months. Professional team, excellent communication. Highly recommended!","date":"October 2025"},
+    {"id":"r2","name":"Olena Sydorenko","company":"Retail Group","text":"Thanks to Partnerio's test automation, we reduced production bugs by 80%. The QA team are true professionals.","date":"May 2025"},
+    {"id":"r3","name":"Viktor Lysenko","company":"NovaBank","text":"They delivered a complex banking system on time and on budget. Scalable architecture and excellent documentation.","date":"June 2025"}
+  ],
+  "stats": [
+    {"value":"120+","label":"Specialists","description":"Developers, QA engineers, and ML experts on our team."},
+    {"value":"250+","label":"Projects","description":"Successfully delivered solutions for clients in 15 countries."},
+    {"value":"98%","label":"Satisfied clients","description":"Return with new tasks and recommend us to partners."}
+  ]
+}
