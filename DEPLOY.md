@@ -1,28 +1,33 @@
-# Деплой Partnerio на GitHub Pages
-
-## Правильна адреса сайту
-
-Логін GitHub: **Niamey** (не niarney, не niamrey)
+# Деплой Partnerio — виправлення 404
 
 Сайт: **https://niamey.github.io/partnerio/**
 
-## Крок 1 — увімкнути GitHub Actions (не "Deploy from branch")
+## Варіант A (рекомендовано): папка `/docs`
 
-1. https://github.com/Niamey/partnerio/settings/pages
-2. **Build and deployment → Source** → виберіть **GitHub Actions**
-3. Збережіть
+1. Запуште зміни:
+   ```powershell
+   cd C:\Users\Hello\Documents\work\interwiev\Partnerio\partnerio
+   git add docs .github/workflows/pages.yml DEPLOY.md
+   git commit -m "Fix Pages 404: deploy static site from docs folder"
+   git push origin main
+   ```
 
-## Крок 2 — запушити workflow
+2. GitHub → **Settings → Pages**:
+   - **Source:** Deploy from a branch
+   - **Branch:** `main`
+   - **Folder:** `/docs`  ← не root, а **docs**
+   - **Save**
 
-```powershell
-cd C:\Users\Hello\Documents\work\interwiev\Partnerio\partnerio
-git add .github/workflows/pages.yml DEPLOY.md
-git commit -m "Add GitHub Actions Pages deploy workflow"
-git push origin main
-```
+3. Зачекайте 2–5 хв, відкрийте https://niamey.github.io/partnerio/ (Ctrl+F5)
 
-## Крок 3 — перевірити збірку
+## Варіант B: GitHub Actions
 
-1. https://github.com/Niamey/partnerio/actions
-2. Відкрийте workflow **Deploy Partnerio site** — має бути зелена галочка
-3. Через 1–3 хв відкрийте https://niamey.github.io/partnerio/
+1. Після `git push` (див. вище)
+2. **Settings → Pages → Source:** **GitHub Actions**
+3. Перевірте **Actions** — workflow **Deploy Partnerio site** має бути зелений
+
+## Якщо все ще 404
+
+- Перевірте логін: **Niamey** (не niarney)
+- Репозиторій: **partnerio** (не partnerio-front)
+- У Settings → Pages має бути зелений банер «Your site is live at…»
