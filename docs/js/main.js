@@ -284,7 +284,7 @@ function initContactForm() {
         const body = encodeURIComponent(
           `Name: ${form.name.value.trim()}\nEmail: ${form.email.value.trim()}\nPhone: ${form.phone.value.trim()}\nService: ${form.service.value}\n\n${form.message.value.trim()}`
         );
-        window.location.href = `mailto:hello@partnerio.ua?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:olyakorneva09@gmail.com?subject=${subject}&body=${body}`;
         messageEl.className = 'form-message success';
         messageEl.textContent = i18n.getLang() === 'en'
           ? 'Your email client has been opened. Please send the message.'
