@@ -8,37 +8,25 @@
     {"id":"support","title":"Support & Maintenance","description":"We keep your systems running after launch — 24/7 monitoring and rapid incident response.","icon":"support","features":["SLA-backed technical support","Security updates and patches","Scaling under load","Documentation and team training"]}
   ],
   "projects": [
-    {"id":"p1","category":"AI / NLP","title":"Smart call center assistant","description":"Built an LLM assistant that automates 60% of routine customer requests and integrates with CRM.","client":"FinTech Ukraine","date":"2025","image":"images/projects/p1.png"},
-    {"id":"p2","category":"Web Development","title":"E-commerce platform","description":"Full marketplace with payments, analytics, and admin panel for 50,000+ SKUs.","client":"Retail Group","date":"2024","image":"images/projects/p2.png"},
-    {"id":"p3","category":"QA / Automation","title":"Banking system test automation","description":"Built a test framework that reduced regression time from 5 days to 4 hours.","client":"NovaBank","date":"2024","image":"images/projects/p3.png"},
-    {"id":"p4","category":"Computer Vision","title":"Manufacturing quality control system","description":"AI model detects product defects in real time with 98.5% accuracy.","client":"IndustrialTech","date":"2025","image":"images/projects/p4.png"},
-    {"id":"p5","category":"Mobile Development","title":"Logistics driver app","description":"Cross-platform app for drivers and dispatchers with GPS tracking, routing, and offline mode.","client":"LogiTrans","date":"2024","image":"images/projects/p5.png"},
-    {"id":"p6","category":"DevOps / Cloud","title":"AWS migration for SaaS","description":"Migrated a monolithic system to AWS microservices, set up CI/CD, and reduced infrastructure costs by 35%.","client":"CloudSoft","date":"2025","image":"images/projects/p6.png"}
+    {"id":"p1","category":"AI / NLP","title":"Smart call center assistant","description":"Built an LLM assistant that automates 60% of routine customer requests and integrates with CRM.","client":"FinTech Ukraine","date":"2025","image":"https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80"},
+    {"id":"p2","category":"Web Development","title":"E-commerce platform","description":"Full marketplace with payments, analytics, and admin panel for 50,000+ SKUs.","client":"Retail Group","date":"2024","image":"https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"},
+    {"id":"p3","category":"QA / Automation","title":"Banking system test automation","description":"Built a test framework that reduced regression time from 5 days to 4 hours.","client":"NovaBank","date":"2024","image":"https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80"},
+    {"id":"p4","category":"Computer Vision","title":"Manufacturing quality control system","description":"AI model detects product defects in real time with 98.5% accuracy.","client":"IndustrialTech","date":"2025","image":"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"}
   ],
   "team": [
-    {"id":"t1","name":"Anton Fil","role":"CEO & Lead Architect","experience":"15 years of experience","bio":"Company founder. Expert in enterprise architecture and IT product strategy.","image":"images/team/anton.png"},
+    {"id":"t1","name":"Anton Fil","role":"CEO & Lead Architect","experience":"20 years of experience","bio":"Company founder. Expert in enterprise architecture and IT product strategy.","image":"https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"},
     {"id":"t2","name":"Olga Korneva","role":"CTO","experience":"17 years of experience","bio":"Chief Technology Officer. Defines technology strategy, platform architecture, and drives innovation across products.","image":"images/olga-korneva.png"},
-    {"id":"t3","name":"Dmytro Bondarenko","role":"AI/ML Lead","experience":"8 years of experience","bio":"PhD in machine learning. Specializes in NLP and computer vision.","image":"images/team/dmytro.png"},
-    {"id":"t4","name":"Anna Melnyk","role":"Senior Full-Stack Developer","experience":"7 years of experience","bio":"Expert in React, Node.js, and Python. Led development of 20+ successful projects.","image":"images/team/anna.png"}
+    {"id":"t3","name":"Dmytro Bondarenko","role":"AI/ML Lead","experience":"8 years of experience","bio":"PhD in machine learning. Specializes in NLP and computer vision.","image":"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"},
+    {"id":"t4","name":"Anna Melnyk","role":"Senior Full-Stack Developer","experience":"7 years of experience","bio":"Expert in React, Node.js, and Python. Led development of 20+ successful projects.","image":"https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"}
   ],
   "testimonials": [
     {"id":"r1","name":"Ihor Petrenko","company":"FinTech Ukraine","text":"Partnerio helped us launch an AI assistant in 3 months. Professional team, excellent communication. Highly recommended!","date":"October 2025"},
     {"id":"r2","name":"Olena Sydorenko","company":"Retail Group","text":"Thanks to Partnerio's test automation, we reduced production bugs by 80%. The QA team are true professionals.","date":"May 2025"},
-    {"id":"r3","name":"Viktor Lysenko","company":"NovaBank","text":"They delivered a complex banking system on time and on budget. Scalable architecture and excellent documentation.","date":"June 2025"},
-    {"id":"r4","name":"Maria Koval","company":"LogiTrans","text":"Our logistics mobile app works reliably even in areas with poor connectivity. The team responds quickly to requests.","date":"September 2025"},
-    {"id":"r5","name":"Andriy Hnatiuk","company":"CloudSoft","text":"AWS migration completed with zero downtime. Partnerio not only moved the system but optimized architecture and costs.","date":"November 2025"}
+    {"id":"r3","name":"Viktor Lysenko","company":"NovaBank","text":"They delivered a complex banking system on time and on budget. Scalable architecture and excellent documentation.","date":"June 2025"}
   ],
   "stats": [
     {"value":"120+","label":"Specialists","description":"Developers, QA engineers, and ML experts on our team."},
     {"value":"250+","label":"Projects","description":"Successfully delivered solutions for clients in 15 countries."},
-    {"value":"98%","label":"Satisfied clients","description":"Return with new tasks and recommend us to partners."},
-    {"value":"15+","label":"Years on the market","description":"Experience since 2010 in development, QA, and AI delivery."}
-  ],
-  "faq": [
-    {"id":"q1","question":"How long does project estimation take?","answer":"After receiving your brief, we provide a preliminary estimate within 1–2 business days. For complex systems, we run a 3–5 day discovery session with a detailed roadmap."},
-    {"id":"q2","question":"What engagement models do you offer?","answer":"Dedicated team (Time & Material), fixed-scope projects, and audit/consulting. We choose the model together based on your goals and budget."},
-    {"id":"q3","question":"Do you sign NDAs?","answer":"Yes. We work with confidential data from fintech, healthcare, and enterprise clients. We sign an NDA before discussing project details."},
-    {"id":"q4","question":"How is communication organized during a project?","answer":"We assign a project manager and tech lead. Weekly demos, status reports in Slack/Teams, and access to Jira or your tool of choice. We fully cover UA and EU time zones."},
-    {"id":"q5","question":"Do you provide post-launch support?","answer":"Yes. We offer SLA packages: monitoring, incident response, dependency updates, and feature development. Typical contracts start from 3 months."}
+    {"value":"98%","label":"Satisfied clients","description":"Return with new tasks and recommend us to partners."}
   ]
 }

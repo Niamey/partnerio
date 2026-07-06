@@ -146,7 +146,7 @@ function renderProjects(projects) {
   grid.innerHTML = projects.map((p, i) => `
     <article class="project-card reveal visible" style="transition-delay:${i * 0.08}s">
       <div class="project-card__image">
-        <img src="${resolveImage(p.image)}" alt="${p.title}" loading="lazy">
+        <img src="${p.image}" alt="${p.title}" loading="lazy">
         <span class="project-card__category">${p.category}</span>
       </div>
       <div class="project-card__body">
@@ -193,32 +193,19 @@ function renderTestimonials(items) {
   `).join('');
 }
 
-function renderFaq(items) {
-  const list = document.getElementById('faq-list');
-  if (!items || !list) return;
-  list.innerHTML = items.map((item, i) => `
-    <details class="faq-item reveal visible" style="transition-delay:${i * 0.06}s">
-      <summary class="faq-item__question">${item.question}</summary>
-      <p class="faq-item__answer">${item.answer}</p>
-    </details>
-  `).join('');
-}
-
 async function loadApiContent() {
-  const [services, stats, projects, team, testimonials, faq] = await Promise.all([
+  const [services, stats, projects, team, testimonials] = await Promise.all([
     fetchJSON('/api/services'),
     fetchJSON('/api/stats'),
     fetchJSON('/api/projects'),
     fetchJSON('/api/team'),
     fetchJSON('/api/testimonials'),
-    fetchJSON('/api/faq'),
   ]);
   renderServices(services);
   renderStats(stats);
   renderProjects(projects);
   renderTeam(team);
   renderTestimonials(testimonials);
-  renderFaq(faq);
 }
 
 function observeReveal() {
@@ -254,10 +241,26 @@ function initHeader() {
     links.forEach((l) => l.classList.toggle('active', l.dataset.section === current));
   });
 
-  burger.addEventListener('click', () => {
+  burger.addEventListener('click', (e) => {
+    e.stopPropagation();
     burger.classList.toggle('active');
     nav.classList.toggle('open');
     document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!nav.classList.contains('open')) return;
+    if (nav.contains(e.target) || burger.contains(e.target)) return;
+    burger.classList.remove('active');
+    nav.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || !nav.classList.contains('open')) return;
+    burger.classList.remove('active');
+    nav.classList.remove('open');
+    document.body.style.overflow = '';
   });
 
   nav.querySelectorAll('.nav__link').forEach((link) => {
