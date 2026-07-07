@@ -21,6 +21,8 @@ PROJECT_IMAGES = {
 }
 
 TEAM_IMAGES = {
+    "t1": "images/team/anton-fil.jpg",
+    "t2": "images/team/olga-kornieva.jpg",
     "t3": "images/team/sergiy-mazur.jpg",
     "t4": "images/team/kateryna-levchenko.jpg",
 }

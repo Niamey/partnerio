@@ -414,7 +414,7 @@
       "role": "CEO & Lead Architect",
       "experience": "20 років досвіду",
       "bio": "Засновник і CEO Partnerio, Lead Architect з 20-річним досвідом enterprise-розробки. Визначає архітектурну стратегію компанії, стандарти інженерії та технічний due diligence для ключових проєктів. Безпосередньо залучений до fintech, banking і high-load платформ — від core banking до payment gateways. Веде архітектурні комітети, code review критичних модулів і менторить team leads. Останні 5 років — фокус на AI-first архітектурі, інтеграції LLM/RAG у enterprise і безпечному deployment у regulated-середовищах.",
-      "image": "images/anton-fil.png"
+      "image": "images/team/anton-fil.jpg"
     },
     {
       "id": "t2",
@@ -422,7 +422,7 @@
       "role": "СТО",
       "experience": "17 років досвіду",
       "bio": "Технічний директор Partnerio. Відповідає за технологічну стратегію, вибір стеку, архітектуру платформ і впровадження AI/ML у продукти клієнтів. Має досвід побудови R&D-процесів, масштабування команд 50+ інженерів і міграцій monolith → microservices → event-driven. Курує безпеку, performance та технічну якість delivery. Керує ML/NLP/CV-напрямком, MLOps-практиками та evaluation frameworks. Спікер на внутрішніх AI guilds — ділиться best practices з fine-tuning, RAG і production ML.",
-      "image": "images/olga-kornieva.png"
+      "image": "images/team/olga-kornieva.jpg"
     },
     {
       "id": "t3",

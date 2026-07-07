@@ -150,7 +150,7 @@ CONTENT: dict[str, dict] = {
                 "role": "CEO & Lead Architect",
                 "experience": "20 років досвіду",
                 "bio": "Засновник і CEO Partnerio. Lead Architect з досвідом enterprise-розробки. Визначає архітектурну стратегію, стандарти інженерії, масштабування платформ і розвиток ключових продуктів компанії.",
-                "image": "images/anton-fil.png",
+                "image": "images/team/anton-fil.jpg",
             },
             {
                 "id": "t2",
@@ -158,7 +158,7 @@ CONTENT: dict[str, dict] = {
                 "role": "СТО",
                 "experience": "17 років досвіду",
                 "bio": "Технічний директор Partnerio. Відповідає за технологічну стратегію, вибір стеку, архітектуру платформ і впровадження AI/ML у продукти клієнтів. Має досвід побудови R&D-процесів, масштабування команд 50+ інженерів і міграцій monolith → microservices.",
-                "image": "images/olga-kornieva.png",
+                "image": "images/team/olga-kornieva.jpg",
             },
             {
                 "id": "t3",
@@ -166,7 +166,7 @@ CONTENT: dict[str, dict] = {
                 "role": "CFO",
                 "experience": "14 років досвіду",
                 "bio": "Фінансовий директор Partnerio. Відповідає за фінансове планування, бюджетування, управлінський облік та оптимізацію витрат. Досвід роботи з IT-компаніями, міжнародними контрактами та фінансовою звітністю для enterprise-клієнтів.",
-                "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "image": "images/team/sergiy-mazur.jpg",
             },
             {
                 "id": "t4",
@@ -341,7 +341,7 @@ CONTENT: dict[str, dict] = {
                 "role": "CEO & Lead Architect",
                 "experience": "20 years of experience",
                 "bio": "Founder and CEO of Partnerio. Lead Architect with enterprise development expertise. Defines architecture strategy, engineering standards, platform scaling, and growth of the company's key products.",
-                "image": "images/anton-fil.png",
+                "image": "images/team/anton-fil.jpg",
             },
             {
                 "id": "t2",
@@ -349,7 +349,7 @@ CONTENT: dict[str, dict] = {
                 "role": "CTO",
                 "experience": "17 years of experience",
                 "bio": "Chief Technology Officer at Partnerio. Owns technology strategy, stack selection, platform architecture, and AI/ML adoption in client products. Experienced in building R&D processes and scaling 50+ engineer teams.",
-                "image": "images/olga-kornieva.png",
+                "image": "images/team/olga-kornieva.jpg",
             },
             {
                 "id": "t3",
@@ -357,7 +357,7 @@ CONTENT: dict[str, dict] = {
                 "role": "CFO",
                 "experience": "14 years of experience",
                 "bio": "Chief Financial Officer at Partnerio. Oversees financial planning, budgeting, management accounting, and cost optimization. Experienced with IT companies, international contracts, and financial reporting for enterprise clients.",
-                "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "image": "images/team/sergiy-mazur.jpg",
             },
             {
                 "id": "t4",

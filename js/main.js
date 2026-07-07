@@ -59,8 +59,11 @@ function resolveImage(url) {
   if (!url) return '';
   if (url.startsWith('http://') || url.startsWith('https://')) return url;
   const resolved = new URL(url.replace(/^\//, ''), window.location.href).href;
+  if (/images\/team\//i.test(url)) {
+    return `${resolved}${resolved.includes('?') ? '&' : '?'}v=20250708b`;
+  }
   if (/images\/(anton-fil|olga-kornieva|olga-korneva)\.png$/i.test(url)) {
-    return `${resolved}${resolved.includes('?') ? '&' : '?'}v=20250707x`;
+    return `${resolved}${resolved.includes('?') ? '&' : '?'}v=20250708b`;
   }
   return resolved;
 }

@@ -414,7 +414,7 @@
       "role": "CEO & Lead Architect",
       "experience": "20 years of experience",
       "bio": "Founder and CEO of Partnerio, Lead Architect with 20 years of enterprise development. Sets architecture strategy, engineering standards, and technical due diligence for key projects. Directly involved in fintech, banking, and high-load platforms — from core banking to payment gateways. Leads architecture committees, critical code reviews, and mentors team leads. Last 5 years focused on AI-first architecture, LLM/RAG integration in enterprise, and secure deployment in regulated environments.",
-      "image": "images/anton-fil.png"
+      "image": "images/team/anton-fil.jpg"
     },
     {
       "id": "t2",
@@ -422,7 +422,7 @@
       "role": "CTO",
       "experience": "17 years of experience",
       "bio": "CTO of Partnerio. Owns technology strategy, stack selection, platform architecture, and AI/ML adoption in client products. Built R&D processes, scaled teams of 50+ engineers, and led monolith → microservices → event-driven migrations. Oversees security, performance, and delivery quality. Leads ML/NLP/CV practice, MLOps, and evaluation frameworks. Runs internal AI guilds sharing fine-tuning, RAG, and production ML best practices.",
-      "image": "images/olga-kornieva.png"
+      "image": "images/team/olga-kornieva.jpg"
     },
     {
       "id": "t3",

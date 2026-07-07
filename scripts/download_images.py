@@ -35,15 +35,22 @@ FILES = {
     "projects/p12.jpg": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=85&auto=format&fit=crop",
     "projects/p13.jpg": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=85&auto=format&fit=crop",
     # Team & reviews — unique portraits
-    "team/sergiy-mazur.jpg": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80&auto=format&fit=crop",
-    "team/kateryna-levchenko.jpg": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80&auto=format&fit=crop",
+    # Team — uniform business portraits (3:4)
+    "team/anton-fil.jpg": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&h=667&fit=crop&crop=faces,center&q=85",
+    "team/olga-kornieva.jpg": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=667&fit=crop&crop=faces,center&q=85",
+    "team/sergiy-mazur.jpg": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&h=667&fit=crop&crop=faces,center&q=85",
+    "team/kateryna-levchenko.jpg": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=667&fit=crop&crop=faces,center&q=85",
     "reviews/ihor-petrenko.jpg": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80&auto=format&fit=crop",
     "reviews/olena-sydorenko.jpg": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80&auto=format&fit=crop",
     "reviews/marina-kovalenko.jpg": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80&auto=format&fit=crop",
 }
 
-# Never overwrite real team photos
+# Never overwrite generated team business portraits
 SKIP_OVERWRITE = {
+    "anton-fil.jpg",
+    "olga-kornieva.jpg",
+    "sergiy-mazur.jpg",
+    "kateryna-levchenko.jpg",
     "anton-fil.png",
     "olga-kornieva.png",
     "olga-korneva.png",
