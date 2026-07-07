@@ -110,7 +110,7 @@ const UI = {
       metricProjects: 'проєктів',
       h1: 'Моделі співпраці',
       h2: 'Regulated-галузі',
-      h3: 'Підтримка після launch',
+      h3: 'Підтримка після запуску',
       imgAlt: 'AI-команда Partnerio',
       imgAltMain: 'AI-команда Partnerio',
       imgAltAi: 'Мікросхеми та високі технології',
