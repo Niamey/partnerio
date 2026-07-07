@@ -488,27 +488,8 @@ function setMetaProperty(property, content) {
 }
 
 function applyFaqSchema() {
-  const faq = UI[currentLang]?.faq || UI.uk?.faq;
-  if (!faq) return;
-  const pairs = [1, 2, 3, 4, 5, 6]
-    .map((n) => ({ q: faq[`q${n}`], a: faq[`a${n}`] }))
-    .filter((item) => item.q && item.a);
-  let el = document.getElementById('faq-schema');
-  if (!el) {
-    el = document.createElement('script');
-    el.type = 'application/ld+json';
-    el.id = 'faq-schema';
-    document.head.appendChild(el);
-  }
-  el.textContent = JSON.stringify({
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: pairs.map((item) => ({
-      '@type': 'Question',
-      name: item.q,
-      acceptedAnswer: { '@type': 'Answer', text: item.a },
-    })),
-  });
+  const el = document.getElementById('faq-schema');
+  if (el) el.remove();
 }
 
 function applySeoMeta() {

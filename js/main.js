@@ -134,17 +134,27 @@ async function fetchJSON(endpoint) {
 function renderServices(services) {
   const grid = document.getElementById('services-grid');
   if (!services || !grid) return;
+  const maxFeatures = Math.max(0, ...services.map((s) => (s.features || []).length));
   grid.innerHTML = services.map((s, i) => {
     const num = String(i + 1).padStart(2, '0');
+    const items = [...(s.features || [])];
+    while (items.length < maxFeatures) items.push(null);
+    const listHtml = items.map((f) => (
+      f
+        ? `<li>${escapeHtml(f)}</li>`
+        : '<li class="service-card__spacer" aria-hidden="true"></li>'
+    )).join('');
     return `
     <article class="service-card reveal visible" style="transition-delay:${i * 0.06}s">
       <div class="service-card__mark" aria-hidden="true">
         <span class="service-card__num">${num}</span>
       </div>
-      <h3>${escapeHtml(s.title)}</h3>
-      <p class="service-card__lead">${escapeHtml(s.description)}</p>
-      ${s.details ? `<p class="service-card__details">${escapeHtml(s.details)}</p>` : ''}
-      <ul>${(s.features || []).map((f) => `<li>${escapeHtml(f)}</li>`).join('')}</ul>
+      <div class="service-card__intro">
+        <h3>${escapeHtml(s.title)}</h3>
+        <p class="service-card__lead">${escapeHtml(s.description)}</p>
+        ${s.details ? `<p class="service-card__details">${escapeHtml(s.details)}</p>` : '<p class="service-card__details service-card__details--empty" aria-hidden="true"></p>'}
+      </div>
+      <ul>${listHtml}</ul>
     </article>`;
   }).join('');
 }

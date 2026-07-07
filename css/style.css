@@ -1117,6 +1117,16 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   color: var(--navy);
   margin-bottom: 10px;
   padding-right: 52px;
+  min-height: 2.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.service-card__intro {
+  flex-shrink: 0;
+  min-height: 12.5rem;
+  margin-bottom: 16px;
 }
 .service-card__lead {
   font-size: 0.95rem;
@@ -1133,26 +1143,40 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   font-size: 0.9rem;
   color: var(--text-light);
   line-height: 1.75;
-  margin-bottom: 16px;
+  margin-bottom: 0;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  min-height: 6.3rem;
+}
+.service-card__details--empty {
+  visibility: hidden;
+  pointer-events: none;
 }
 .service-card p { font-size: 0.93rem; color: var(--text-light); margin-bottom: 16px; }
 .service-card ul {
   display: grid;
   gap: 8px;
-  margin-top: 0;
+  margin-top: auto;
   flex: 1 1 auto;
-  min-height: 272px;
   align-content: start;
+  grid-template-rows: repeat(10, minmax(2.75rem, auto));
 }
 .service-card li {
   font-size: 0.875rem;
   color: var(--text);
   padding-left: 18px;
   position: relative;
+  min-height: 2.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.service-card__spacer {
+  visibility: hidden;
+  pointer-events: none;
 }
 .service-card li::before {
   content: '';
