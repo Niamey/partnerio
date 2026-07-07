@@ -60,10 +60,10 @@ function resolveImage(url) {
   if (url.startsWith('http://') || url.startsWith('https://')) return url;
   const resolved = new URL(url.replace(/^\//, ''), window.location.href).href;
   if (/images\/team\//i.test(url)) {
-    return `${resolved}${resolved.includes('?') ? '&' : '?'}v=20250708b`;
+    return `${resolved}${resolved.includes('?') ? '&' : '?'}v=20250708e`;
   }
   if (/images\/(anton-fil|olga-kornieva|olga-korneva)\.png$/i.test(url)) {
-    return `${resolved}${resolved.includes('?') ? '&' : '?'}v=20250708b`;
+    return `${resolved}${resolved.includes('?') ? '&' : '?'}v=20250708e`;
   }
   return resolved;
 }
@@ -262,14 +262,19 @@ function renderTestimonials(items) {
   grid.innerHTML = items.map((t, i) => `
     <article class="review-card reveal visible" style="transition-delay:${i * 0.08}s">
       <div class="review-card__stars">★★★★★</div>
-      <p>${escapeHtml(t.text)}</p>
-      <div class="review-card__author">
-        ${t.image
+      <p class="review-card__text">${escapeHtml(t.text)}</p>
+      <div class="review-card__footer">
+        <div class="review-card__author">
+          ${t.image
     ? `<div class="review-card__avatar review-card__avatar--photo"><img src="${resolveImage(t.image)}" alt="${escapeHtml(t.name)}" loading="lazy" data-fallback-class="review-card__avatar" data-fallback-initials="${escapeAttr(initials(t.name))}" data-fallback-replace="parent"></div>`
     : `<div class="review-card__avatar">${escapeHtml(initials(t.name))}</div>`}
-        <div><h4>${escapeHtml(t.name)}</h4><span>${escapeHtml(t.company)}</span></div>
+          <div class="review-card__meta">
+            <h4>${escapeHtml(t.name)}</h4>
+            <span>${escapeHtml(t.company)}</span>
+          </div>
+        </div>
+        <p class="review-card__date">${escapeHtml(t.date)}</p>
       </div>
-      <p class="review-card__date">${escapeHtml(t.date)}</p>
     </article>
   `).join('');
   bindImageFallbacks(grid);

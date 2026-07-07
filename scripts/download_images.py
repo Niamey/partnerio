@@ -10,8 +10,8 @@ FRONTEND_IMG = ROOT / "frontend" / "images"
 # Each URL used once across the site (hero, sections, projects, team, reviews).
 FILES = {
     # Hero & section visuals (static HTML only)
-    "ai/hero.jpg": "https://images.unsplash.com/photo-1770249196589-36453bf42a4b?w=1400&q=85&auto=format&fit=crop",
-    "ai/hero-accent.jpg": "https://images.unsplash.com/photo-1771503735122-22405ba958f9?w=900&q=85&auto=format&fit=crop",
+    "ai/hero.jpg": "https://images.unsplash.com/photo-1769839271832-cfd7a1f6854f?w=1400&q=85&auto=format&fit=crop",
+    "ai/hero-accent.jpg": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900&q=85&auto=format&fit=crop",
     "ai/about-hero.jpg": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=85&auto=format&fit=crop",
     "ai/about-ai.jpg": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900&q=85&auto=format&fit=crop",
     "ai/about-main.jpg": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=900&q=85&auto=format&fit=crop",

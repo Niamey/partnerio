@@ -157,7 +157,7 @@ const UI = {
     },
     faq: {
       label: 'FAQ',
-      title: 'Часті запитання про розробку ШІ та програмного забезпечення',
+      title: 'FAQ',
       subtitle: 'Відповіді на типові запитання про замовлення AI-проєктів, розробку програмного забезпечення, терміни, моделі співпраці та підтримку після запуску.',
       q1: 'Як замовити розробку штучного інтелекту або програмного забезпечення в Partnerio?',
       a1: 'Залиште заявку на сайті або напишіть на email — протягом одного робочого дня менеджер зв\'яжеться з вами, уточнить задачу та призначить безкоштовний discovery call з AI/ML-експертом. Далі — оцінка data readiness, комерційна пропозиція з командою, термінами та KPI протягом 1–2 робочих днів.',
@@ -379,7 +379,7 @@ const UI = {
     },
     faq: {
       label: 'FAQ',
-      title: 'Frequently asked questions about AI and software development',
+      title: 'FAQ',
       subtitle: 'Answers about ordering AI projects, custom software development, timelines, engagement models, and post-launch support.',
       q1: 'How do I order AI or custom software development from Partnerio?',
       a1: 'Submit the form on this page or email us — within one business day a manager will contact you, clarify your requirements, and schedule a free discovery call with an AI/ML expert. Next: data readiness assessment and a commercial proposal with team, timeline, and KPIs within 1–2 business days.',
