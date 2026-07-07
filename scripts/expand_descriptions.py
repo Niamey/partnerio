@@ -42,10 +42,6 @@ UK_EXP = {
         "description": "ML-прогноз попиту для retail: XGBoost + Prophet, feature store, ERP і auto-reorder для 180+ магазинів.",
         "details": "FreshMarket — overstock і out-of-stock на 15 000 SKU. Feature store (seasonality, promo, weather), ensemble-моделі, what-if dashboard для закупівельників. Weekly retrain, MAPE по категоріях, explainability для category managers.",
     },
-    "p10": {
-        "description": "Міграція payment-платформи в AWS EKS: GitOps, service mesh, canary deploys і zero-downtime blue-green migration.",
-        "details": "PayStream обробляла 500K+ транзакцій на добу на застарілій інфраструктурі; деплої займали години, масштабування — вручну. Partnerio спроєктувала EKS-кластер, GitOps через ArgoCD, service mesh, canary deploys і blue-green migration без простою. Додали Prometheus/Grafana, централізовані логи, runbook для on-call і cost optimization для GPU/CPU workloads.",
-    },
     "p11": {
         "description": "AI-репетитор: RAG на curriculum, fine-tuned LLM, auto-grader і adaptive path для 25 000 учнів.",
         "details": "EduSmart — 1 викладач на 120 учнів. RAG на підручниках, plain-language LLM, rubric auto-grader, adaptive path за помилками. Moderation, parental controls, teacher dashboard. Відповідь < 5 сек.",
@@ -96,10 +92,6 @@ EN_EXP = {
     "p9": {
         "description": "Retail demand forecasting: XGBoost + Prophet ensemble, feature store, ERP integration, auto-reorder for 180+ stores.",
         "details": "FreshMarket — overstock and out-of-stock on 15,000 SKUs. Feature store (seasonality, promo, weather), what-if buyer dashboard, weekly retrain, MAPE by category, explainability for managers.",
-    },
-    "p10": {
-        "description": "Payment platform migration to AWS EKS: GitOps, service mesh, canary deploys, and zero-downtime blue-green migration.",
-        "details": "PayStream processed 500K+ daily transactions on legacy infra; deploys took hours, scaling was manual. We designed EKS, ArgoCD GitOps, service mesh, canary deploys, and blue-green migration with no downtime. Added Prometheus/Grafana, centralized logs, on-call runbooks, and cost optimization.",
     },
     "p11": {
         "description": "AI tutor: curriculum RAG, fine-tuned LLM, auto-grader, and adaptive paths for 25,000 students.",

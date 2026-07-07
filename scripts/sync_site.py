@@ -18,6 +18,10 @@ PAIRS = [
     ("data/uk.json", "frontend/data/uk.json"),
     ("data/en.json", "data/en.json"),
     ("data/en.json", "frontend/data/en.json"),
+    ("robots.txt", "robots.txt"),
+    ("robots.txt", "frontend/robots.txt"),
+    ("sitemap.xml", "sitemap.xml"),
+    ("sitemap.xml", "frontend/sitemap.xml"),
 ]
 
 

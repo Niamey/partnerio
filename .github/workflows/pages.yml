@@ -34,7 +34,9 @@ jobs:
           test -f docs/images/anton-fil.png
           test -f docs/images/reviews/ihor-petrenko.jpg
           test -f docs/images/ai/hero.jpg
-          test -f docs/images/ai/robot-hero-accent.jpg
+          test -f docs/images/ai/hero-accent.jpg
+          test -f docs/robots.txt
+          test -f docs/sitemap.xml
 
       - uses: actions/configure-pages@v5
 

@@ -332,31 +332,6 @@
       "image": "images/ai/about-data.jpg"
     },
     {
-      "id": "p10",
-      "category": "DevOps / Хмара",
-      "title": "Міграція fintech у Kubernetes",
-      "description": "Міграція payment-платформи в AWS EKS: GitOps, service mesh, canary deploys і zero-downtime blue-green migration.",
-      "details": "PayStream обробляла 500K+ транзакцій на добу на застарілій інфраструктурі; деплої займали години, масштабування — вручну. Partnerio спроєктувала EKS-кластер, GitOps через ArgoCD, service mesh, canary deploys і blue-green migration без простою. Додали Prometheus/Grafana, централізовані логи, runbook для on-call і cost optimization для GPU/CPU workloads. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
-      "stack": [
-        "AWS",
-        "EKS",
-        "Terraform",
-        "ArgoCD",
-        "Prometheus",
-        "GitHub Actions"
-      ],
-      "results": [
-        "Deploy: з 2 год до 15 хв",
-        "99.95% uptime після міграції",
-        "Auto-scaling під Black Friday",
-        "40% зниження cloud cost (rightsizing)",
-        "PCI-DSS ready інфраструктура"
-      ],
-      "client": "PayStream",
-      "date": "2025",
-      "image": "images/ai/gallery-mlops.jpg"
-    },
-    {
       "id": "p11",
       "category": "EdTech / ШІ",
       "title": "AI-репетитор з адаптивним навчанням",

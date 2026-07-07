@@ -332,31 +332,6 @@
       "image": "images/ai/about-data.jpg"
     },
     {
-      "id": "p10",
-      "category": "DevOps / Cloud",
-      "title": "Fintech migration to Kubernetes",
-      "description": "Payment platform migration to AWS EKS: GitOps, service mesh, canary deploys, and zero-downtime blue-green migration.",
-      "details": "PayStream processed 500K+ daily transactions on legacy infra; deploys took hours, scaling was manual. We designed EKS, ArgoCD GitOps, service mesh, canary deploys, and blue-green migration with no downtime. Added Prometheus/Grafana, centralized logs, on-call runbooks, and cost optimization. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
-      "stack": [
-        "AWS",
-        "EKS",
-        "Terraform",
-        "ArgoCD",
-        "Prometheus",
-        "GitHub Actions"
-      ],
-      "results": [
-        "Deploy time: 2 hours → 15 minutes",
-        "99.95% uptime after migration",
-        "Auto-scaling for Black Friday",
-        "40% cloud cost reduction (rightsizing)",
-        "PCI-DSS ready infrastructure"
-      ],
-      "client": "PayStream",
-      "date": "2025",
-      "image": "images/ai/gallery-mlops.jpg"
-    },
-    {
       "id": "p11",
       "category": "EdTech / AI",
       "title": "AI tutor with adaptive learning",

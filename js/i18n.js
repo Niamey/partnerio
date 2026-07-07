@@ -1,10 +1,12 @@
 const LANG_KEY = 'partnerio_lang';
+const SITE_BASE = 'https://niamey.github.io/partnerio/';
 
 const UI = {
   uk: {
     meta: {
-      title: 'Partnerio | ШІ-рішення: LLM, NLP, Computer Vision та розробка ПЗ',
-      description: 'Partnerio — AI-first IT-компанія з 2010 року. LLM, RAG, NLP, computer vision, голосові AI та production ML. Також розробка ПЗ, QA і DevOps. Київ, Львів. 50+ інженерів, 250+ проєктів.',
+      title: 'Partnerio | Розробка ШІ та програмного забезпечення на замовлення — Київ, Україна',
+      description: 'Замовити розробку штучного інтелекту та програмного забезпечення: LLM, RAG, NLP, computer vision, MLOps. IT-компанія Partnerio з 2010 року — Київ, Львів, remote EU/US. 50+ інженерів, 250+ проєктів, безкоштовний discovery call.',
+      keywords: 'розробка штучного інтелекту, розробка ШІ, розробка програмного забезпечення на замовлення, замовити розробку ПЗ, IT-компанія Київ, IT аутсорсинг Україна, LLM розробка, RAG, NLP, computer vision, MLOps, DevOps, Partnerio, розробка AI проєктів',
     },
     topbar: {
       hours: 'Пн–Пт · 9:00–18:00 · Київ та Львів',
@@ -19,10 +21,9 @@ const UI = {
       menu: 'Меню',
     },
     hero: {
-      eyebrow: 'AI-first компанія · LLM · NLP · Computer Vision · з 2010 року',
-      title: 'Штучний інтелект та інженерія ПЗ для вашого бізнесу',
+      title: 'Розробляємо ШІ-проєкти та програмне забезпечення для вашого бізнесу',
       tagline: 'Від discovery і PoC до production ML — з KPI, SLA та підтримкою після запуску',
-      text: 'Partnerio — AI-first партнер для компаній, які будують продукти на штучному інтелекті: LLM-асистенти, RAG, NLP, computer vision і голосові рішення. Допомагаємо пройти шлях від ідеї до production з вимірюваним ROI — accuracy, latency, adoption і cost savings. Поруч — надійна розробка ПЗ, QA і DevOps для fintech, retail, manufacturing, healthtech і enterprise в Україні, ЄС та США. Працюємо прозоро: weekly demo, KPI dashboard і команда, яка залишається після launch.',
+      text: 'Partnerio — IT-партнер для розробки штучного інтелекту та програмного забезпечення на замовлення. Створюємо ШІ-проєкти: LLM-асистенти, RAG, NLP, computer vision і голосові рішення — від ідеї до production з вимірюваним ROI. Паралельно розробляємо веб- і мобільні системи, QA і DevOps для fintech, retail, manufacturing, healthtech і enterprise в Україні, ЄС та США.',
       cta1: 'Обговорити ШІ-проєкт',
       cta2: 'Переглянути AI-кейси',
       cert1: 'LLM · RAG · fine-tuning',
@@ -31,8 +32,8 @@ const UI = {
       stat1: 'проєктів',
       stat2: 'ML/AI-експертів',
       stat3: 'клієнтів',
-      imgAlt: 'ШІ, роботи та високі технології — Partnerio',
-      accentAlt: 'Робот та штучний інтелект',
+      imgAlt: 'Сучасний робот та штучний інтелект — Partnerio',
+      accentAlt: 'Робототехніка та AI',
       visualBadge: 'AI · Robotics · High Tech',
     },
     showcase: {
@@ -84,7 +85,7 @@ const UI = {
       f2text: 'LLM-асистенти, RAG, multi-agent workflows, OCR, object detection, відеоаналітика, Speech-to-Text і Text-to-Speech — повний спектр інтелектуальних модальностей для enterprise. Moderation, guardrails, cited answers для regulated domains і explainability для fraud/risk scoring.',
       f3title: 'AI-команда + delivery',
       f3chip: 'AI Engineering',
-      f3imgAlt: 'Роботизація та AI-інженерія',
+      f3imgAlt: 'AI-команда та інженерія',
       f3text: '35+ ML/NLP/CV-інженерів і data scientists — 40% senior/lead. Поруч backend, frontend, QA і DevOps для end-to-end delivery: один партнер від discovery до support. Embedded у ваш процес або dedicated team під ваш бренд — з тим самим SLA і прозорістю.',
     },
     about: {
@@ -105,8 +106,13 @@ const UI = {
       check8: 'Підтримка проектів після запуску — SLA, моніторинг, інциденти та розвиток продукту',
       cta: "Зв'язатися з нами",
       badge: 'років на ринку',
+      metricTeam: 'інженерів',
+      metricProjects: 'проєктів',
+      h1: 'Моделі співпраці',
+      h2: 'Regulated-галузі',
+      h3: 'Підтримка після launch',
       imgAlt: 'AI-команда Partnerio',
-      imgAltMain: 'Роботизовані технології та автоматизація',
+      imgAltMain: 'AI-команда Partnerio',
       imgAltAi: 'Мікросхеми та високі технології',
       imgAltData: 'Штучний інтелект та LLM',
     },
@@ -133,23 +139,11 @@ const UI = {
     projects: {
       label: 'Портфоліо',
       title: 'Реалізовані проєкти',
-      subtitle: '13+ AI-кейсів і enterprise-проєктів з метриками: LLM для кол-центру, RAG для insurance, CV на виробництві, fraud ML, voice AI для logistics, multi-agent legal ops, EdTech та cloud migration. Кожен кейс — з описом задачі, підходу, стеку і вимірюваних результатів.',
+      subtitle: '12+ AI-кейсів і enterprise-проєктів з метриками: LLM для кол-центру, RAG для insurance, CV на виробництві, fraud ML, voice AI для logistics, multi-agent legal ops та EdTech. Кожен кейс — з описом задачі, підходу, стеку і вимірюваних результатів.',
       aiTitle: 'ШІ-кейси',
       otherTitle: 'Інші реалізовані проєкти',
       results: 'Результати',
       empty: 'Описи проєктів завантажуються…',
-    },
-    tech: {
-      label: 'Технології',
-      title: 'Технологічний стек',
-      subtitle: 'Production-ready стек ШІ: LLM, RAG, computer vision, голос, AI agents, MLOps і векторні бази даних',
-      groupDev: 'Розробка та інфраструктура',
-      groupAI: 'ШІ та машинне навчання',
-      groupNLP: 'NLP та LLM',
-      groupRAG: 'RAG та векторні БД',
-      groupCV: 'Computer Vision',
-      groupVoice: 'Голосові технології',
-      groupAgents: 'AI Agents та автоматизація',
     },
     team: {
       label: 'Команда',
@@ -160,6 +154,23 @@ const UI = {
       label: 'Відгуки',
       title: 'Рекомендації клієнтів',
       subtitle: 'Відгуки product owner, CTO і VP Engineering — про терміни, якість комунікації, прозорість процесу, compliance-ready delivery і вимірюваний бізнес-результат після launch.',
+    },
+    faq: {
+      label: 'FAQ',
+      title: 'Часті запитання про розробку ШІ та програмного забезпечення',
+      subtitle: 'Відповіді на типові запитання про замовлення AI-проєктів, розробку програмного забезпечення, терміни, моделі співпраці та підтримку після запуску.',
+      q1: 'Як замовити розробку штучного інтелекту або програмного забезпечення в Partnerio?',
+      a1: 'Залиште заявку на сайті або напишіть на email — протягом одного робочого дня менеджер зв\'яжеться з вами, уточнить задачу та призначить безкоштовний discovery call з AI/ML-експертом. Далі — оцінка data readiness, комерційна пропозиція з командою, термінами та KPI протягом 1–2 робочих днів.',
+      q2: 'Які ШІ-рішення ви розробляєте?',
+      a2: 'LLM-асистенти та чат-боти, RAG на корпоративних даних, NLP (класифікація, summarization, NER), computer vision (OCR, detection, відеоаналітика), голосові AI (ASR, TTS, IVR), fraud ML, прогнозування попиту, multi-agent системи та MLOps для production.',
+      q3: 'Скільки триває розробка AI-проєкту від ідеї до production?',
+      a3: 'PoC — від 4–8 тижнів, MVP — від 2–4 місяців, enterprise production — від 4–12 місяців залежно від scope, даних і інтеграцій. Точні терміни фіксуємо після discovery і аудиту даних — з milestones на кожен спринт.',
+      q4: 'Чи розробляєте ви програмне забезпечення окремо від ШІ?',
+      a4: 'Так. Окрім ШІ-проєктів, ми створюємо веб- і мобільні додатки, SaaS-платформи, корпоративні системи, API, QA-автотести та DevOps-інфраструктуру. Можна замовити повний цикл «ШІ + програмне забезпечення» або окремий напрямок.',
+      q5: 'З якими регіонами і галузями ви працюєте?',
+      a5: 'Офіси в Києві та Львові, remote-команди для клієнтів з України, ЄС та США. Досвід у fintech, banking, retail, manufacturing, healthtech, insurance, legal, logistics та EdTech — включно з regulated-середовищем і compliance.',
+      q6: 'Чи надаєте підтримку після запуску проєкту?',
+      a6: 'Так — L1/L2/L3 support за SLA, моніторинг моделей і drift, retrain, інцидент-менеджмент, security patches і розвиток функціоналу. Більшість клієнтів працюють з нами 3+ роки після launch.',
     },
     cta: {
       title: 'Обговоримо ваш AI-проєкт?',
@@ -215,8 +226,9 @@ const UI = {
   },
   en: {
     meta: {
-      title: 'Partnerio | AI Solutions: LLM, NLP, Computer Vision & Software Engineering',
-      description: 'Partnerio — AI-first IT company since 2010. LLM, RAG, NLP, computer vision, voice AI, and production ML. Plus software development, QA, and DevOps. Kyiv, Lviv. 50+ engineers, 250+ projects.',
+      title: 'Partnerio | Custom AI & Software Development — Kyiv, Ukraine',
+      description: 'Order AI and custom software development: LLM, RAG, NLP, computer vision, MLOps. Partnerio IT company since 2010 — Kyiv, Lviv, remote EU/US. 50+ engineers, 250+ projects, free discovery call.',
+      keywords: 'AI development, custom software development, LLM development, RAG, NLP, computer vision, IT outsourcing Ukraine, software company Kyiv, MLOps, DevOps, Partnerio, AI projects',
     },
     topbar: {
       hours: 'Mon–Fri · 9:00–18:00 · Kyiv & Lviv',
@@ -231,10 +243,9 @@ const UI = {
       menu: 'Menu',
     },
     hero: {
-      eyebrow: 'AI-first company · LLM · NLP · Computer Vision · since 2010',
-      title: 'Artificial intelligence and software engineering for your business',
+      title: 'We build AI projects and custom software for your business',
       tagline: 'From discovery and PoC to production ML — with KPIs, SLA, and post-launch support',
-      text: 'Partnerio is an AI-first partner for companies building products on artificial intelligence: LLM assistants, RAG, NLP, computer vision, and voice solutions. We help you go from idea to production with measurable ROI — accuracy, latency, adoption, and cost savings. We also deliver reliable software development, QA, and DevOps for fintech, retail, manufacturing, healthtech, and enterprise across Ukraine, the EU, and the US. Transparent delivery: weekly demos, KPI dashboards, and a team that stays after launch.',
+      text: 'Partnerio is your IT partner for artificial intelligence and custom software development. We build AI projects — LLM assistants, RAG, NLP, computer vision, and voice solutions — from idea to production with measurable ROI. We also deliver web and mobile systems, QA, and DevOps for fintech, retail, manufacturing, healthtech, and enterprise across Ukraine, the EU, and the US.',
       cta1: 'Discuss your AI project',
       cta2: 'View AI case studies',
       cert1: 'LLM · RAG · fine-tuning',
@@ -243,8 +254,8 @@ const UI = {
       stat1: 'projects',
       stat2: 'ML/AI experts',
       stat3: 'clients',
-      imgAlt: 'AI, robotics, and high technology — Partnerio',
-      accentAlt: 'Robot and artificial intelligence',
+      imgAlt: 'Modern robot and artificial intelligence — Partnerio',
+      accentAlt: 'Robotics and AI',
       visualBadge: 'AI · Robotics · High Tech',
     },
     showcase: {
@@ -296,7 +307,7 @@ const UI = {
       f2text: 'LLM assistants, RAG, multi-agent workflows, OCR, object detection, video analytics, speech-to-text, and text-to-speech — the full spectrum of intelligent modalities for enterprise. Moderation, guardrails, cited answers for regulated domains, and explainability for fraud/risk scoring.',
       f3title: 'AI team + delivery',
       f3chip: 'AI Engineering',
-      f3imgAlt: 'Robotics and AI engineering',
+      f3imgAlt: 'AI team and engineering',
       f3text: '35+ ML/NLP/CV engineers and data scientists — 40% senior/lead. Plus backend, frontend, QA, and DevOps for end-to-end delivery: one partner from discovery to support. Embedded in your process or a dedicated team under your brand — same SLA and transparency.',
     },
     about: {
@@ -317,8 +328,13 @@ const UI = {
       check8: 'Post-launch project support — SLA, monitoring, incidents, and product evolution',
       cta: 'Contact us',
       badge: 'years on the market',
+      metricTeam: 'engineers',
+      metricProjects: 'projects',
+      h1: 'Engagement models',
+      h2: 'Regulated industries',
+      h3: 'Post-launch support',
       imgAlt: 'Partnerio AI team',
-      imgAltMain: 'Robotics and industrial automation',
+      imgAltMain: 'Partnerio AI team',
       imgAltAi: 'Microchips and high technology',
       imgAltData: 'Artificial intelligence and LLM',
     },
@@ -345,23 +361,11 @@ const UI = {
     projects: {
       label: 'Portfolio',
       title: 'Delivered projects',
-      subtitle: '13+ AI case studies and enterprise projects with metrics: LLM for call centers, insurance RAG, manufacturing CV, fraud ML, voice AI for logistics, multi-agent legal ops, EdTech, and cloud migration. Each case includes problem, approach, stack, and measurable outcomes.',
+      subtitle: '12+ AI case studies and enterprise projects with metrics: LLM for call centers, insurance RAG, manufacturing CV, fraud ML, voice AI for logistics, multi-agent legal ops, and EdTech. Each case includes problem, approach, stack, and measurable outcomes.',
       aiTitle: 'AI case studies',
       otherTitle: 'Other delivered projects',
       results: 'Key results',
       empty: 'Loading project descriptions…',
-    },
-    tech: {
-      label: 'Technologies',
-      title: 'Technology stack',
-      subtitle: 'Production-ready AI stack: LLM, RAG, computer vision, voice, AI agents, MLOps, and vector databases',
-      groupDev: 'Development & infrastructure',
-      groupAI: 'AI & machine learning',
-      groupNLP: 'NLP & LLM',
-      groupRAG: 'RAG & vector databases',
-      groupCV: 'Computer Vision',
-      groupVoice: 'Voice & speech',
-      groupAgents: 'AI agents & automation',
     },
     team: {
       label: 'Team',
@@ -372,6 +376,23 @@ const UI = {
       label: 'Reviews',
       title: 'Client testimonials',
       subtitle: 'Feedback from product owners, CTOs, and VPs of Engineering — on timelines, communication quality, process transparency, compliance-ready delivery, and measurable business results after launch.',
+    },
+    faq: {
+      label: 'FAQ',
+      title: 'Frequently asked questions about AI and software development',
+      subtitle: 'Answers about ordering AI projects, custom software development, timelines, engagement models, and post-launch support.',
+      q1: 'How do I order AI or custom software development from Partnerio?',
+      a1: 'Submit the form on this page or email us — within one business day a manager will contact you, clarify your requirements, and schedule a free discovery call with an AI/ML expert. Next: data readiness assessment and a commercial proposal with team, timeline, and KPIs within 1–2 business days.',
+      q2: 'What AI solutions do you build?',
+      a2: 'LLM assistants and chatbots, RAG on corporate data, NLP (classification, summarization, NER), computer vision (OCR, detection, video analytics), voice AI (ASR, TTS, IVR), fraud ML, demand forecasting, multi-agent systems, and MLOps for production.',
+      q3: 'How long does an AI project take from idea to production?',
+      a3: 'PoC — from 4–8 weeks, MVP — from 2–4 months, enterprise production — from 4–12 months depending on scope, data, and integrations. Exact timelines are fixed after discovery and a data audit — with milestones for each sprint.',
+      q4: 'Do you develop software separately from AI?',
+      a4: 'Yes. Besides AI projects, we build web and mobile apps, SaaS platforms, enterprise systems, APIs, QA automation, and DevOps infrastructure. You can order full-cycle “AI + software” or a single service line.',
+      q5: 'Which regions and industries do you serve?',
+      a5: 'Offices in Kyiv and Lviv, remote teams for clients in Ukraine, the EU, and the US. Experience in fintech, banking, retail, manufacturing, healthtech, insurance, legal, logistics, and EdTech — including regulated environments and compliance.',
+      q6: 'Do you provide support after launch?',
+      a6: 'Yes — L1/L2/L3 support under SLA, model and drift monitoring, retraining, incident management, security patches, and feature evolution. Most clients stay with us 3+ years after launch.',
     },
     cta: {
       title: 'Discuss your AI project?',
@@ -433,9 +454,82 @@ function normalizeLang(lang) {
 
 let currentLang = 'uk';
 try {
-  currentLang = normalizeLang(localStorage.getItem(LANG_KEY));
+  const urlLang = new URLSearchParams(window.location.search).get('lang');
+  currentLang = normalizeLang(urlLang || localStorage.getItem(LANG_KEY));
 } catch {
-  currentLang = 'uk';
+  const urlLang = new URLSearchParams(window.location.search).get('lang');
+  currentLang = normalizeLang(urlLang) || 'uk';
+}
+
+function siteUrl(lang = currentLang) {
+  return lang === 'en' ? `${SITE_BASE}?lang=en` : SITE_BASE;
+}
+
+function setMetaName(name, content) {
+  if (!content) return;
+  let el = document.querySelector(`meta[name="${name}"]`);
+  if (!el) {
+    el = document.createElement('meta');
+    el.setAttribute('name', name);
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', content);
+}
+
+function setMetaProperty(property, content) {
+  if (!content) return;
+  let el = document.querySelector(`meta[property="${property}"]`);
+  if (!el) {
+    el = document.createElement('meta');
+    el.setAttribute('property', property);
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', content);
+}
+
+function applyFaqSchema() {
+  const faq = UI[currentLang]?.faq || UI.uk?.faq;
+  if (!faq) return;
+  const pairs = [1, 2, 3, 4, 5, 6]
+    .map((n) => ({ q: faq[`q${n}`], a: faq[`a${n}`] }))
+    .filter((item) => item.q && item.a);
+  let el = document.getElementById('faq-schema');
+  if (!el) {
+    el = document.createElement('script');
+    el.type = 'application/ld+json';
+    el.id = 'faq-schema';
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: pairs.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  });
+}
+
+function applySeoMeta() {
+  const title = t('meta.title');
+  const description = t('meta.description');
+  const keywords = t('meta.keywords');
+  const url = siteUrl(currentLang);
+
+  document.title = title;
+  setMetaName('description', description);
+  setMetaName('keywords', keywords);
+  setMetaProperty('og:title', title);
+  setMetaProperty('og:description', description);
+  setMetaProperty('og:url', url);
+  setMetaProperty('og:locale', currentLang === 'uk' ? 'uk_UA' : 'en_US');
+  setMetaName('twitter:title', title);
+  setMetaName('twitter:description', description);
+
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.href = url;
+  applyFaqSchema();
 }
 
 function t(key) {
@@ -521,20 +615,6 @@ function applyWhySection() {
   });
 }
 
-function applyTechSection() {
-  const tech = UI[currentLang]?.tech || UI.uk?.tech;
-  if (!tech) return;
-  const fields = [
-    ['tech-label', 'label'],
-    ['tech-title', 'title'],
-    ['tech-subtitle', 'subtitle'],
-  ];
-  fields.forEach(([id, key]) => {
-    const el = document.getElementById(id);
-    if (el && tech[key]) el.textContent = tech[key];
-  });
-}
-
 function applyTranslations() {
   document.documentElement.lang = currentLang;
 
@@ -546,7 +626,7 @@ function applyTranslations() {
 
   applyWhySection();
   applyProcessSection();
-  applyTechSection();
+  applySeoMeta();
 
   document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
     applyTranslation(el, 'data-i18n-placeholder', (value) => {
@@ -566,12 +646,6 @@ function applyTranslations() {
     });
   });
 
-  const title = document.querySelector('title');
-  if (title) title.textContent = t('meta.title');
-
-  const desc = document.querySelector('meta[name="description"]');
-  if (desc) desc.setAttribute('content', t('meta.description'));
-
   document.querySelectorAll('.lang-switch__btn').forEach((btn) => {
     btn.classList.toggle('active', btn.dataset.lang === currentLang);
   });
@@ -587,6 +661,14 @@ function setLang(lang) {
     /* ignore private mode / blocked storage */
   }
   applyTranslations();
+  try {
+    const url = new URL(window.location.href);
+    if (lang === 'en') url.searchParams.set('lang', 'en');
+    else url.searchParams.delete('lang');
+    window.history.replaceState({}, '', url);
+  } catch {
+    /* ignore */
+  }
   document.dispatchEvent(new CustomEvent('langchange', { detail: lang }));
 }
 
@@ -597,14 +679,11 @@ function initLangSwitch() {
   applyTranslations();
 }
 
-window.i18n = { t, getLang, setLang, applyTranslations, initLangSwitch, applyWhySection, applyProcessSection, applyTechSection };
+window.i18n = { t, getLang, setLang, applyTranslations, initLangSwitch, applyWhySection, applyProcessSection };
 
 if (document.getElementById('why-title') || document.querySelector('[data-i18n^="why."]')) {
   applyWhySection();
 }
 if (document.getElementById('process-s5-title') || document.querySelector('[data-i18n^="process.s"]')) {
   applyProcessSection();
-}
-if (document.getElementById('tech-stacks')) {
-  applyTechSection();
 }
