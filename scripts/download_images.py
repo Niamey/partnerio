@@ -10,8 +10,7 @@ FRONTEND_IMG = ROOT / "frontend" / "images"
 # Each URL used once across the site (hero, sections, projects, team, reviews).
 FILES = {
     # Hero & section visuals (static HTML only)
-    # Hero — hero.jpg is a custom generated asset (see docs/images/ai/hero.jpg)
-    "ai/hero-accent.jpg": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900&q=85&auto=format&fit=crop",
+    # Hero — custom generated assets (see docs/images/ai/hero*.jpg)
     "ai/about-hero.jpg": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=85&auto=format&fit=crop",
     "ai/about-ai.jpg": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900&q=85&auto=format&fit=crop",
     "ai/about-main.jpg": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=900&q=85&auto=format&fit=crop",
@@ -48,6 +47,7 @@ FILES = {
 # Never overwrite generated team business portraits
 SKIP_OVERWRITE = {
     "hero.jpg",
+    "hero-accent.jpg",
     "anton-fil.jpg",
     "olga-kornieva.jpg",
     "sergiy-mazur.jpg",

@@ -111,7 +111,7 @@
       "category": "ШІ / NLP",
       "title": "Розумний асистент для кол-центру",
       "description": "LLM-асистент для fintech-кол-центру з RAG, інтеграцією в CRM і телефонію, KYC-верифікацією та безпечною ескалацією до оператора з повним контекстом діалогу.",
-      "details": "FinTech Ukraine обробляла понад 15 000 звернень на місяць; оператори витрачали до 70% часу на типові запити. Partnerio провела discovery з бізнесом і compliance, зібрала intent-каталог на 40+ сценаріїв і розробила fine-tuned LLM з RAG на knowledge base. Асистент верифікує клієнта за KYC, відповідає у контексті діалогу, підтримує UA/EN і передає оператору повну транскрипцію. Додали moderation layer, audit log і dashboard з adoption та containment rate. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "Клієнт обробляв понад 15 000 звернень на місяць; оператори витрачали до 70% часу на типові запити. Partnerio провела discovery з бізнесом і compliance, зібрала intent-каталог на 40+ сценаріїв і розробила fine-tuned LLM з RAG на knowledge base. Асистент верифікує клієнта за KYC, відповідає у контексті діалогу, підтримує UA/EN і передає оператору повну транскрипцію. Додали moderation layer, audit log і dashboard з adoption та containment rate. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "Python",
         "FastAPI",
@@ -127,7 +127,7 @@
         "Час першої відповіді: з 4 хв до 40 сек",
         "NPS кол-центру +12 п.п. за 6 місяців"
       ],
-      "client": "FinTech Ukraine",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p1.jpg"
     },
@@ -136,7 +136,7 @@
       "category": "Веб-розробка",
       "title": "E-commerce платформа",
       "description": "Omnichannel-маркетплейс для retail-мережі: єдиний каталог B2C і B2B, оплата, логістика, промо та ABC-аналітика для 50 000+ SKU.",
-      "details": "Retail Group масштабувала офлайн-мережу і мала розрізнені системи для магазинів, оптових клієнтів і інтернет-продажів. Спроєктували мікросервісну платформу: каталог, кошик, замовлення, платежі, промо та звітність — з єдиним профілем клієнта. Окремий акцент — performance під Black Friday (< 1.2 сек каталог), модуль для категорійних менеджерів з ABC-аналітикою, інтеграція з ERP і WMS. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "Клієнт масштабував офлайн-мережу і мала розрізнені системи для магазинів, оптових клієнтів і інтернет-продажів. Спроєктували мікросервісну платформу: каталог, кошик, замовлення, платежі, промо та звітність — з єдиним профілем клієнта. Окремий акцент — performance під Black Friday (< 1.2 сек каталог), модуль для категорійних менеджерів з ABC-аналітикою, інтеграція з ERP і WMS. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "React",
         "Node.js",
@@ -152,7 +152,7 @@
         "Час завантаження каталогу < 1.2 сек",
         "Запуск B2B-каналу без окремої платформи"
       ],
-      "client": "Retail Group",
+      "client": "",
       "date": "2024",
       "image": "images/projects/p2.jpg"
     },
@@ -161,7 +161,7 @@
       "category": "QA / Автотести",
       "title": "Автоматизація тестування банківської системи",
       "description": "Enterprise test framework для core banking: API, UI, smoke у production і audit-ready звітність для compliance-команди.",
-      "details": "NovaBank випускала релізи core banking кожні 2 тижні, але регресія займала 5 робочих днів і блокувала delivery. Partnerio побудувала layered framework: контрактні API-тести, Playwright-сценарії для 40+ критичних user flow, nightly smoke на staging і post-deploy перевірки. Звіти Allure інтегровані в Jira; compliance-команда отримує traceability від user story до test case. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "Банк випускав релізи core banking кожні 2 тижні, але регресія займала 5 робочих днів і блокувала delivery. Partnerio побудувала layered framework: контрактні API-тести, Playwright-сценарії для 40+ критичних user flow, nightly smoke на staging і post-deploy перевірки. Звіти Allure інтегровані в Jira; compliance-команда отримує traceability від user story до test case. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "Java",
         "Playwright",
@@ -177,7 +177,7 @@
         "95% покриття critical path",
         "Економія 2 FTE QA на регресії"
       ],
-      "client": "NovaBank",
+      "client": "",
       "date": "2024",
       "image": "images/projects/p3.jpg"
     },
@@ -186,7 +186,7 @@
       "category": "Computer Vision",
       "title": "Система контролю якості на виробництві",
       "description": "Real-time CV для дефектоскопії на конвеєрі: edge-inference на TensorRT, інтеграція в MES і dashboard з heatmap дефектів.",
-      "details": "IndustrialTech контролювала якість вручну — затримки, людський фактор, складність масштабування. Зібрали 12 000+ зображень дефектів, навчили PyTorch-модель, оптимізували TensorRT на edge-серверах і підключили MES для автозупинки партії. 30 FPS, 8 типів дефектів, push-алерти оператору, trend-аналітика і export для аудиту якості. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "Виробник контролював якість вручну — затримки, людський фактор, складність масштабування. Зібрали 12 000+ зображень дефектів, навчили PyTorch-модель, оптимізували TensorRT на edge-серверах і підключили MES для автозупинки партії. 30 FPS, 8 типів дефектів, push-алерти оператору, trend-аналітика і export для аудиту якості. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "Python",
         "PyTorch",
@@ -202,7 +202,7 @@
         "ROI за 8 місяців",
         "Розгортання на 3 лініях без простою"
       ],
-      "client": "IndustrialTech",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p4.jpg"
     },
@@ -211,7 +211,7 @@
       "category": "Голосовий ШІ",
       "title": "Voice AI для логістичного кол-центру",
       "description": "Voice AI для логістики: Whisper ASR, NLU, TTS, IVR і інтеграція з TMS/CRM для автоматичного трекінгу вантажів.",
-      "details": "LogiTrans EU — 8 000+ дзвінків/місяць, черги до 15 хв у пік. Whisper ASR, NLU для 25+ intent, TTS і TMS-інтеграція з SMS-підтвердженнями. Ескалація з транскрипцією та next-best-action. 6 мов, call analytics, weekly звіти для operations. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "У логістичному кол-центрі — 8 000+ дзвінків/місяць, черги до 15 хв у пік. Whisper ASR, NLU для 25+ intent, TTS і TMS-інтеграція з SMS-підтвердженнями. Ескалація з транскрипцією та next-best-action. 6 мов, call analytics, weekly звіти для operations. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "Python",
         "Whisper",
@@ -227,7 +227,7 @@
         "Підтримка 6 мов для EU-клієнтів",
         "Запуск за 4 місяці"
       ],
-      "client": "LogiTrans EU",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p5.jpg"
     },
@@ -236,7 +236,7 @@
       "category": "ШІ / RAG",
       "title": "Корпоративний пошук по документах",
       "description": "Enterprise RAG для страхової: семантичний пошук по 120 000+ документів, LLM-відповіді з цитуванням і role-based доступом.",
-      "details": "SecureInsurance — юристи витрачали до 40 хв на пошук у PDF/Word. Pipeline: OCR, smart chunking, Azure OpenAI embeddings, Qdrant, LLM з обов'язковими цитатами. Role-based доступ, audit log, hybrid search + re-ranking, export цитат у Word. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "У страховій компанії — юристи витрачали до 40 хв на пошук у PDF/Word. Pipeline: OCR, smart chunking, Azure OpenAI embeddings, Qdrant, LLM з обов'язковими цитатами. Role-based доступ, audit log, hybrid search + re-ranking, export цитат у Word. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "Python",
         "LangChain",
@@ -252,7 +252,7 @@
         "GDPR-ready архітектура",
         "Adoption 78% за 3 місяці"
       ],
-      "client": "SecureInsurance",
+      "client": "",
       "date": "2024",
       "image": "images/projects/p6.jpg"
     },
@@ -261,7 +261,7 @@
       "category": "Computer Vision / GIS",
       "title": "Computer Vision для аналізу супутникових знімків",
       "description": "CV/GIS-платформа для agrotech і логістики: супутниковий моніторинг, change detection, object detection і аналітичний dashboard.",
-      "details": "GeoInsight EU аналізувала супутникові знімки для agrotech і логістики — ручна обробка займала дні. Partnerio розробила pipeline: preprocessing, tile segmentation, YOLO object detection, change detection між time-series знімками та dashboard для аналітиків. Inference на GPU-кластері з чергою завдань, пріоритизацією критичних зон і export звітів для клієнтів. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "Клієнт аналізував супутникові знімки для agrotech і логістики — ручна обробка займала дні. Partnerio розробила pipeline: preprocessing, tile segmentation, YOLO object detection, change detection між time-series знімками та dashboard для аналітиків. Inference на GPU-кластері з чергою завдань, пріоритизацією критичних зон і export звітів для клієнтів. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "Python",
         "PyTorch",
@@ -277,7 +277,7 @@
         "On-prem deployment для безпеки даних",
         "Інтеграція з GIS-системою клієнта"
       ],
-      "client": "GeoInsight EU",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p7.jpg"
     },
@@ -286,7 +286,7 @@
       "category": "HealthTech / NLP",
       "title": "NLP для обробки медичних карток",
       "description": "NLP для медкарток: de-identification PHI, ICD-10, LLM-summarization — on-prem, HIPAA-aligned.",
-      "details": "MediCore — ручна анонімізація блокувала analytics на 2–3 тижні. NER для PHI, human-in-the-loop, ICD-10 на 200+ категорій, LLM discharge summary. On-prem, audit trail, 50 000 записів/добу, API для EMR. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "У медзакладі — ручна анонімізація блокувала analytics на 2–3 тижні. NER для PHI, human-in-the-loop, ICD-10 на 200+ категорій, LLM discharge summary. On-prem, audit trail, 50 000 записів/добу, API для EMR. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "Python",
         "spaCy",
@@ -302,7 +302,7 @@
         "Audit trail для кожного запиту",
         "Запуск pilot за 5 місяців"
       ],
-      "client": "MediCore",
+      "client": "",
       "date": "2024",
       "image": "images/projects/p8.jpg"
     },
@@ -311,7 +311,7 @@
       "category": "ШІ / ML",
       "title": "Прогнозування попиту для retail",
       "description": "ML-прогноз попиту для retail: XGBoost + Prophet, feature store, ERP і auto-reorder для 180+ магазинів.",
-      "details": "FreshMarket — overstock і out-of-stock на 15 000 SKU. Feature store (seasonality, promo, weather), ensemble-моделі, what-if dashboard для закупівельників. Weekly retrain, MAPE по категоріях, explainability для category managers. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "У retail-мережі — overstock і out-of-stock на 15 000 SKU. Feature store (seasonality, promo, weather), ensemble-моделі, what-if dashboard для закупівельників. Weekly retrain, MAPE по категоріях, explainability для category managers. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "Python",
         "XGBoost",
@@ -327,7 +327,7 @@
         "Автоматичний reorder для 80% SKU",
         "ROI за 6 місяців"
       ],
-      "client": "FreshMarket",
+      "client": "",
       "date": "2024",
       "image": "images/projects/p9.jpg"
     },
@@ -336,7 +336,7 @@
       "category": "EdTech / ШІ",
       "title": "AI-репетитор з адаптивним навчанням",
       "description": "AI-репетитор: RAG на curriculum, fine-tuned LLM, auto-grader і adaptive path для 25 000 учнів.",
-      "details": "EduSmart — 1 викладач на 120 учнів. RAG на підручниках, plain-language LLM, rubric auto-grader, adaptive path за помилками. Moderation, parental controls, teacher dashboard. Відповідь < 5 сек. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "В онлайн-школі — 1 викладач на 120 учнів. RAG на підручниках, plain-language LLM, rubric auto-grader, adaptive path за помилками. Moderation, parental controls, teacher dashboard. Відповідь < 5 сек. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "Python",
         "OpenAI",
@@ -352,7 +352,7 @@
         "Moderation блокує 99.7% небезпечного контенту",
         "Запуск MVP за 4 місяці"
       ],
-      "client": "EduSmart",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p11.jpg"
     },
@@ -361,7 +361,7 @@
       "category": "ШІ / ML",
       "title": "Fraud detection для payment-платформи",
       "description": "Real-time fraud ML: Kafka streaming, 200+ ознак, ensemble і SHAP explainability — scoring < 50 ms.",
-      "details": "ClearPay — 2M+ транзакцій/добу, 8% false positive. Kafka pipeline, feature store, XGBoost + isolation forest, human review queue, daily retrain. $1.2M/рік економії на chargebacks. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "На payment-платформі — 2M+ транзакцій/добу, 8% false positive. Kafka pipeline, feature store, XGBoost + isolation forest, human review queue, daily retrain. $1.2M/рік економії на chargebacks. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "Python",
         "XGBoost",
@@ -377,7 +377,7 @@
         "Економія $1.2M/рік на chargebacks",
         "Retrain pipeline — щоденно"
       ],
-      "client": "ClearPay",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p12.jpg"
     },
@@ -386,7 +386,7 @@
       "category": "ШІ / AI Agents",
       "title": "Multi-agent система для обробки договорів",
       "description": "Multi-agent legal ops: clause extraction, playbook compare, risk scoring, redlines — LangGraph + RAG.",
-      "details": "LegalTech Pro — 6 год review на договір. LangGraph agents: extraction, playbook (50+ clauses), risk scoring, redlines. Human approval, audit log, Word export з track changes. 200 договорів/місяць у pilot. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
+      "details": "У legal-tech продукті — 6 год review на договір. LangGraph agents: extraction, playbook (50+ clauses), risk scoring, redlines. Human approval, audit log, Word export з track changes. 200 договорів/місяць у pilot. Команда Partnerio супроводжувала проєкт від discovery до production: архітектура, інтеграції, MLOps і підтримка після launch з прозорою звітністю для бізнесу.",
       "stack": [
         "Python",
         "LangGraph",
@@ -402,7 +402,7 @@
         "Юристи фокусуються на 20% edge cases",
         "Pilot — 200 договорів/місяць"
       ],
-      "client": "LegalTech Pro",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p13.jpg"
     }
@@ -445,7 +445,7 @@
     {
       "id": "r1",
       "name": "Ігор Петренко",
-      "company": "FinTech Ukraine",
+      "company": "",
       "text": "Нам потрібен був ШІ-асистент для кол-центру до пікового сезону — терміни піджимали, а внутрішня команда була зайнята core banking. Partnerio за 3 місяці зібрали MVP, інтегрували з CRM Salesforce і телефонією, провели UAT з операторами. Зараз автоматизовано 60% типових діалогів, час першої відповіді скоротився з 4 хв до 40 сек, NPS +12 п.п. Оператори отримують готовий контекст при ескалації. Щотижневі демо, прозорий backlog і жодних сюрпризів — саме те, чого ми чекали. Після launch команда залишилась на support: drift monitoring, retrain моделі, moderation updates під SLA.",
       "date": "Жовтень 2025",
       "image": "images/reviews/ihor-petrenko.jpg"
@@ -453,7 +453,7 @@
     {
       "id": "r2",
       "name": "Олена Сидоренко",
-      "company": "Retail Group",
+      "company": "",
       "text": "Після запуску e-commerce платформи від Partnerio ми обробляємо понад 2 000 замовлень на добу в пік — Black Friday пройшов без інцидентів. Окремо цінуємо архітектуру: B2B і B2C в одній системі без дублювання даних, єдиний профіль клієнта, інтеграція з ERP і WMS. QA-команда Partnerio побудувала 400+ автотестів — баги в production впали на 80%. Комунікація на рівні product owner: backlog, пріоритети, ризики — все видно. Рекомендуємо як партнера для складних retail-платформ і довгострокового support.",
       "date": "Травень 2025",
       "image": "images/reviews/olena-sydorenko.jpg"
@@ -461,7 +461,7 @@
     {
       "id": "r4",
       "name": "Марина Коваленко",
-      "company": "SecureInsurance",
+      "company": "",
       "text": "RAG для insurance — складний кейс: 120 000+ документів, role-based доступ, обов'язкові цитати для юристів. Partnerio зробили PoC за 6 тижнів, потім production з audit log і export цитат у Word. Час пошуку відповіді скоротився з 40 хв до 3 хв. Особливо цінуємо обережність з даними — on-prem embeddings, NDA, IP transfer. Команда говорить мовою compliance, а не лише ML metrics.",
       "date": "Листопад 2025",
       "image": "images/reviews/marina-kovalenko.jpg"

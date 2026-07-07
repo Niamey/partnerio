@@ -111,7 +111,7 @@
       "category": "AI / NLP",
       "title": "Smart call center assistant",
       "description": "LLM assistant for a fintech call center with RAG, CRM/telephony integration, KYC verification, and secure agent handoff with full context.",
-      "details": "FinTech Ukraine handled 15,000+ monthly requests; agents spent 70% of time on routine inquiries. We built a 40+ intent catalog and fine-tuned LLM with RAG on policies and FAQ. KYC verification, UA/EN support, full transcription on escalation, moderation layer, audit log, and adoption dashboard. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "The client handled 15,000+ monthly requests; agents spent 70% of time on routine inquiries. We built a 40+ intent catalog and fine-tuned LLM with RAG on policies and FAQ. KYC verification, UA/EN support, full transcription on escalation, moderation layer, audit log, and adoption dashboard. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "Python",
         "FastAPI",
@@ -127,7 +127,7 @@
         "First response time: 4 min → 40 sec",
         "Call center NPS +12 pp in 6 months"
       ],
-      "client": "FinTech Ukraine",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p1.jpg"
     },
@@ -136,7 +136,7 @@
       "category": "Web Development",
       "title": "E-commerce platform",
       "description": "Omnichannel marketplace for a retail chain: unified B2C and B2B catalog, payments, logistics, promos, and ABC analytics for 50,000+ SKUs.",
-      "details": "Retail Group scaled offline stores but had fragmented systems for shops, wholesale, and e-commerce. We designed a microservices platform: catalog, cart, orders, payments, promos, and reporting with a single customer profile. Focus on Black Friday performance (< 1.2s catalog), category manager module with ABC analytics, ERP and WMS integration. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "The client scaled offline stores but had fragmented systems for shops, wholesale, and e-commerce. We designed a microservices platform: catalog, cart, orders, payments, promos, and reporting with a single customer profile. Focus on Black Friday performance (< 1.2s catalog), category manager module with ABC analytics, ERP and WMS integration. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "React",
         "Node.js",
@@ -152,7 +152,7 @@
         "Catalog load time < 1.2 sec",
         "B2B channel without a separate platform"
       ],
-      "client": "Retail Group",
+      "client": "",
       "date": "2024",
       "image": "images/projects/p2.jpg"
     },
@@ -161,7 +161,7 @@
       "category": "QA / Automation",
       "title": "Banking system test automation",
       "description": "Enterprise test framework for core banking: API, UI, production smoke tests, and audit-ready reporting for compliance teams.",
-      "details": "NovaBank released core banking every 2 weeks, but regression took 5 business days and blocked delivery. We built a layered framework: contract API tests, Playwright for 40+ critical flows, nightly staging smoke, and post-deploy checks. Allure reports integrated into Jira with traceability from user story to test case. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "The bank released core banking every 2 weeks, but regression took 5 business days and blocked delivery. We built a layered framework: contract API tests, Playwright for 40+ critical flows, nightly staging smoke, and post-deploy checks. Allure reports integrated into Jira with traceability from user story to test case. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "Java",
         "Playwright",
@@ -177,7 +177,7 @@
         "95% critical path coverage",
         "Saved 2 FTE QA on regression"
       ],
-      "client": "NovaBank",
+      "client": "",
       "date": "2024",
       "image": "images/projects/p3.jpg"
     },
@@ -186,7 +186,7 @@
       "category": "Computer Vision",
       "title": "Manufacturing quality control system",
       "description": "Real-time CV for conveyor defect detection: TensorRT edge inference, MES integration, and defect heatmap dashboard.",
-      "details": "IndustrialTech relied on manual inspection. We collected 12,000+ defect images, trained PyTorch, optimized TensorRT on edge servers, and connected MES for batch stops. 30 FPS, 8 defect types, operator alerts, trend analytics, and quality audit export. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "The manufacturer relied on manual inspection. We collected 12,000+ defect images, trained PyTorch, optimized TensorRT on edge servers, and connected MES for batch stops. 30 FPS, 8 defect types, operator alerts, trend analytics, and quality audit export. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "Python",
         "PyTorch",
@@ -202,7 +202,7 @@
         "ROI in 8 months",
         "Deployed on 3 lines without downtime"
       ],
-      "client": "IndustrialTech",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p4.jpg"
     },
@@ -211,7 +211,7 @@
       "category": "Voice AI",
       "title": "Voice AI for logistics call center",
       "description": "Voice AI for logistics: Whisper ASR, NLU, TTS, IVR, and TMS/CRM integration for shipment tracking.",
-      "details": "LogiTrans EU — 8,000+ calls/month, 15-minute queues at peak. Whisper ASR, 25+ intents, TTS, TMS with SMS confirmations. Escalation with transcription and next-best-action. Six languages, call analytics, weekly ops reports. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "In the logistics call center — 8,000+ calls/month, 15-minute queues at peak. Whisper ASR, 25+ intents, TTS, TMS with SMS confirmations. Escalation with transcription and next-best-action. Six languages, call analytics, weekly ops reports. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "Python",
         "Whisper",
@@ -227,7 +227,7 @@
         "Support for 6 languages for EU clients",
         "Launched in 4 months"
       ],
-      "client": "LogiTrans EU",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p5.jpg"
     },
@@ -236,7 +236,7 @@
       "category": "AI / RAG",
       "title": "Enterprise document search",
       "description": "Enterprise insurance RAG: semantic search across 120,000+ documents with cited LLM answers and role-based access.",
-      "details": "SecureInsurance — up to 40 minutes to find legal wording. OCR ingestion, smart chunking, Azure OpenAI embeddings, Qdrant, mandatory citations. Role-based access, audit log, hybrid search + re-ranking, Word citation export. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "At the insurance company — up to 40 minutes to find legal wording. OCR ingestion, smart chunking, Azure OpenAI embeddings, Qdrant, mandatory citations. Role-based access, audit log, hybrid search + re-ranking, Word citation export. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "Python",
         "LangChain",
@@ -252,7 +252,7 @@
         "GDPR-ready architecture",
         "78% adoption in 3 months"
       ],
-      "client": "SecureInsurance",
+      "client": "",
       "date": "2024",
       "image": "images/projects/p6.jpg"
     },
@@ -261,7 +261,7 @@
       "category": "Computer Vision / GIS",
       "title": "Computer vision for satellite imagery analysis",
       "description": "CV/GIS platform for agrotech and logistics: satellite monitoring, change detection, object detection, and analytics dashboard.",
-      "details": "GeoInsight EU analyzed satellite imagery for agrotech and logistics — manual processing took days. We built preprocessing, tile segmentation, YOLO detection, time-series change detection, and an analyst dashboard. GPU cluster inference with job queue, critical zone prioritization, and client report export. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "The client analyzed satellite imagery for agrotech and logistics — manual processing took days. We built preprocessing, tile segmentation, YOLO detection, time-series change detection, and an analyst dashboard. GPU cluster inference with job queue, critical zone prioritization, and client report export. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "Python",
         "PyTorch",
@@ -277,7 +277,7 @@
         "On-prem deployment for data security",
         "Integration with client GIS system"
       ],
-      "client": "GeoInsight EU",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p7.jpg"
     },
@@ -286,7 +286,7 @@
       "category": "HealthTech / NLP",
       "title": "NLP for medical record processing",
       "description": "Medical record NLP: PHI de-identification, ICD-10 classification, LLM summarization — on-prem, HIPAA-aligned.",
-      "details": "MediCore — manual anonymization blocked analytics for 2–3 weeks. PHI NER, human-in-the-loop, ICD-10 across 200+ categories, discharge LLM summaries. On-prem, audit trail, 50,000 records/day, EMR API. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "At the healthcare provider — manual anonymization blocked analytics for 2–3 weeks. PHI NER, human-in-the-loop, ICD-10 across 200+ categories, discharge LLM summaries. On-prem, audit trail, 50,000 records/day, EMR API. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "Python",
         "spaCy",
@@ -302,7 +302,7 @@
         "Audit trail for every request",
         "Pilot launched in 5 months"
       ],
-      "client": "MediCore",
+      "client": "",
       "date": "2024",
       "image": "images/projects/p8.jpg"
     },
@@ -311,7 +311,7 @@
       "category": "AI / ML",
       "title": "Demand forecasting for retail",
       "description": "Retail demand forecasting: XGBoost + Prophet ensemble, feature store, ERP integration, auto-reorder for 180+ stores.",
-      "details": "FreshMarket — overstock and out-of-stock on 15,000 SKUs. Feature store (seasonality, promo, weather), what-if buyer dashboard, weekly retrain, MAPE by category, explainability for managers. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "In the retail chain — overstock and out-of-stock on 15,000 SKUs. Feature store (seasonality, promo, weather), what-if buyer dashboard, weekly retrain, MAPE by category, explainability for managers. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "Python",
         "XGBoost",
@@ -327,7 +327,7 @@
         "Automatic reorder for 80% of SKUs",
         "ROI in 6 months"
       ],
-      "client": "FreshMarket",
+      "client": "",
       "date": "2024",
       "image": "images/projects/p9.jpg"
     },
@@ -336,7 +336,7 @@
       "category": "EdTech / AI",
       "title": "AI tutor with adaptive learning",
       "description": "AI tutor: curriculum RAG, fine-tuned LLM, auto-grader, and adaptive paths for 25,000 students.",
-      "details": "EduSmart — 1 teacher per 120 students. RAG on textbooks, plain-language LLM, rubric auto-grader, mistake-based adaptive paths. Moderation, parental controls, teacher dashboard. Response under 5 seconds. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "In the online school — 1 teacher per 120 students. RAG on textbooks, plain-language LLM, rubric auto-grader, mistake-based adaptive paths. Moderation, parental controls, teacher dashboard. Response under 5 seconds. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "Python",
         "OpenAI",
@@ -352,7 +352,7 @@
         "Moderation blocks 99.7% unsafe content",
         "MVP launched in 4 months"
       ],
-      "client": "EduSmart",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p11.jpg"
     },
@@ -361,7 +361,7 @@
       "category": "AI / ML",
       "title": "Fraud detection for a payment platform",
       "description": "Real-time fraud ML: Kafka streaming, 200+ features, ensemble model, SHAP explainability — scoring under 50 ms.",
-      "details": "ClearPay — 2M+ daily transactions, 8% false positives. Kafka pipeline, feature store, XGBoost + isolation forest, human review queue, daily retrain. $1.2M/year saved on chargebacks. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "On the payment platform — 2M+ daily transactions, 8% false positives. Kafka pipeline, feature store, XGBoost + isolation forest, human review queue, daily retrain. $1.2M/year saved on chargebacks. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "Python",
         "XGBoost",
@@ -377,7 +377,7 @@
         "$1.2M/year saved on chargebacks",
         "Daily retrain pipeline"
       ],
-      "client": "ClearPay",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p12.jpg"
     },
@@ -386,7 +386,7 @@
       "category": "AI / Agents",
       "title": "Multi-agent system for contract processing",
       "description": "Multi-agent legal ops: clause extraction, playbook comparison, risk scoring, redlines — LangGraph + RAG.",
-      "details": "LegalTech Pro — 6 hours per contract review. LangGraph agents for extraction, 50+ clause playbook, risk scoring, redlines. Human approval, audit log, Word track-changes export. 200 contracts/month in pilot. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "details": "In the legal-tech product — 6 hours per contract review. LangGraph agents for extraction, 50+ clause playbook, risk scoring, redlines. Human approval, audit log, Word track-changes export. 200 contracts/month in pilot. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
       "stack": [
         "Python",
         "LangGraph",
@@ -402,7 +402,7 @@
         "Lawyers focus on 20% of edge cases",
         "Pilot — 200 contracts/month"
       ],
-      "client": "LegalTech Pro",
+      "client": "",
       "date": "2025",
       "image": "images/projects/p13.jpg"
     }
@@ -445,7 +445,7 @@
     {
       "id": "r1",
       "name": "Ihor Petrenko",
-      "company": "FinTech Ukraine",
+      "company": "",
       "text": "We needed an AI assistant for our call center before peak season — tight timelines and our internal team was busy with core banking. Partnerio delivered an MVP in 3 months, integrated with Salesforce CRM and telephony, and ran UAT with agents. Now 60% of routine dialogs are automated, first response time dropped from 4 min to 40 sec, NPS +12 pp. Agents get full context on escalation. Weekly demos, transparent backlog, no surprises — exactly what we wanted. After launch, the team stayed on support: drift monitoring, model retrain, moderation updates under SLA.",
       "date": "October 2025",
       "image": "images/reviews/ihor-petrenko.jpg"
@@ -453,7 +453,7 @@
     {
       "id": "r2",
       "name": "Olena Sydorenko",
-      "company": "Retail Group",
+      "company": "",
       "text": "After launching Partnerio's e-commerce platform, we handle 2,000+ orders per day at peak — Black Friday with zero incidents. We especially value the architecture: B2B and B2C in one system without data duplication, unified customer profile, ERP and WMS integration. Partnerio's QA built 400+ automated tests — production bugs dropped 80%. Product-owner-level communication: backlog, priorities, risks — all visible. We recommend them for complex retail platforms and long-term support.",
       "date": "May 2025",
       "image": "images/reviews/olena-sydorenko.jpg"
