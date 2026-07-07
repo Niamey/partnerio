@@ -28,9 +28,13 @@ jobs:
           test -f docs/index.html
           test -f docs/css/style.css
           test -f docs/js/main.js
+          test -f docs/data/uk.json
+          test -f docs/data/en.json
           test -f docs/images/olga-kornieva.png
           test -f docs/images/anton-fil.png
           test -f docs/images/reviews/ihor-petrenko.jpg
+          test -f docs/images/ai/hero.jpg
+          test -f docs/images/ai/robot-hero-accent.jpg
 
       - uses: actions/configure-pages@v5
 

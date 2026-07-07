@@ -203,7 +203,7 @@ CONTENT: dict[str, dict] = {
             },
         ],
         "stats": [
-            {"value": "120+", "label": "Спеціалістів", "description": "Розробники, QA-інженери та ML-експерти в нашій команді."},
+            {"value": "50+", "label": "Спеціалістів", "description": "Розробники, QA-інженери та ML-експерти в нашій команді."},
             {"value": "250+", "label": "Проєктів", "description": "Успішно реалізованих рішень для клієнтів з 15 країн."},
             {"value": "98%", "label": "Задоволених клієнтів", "description": "Повертаються до нас з новими завданнями та рекомендують партнерам."},
         ],
@@ -402,7 +402,7 @@ CONTENT: dict[str, dict] = {
             },
         ],
         "stats": [
-            {"value": "120+", "label": "Specialists", "description": "Developers, QA engineers, and ML experts on our team."},
+            {"value": "50+", "label": "Specialists", "description": "Developers, QA engineers, and ML experts on our team."},
             {"value": "250+", "label": "Projects", "description": "Successfully delivered solutions for clients in 15 countries."},
             {"value": "98%", "label": "Satisfied clients", "description": "Return with new tasks and recommend us to partners."},
         ],

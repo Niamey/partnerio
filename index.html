@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20250707i">
 </head>
 <body>
   <div class="topbar">
@@ -43,7 +43,7 @@
           <li><a href="#projects" class="nav__link" data-section="projects" data-i18n="nav.projects">Проєкти</a></li>
           <li><a href="#team" class="nav__link" data-section="team" data-i18n="nav.team">Команда</a></li>
           <li><a href="#reviews" class="nav__link" data-section="reviews" data-i18n="nav.reviews">Відгуки</a></li>
-          <li><a href="#contact" class="nav__link nav__link--cta" data-i18n="nav.contact">Зв'язатися</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta" data-section="contact" data-i18n="nav.contact">Зв'язатися</a></li>
         </ul>
       </nav>
       <div class="header__actions">
@@ -63,7 +63,7 @@
           <p class="hero__eyebrow" data-i18n="hero.eyebrow">AI-first компанія · LLM · NLP · Computer Vision · з 2010 року</p>
           <h1 class="hero__title" data-i18n="hero.title">Штучний інтелект та інженерія ПЗ для вашого бізнесу</h1>
           <p class="hero__tagline" data-i18n="hero.tagline">Від discovery і PoC до production ML — з KPI, SLA та підтримкою після запуску</p>
-          <p class="hero__text" data-i18n="hero.text">Partnerio — партнер для компаній, які будують продукти на ШІ: LLM, RAG, NLP, computer vision і голосові рішення.</p>
+          <p class="hero__text" data-i18n="hero.text">Partnerio — AI-first партнер для компаній, які будують продукти на штучному інтелекті: LLM-асистенти, RAG, NLP, computer vision і голосові рішення. Допомагаємо пройти шлях від ідеї до production з вимірюваним ROI — accuracy, latency, adoption і cost savings. Поруч — надійна розробка ПЗ, QA і DevOps для fintech, retail, manufacturing, healthtech і enterprise в Україні, ЄС та США. Працюємо прозоро: weekly demo, KPI dashboard і команда, яка залишається після launch.</p>
           <div class="hero__actions">
             <a href="#contact" class="btn btn--primary" data-i18n="hero.cta1">Обговорити ШІ-проєкт</a>
             <a href="#projects" class="btn btn--outline" data-i18n="hero.cta2">Переглянути AI-кейси</a>
@@ -76,11 +76,12 @@
         </div>
         <div class="hero__visual">
           <img class="hero__visual-main" src="images/ai/hero.jpg" data-i18n-alt="hero.imgAlt" alt="ШІ, роботи та високі технології — Partnerio">
-          <img class="hero__visual-accent" src="images/ai/about-ai.jpg" data-i18n-alt="hero.accentAlt" alt="" aria-hidden="true">
+          <img class="hero__visual-accent" src="images/ai/robot-hero-accent.jpg" data-i18n-alt="hero.accentAlt" alt="" aria-hidden="true">
+          <div class="hero__visual-glow" aria-hidden="true"></div>
           <span class="hero__visual-badge" data-i18n="hero.visualBadge">AI · Robotics · High Tech</span>
           <div class="hero__stats">
             <div><strong>250+</strong><span data-i18n="hero.stat1">проєктів</span></div>
-            <div><strong>120+</strong><span data-i18n="hero.stat2">ML/AI-експертів</span></div>
+            <div><strong>50+</strong><span data-i18n="hero.stat2">ML/AI-експертів</span></div>
             <div><strong>98%</strong><span data-i18n="hero.stat3">клієнтів</span></div>
           </div>
         </div>
@@ -90,29 +91,44 @@
     <section class="trust-bar">
       <div class="container trust-bar__inner">
         <p class="trust-bar__title" data-i18n="trust.title">Галузі, з якими ми працюємо</p>
-        <p class="trust-bar__subtitle" data-i18n="trust.subtitle">15+ років досвіду в regulated-середовищах — fintech, banking, manufacturing, healthtech і defense</p>
+        <p class="trust-bar__subtitle" data-i18n="trust.subtitle">15+ років досвіду в regulated-середовищах — fintech, banking, manufacturing, healthtech, logistics та EdTech</p>
         <div class="trust-bar__logos">
-          <span>FinTech</span><span>Retail</span><span>HealthTech</span><span>Logistics</span><span>EdTech</span><span>Manufacturing</span><span>MilTech</span>
+          <span>FinTech</span><span>Retail</span><span>HealthTech</span><span>Logistics</span><span>EdTech</span><span>Manufacturing</span>
         </div>
       </div>
     </section>
 
     <section class="features-strip">
       <div class="container features-strip__grid">
-        <article class="feature-card reveal">
-          <div class="feature-card__icon feature-card__icon--brain" data-icon="brain"></div>
-          <h3 data-i18n="features.f1title">ШІ в production</h3>
-          <p data-i18n="features.f1text">ML і LLM у production: PoC, fine-tuning, MLOps і моніторинг drift.</p>
+        <article class="feature-card feature-card--media reveal">
+          <div class="feature-card__media">
+            <img src="images/ai/gallery-mlops.jpg" data-i18n-alt="features.f1imgAlt" alt="MLOps та ШІ в production" loading="lazy">
+            <span class="feature-card__chip" data-i18n="features.f1chip">Production ML</span>
+          </div>
+          <div class="feature-card__content">
+            <h3 data-i18n="features.f1title">ШІ в production</h3>
+            <p data-i18n="features.f1text">Виводимо ML і LLM у production: від PoC, data audit і fine-tuning до MLOps, моніторингу drift і масштабування. 40+ AI-проєктів — кол-центри, fraud detection, manufacturing CV, RAG для insurance і banking QA.</p>
+          </div>
         </article>
-        <article class="feature-card reveal">
-          <div class="feature-card__icon feature-card__icon--layers" data-icon="layers"></div>
-          <h3 data-i18n="features.f2title">NLP, CV і голос</h3>
-          <p data-i18n="features.f2text">LLM, RAG, OCR, computer vision, Speech-to-Text і Text-to-Speech.</p>
+        <article class="feature-card feature-card--media reveal">
+          <div class="feature-card__media">
+            <img src="images/ai/gallery-llm.jpg" data-i18n-alt="features.f2imgAlt" alt="LLM, NLP та computer vision" loading="lazy">
+            <span class="feature-card__chip" data-i18n="features.f2chip">LLM · CV · Voice</span>
+          </div>
+          <div class="feature-card__content">
+            <h3 data-i18n="features.f2title">NLP, CV і голос</h3>
+            <p data-i18n="features.f2text">LLM-асистенти, RAG, multi-agent workflows, OCR, object detection, відеоаналітика, Speech-to-Text і Text-to-Speech — повний спектр інтелектуальних модальностей для enterprise.</p>
+          </div>
         </article>
-        <article class="feature-card reveal">
-          <div class="feature-card__icon feature-card__icon--team" data-icon="team"></div>
-          <h3 data-i18n="features.f3title">AI-команда + delivery</h3>
-          <p data-i18n="features.f3text">35+ ML/NLP/CV-інженерів + backend, QA і DevOps для end-to-end delivery.</p>
+        <article class="feature-card feature-card--media reveal">
+          <div class="feature-card__media">
+            <img src="images/ai/robot-hero-accent.jpg" data-i18n-alt="features.f3imgAlt" alt="AI-команда та роботизація" loading="lazy">
+            <span class="feature-card__chip" data-i18n="features.f3chip">AI Engineering</span>
+          </div>
+          <div class="feature-card__content">
+            <h3 data-i18n="features.f3title">AI-команда + delivery</h3>
+            <p data-i18n="features.f3text">35+ ML/NLP/CV-інженерів і data scientists — 40% senior/lead. Поруч backend, frontend, QA і DevOps для end-to-end delivery: один партнер від discovery до support.</p>
+          </div>
         </article>
       </div>
     </section>
@@ -120,31 +136,31 @@
     <section class="section section--why" id="why">
       <div class="container">
         <div class="section-head reveal">
-          <span class="section-label" data-i18n="why.label">Чому Partnerio</span>
-          <h2 class="section-title" data-i18n="why.title">Партнер, який говорить мовою бізнесу та ШІ</h2>
+          <span class="section-label" id="why-label">Чому Partnerio</span>
+          <h2 class="section-title" id="why-title">Партнер, який говорить мовою бізнесу та ШІ</h2>
           <div class="section-line section-line--center"></div>
-          <p class="text-body text-center text-center--wide" data-i18n="why.subtitle">Ми не продаємо «магію AI» — будуємо рішення з вимірюваним ефектом, прозорим процесом і командою, яка залишається з вами після launch</p>
+          <p class="text-body text-center text-center--wide" id="why-subtitle">Ми не продаємо «магію AI» — будуємо рішення з вимірюваним ефектом, прозорим процесом і командою, яка залишається з вами після launch. Кожен етап — з KPI, документацією та зрозумілою комунікацією для бізнесу і IT.</p>
         </div>
         <div class="why-grid">
           <article class="why-card reveal">
             <span class="why-card__num">01</span>
-            <h3 data-i18n="why.w1title">Вимірюваний ROI</h3>
-            <p data-i18n="why.w1text">Кожен AI-проєкт стартує з KPI: accuracy, latency, adoption, cost savings. Фіксуємо baseline, відстежуємо метрики після launch і звітуємо про бізнес-ефект — не лише про «точність моделі».</p>
+            <h3 id="why-w1-title">Вимірюваний ROI</h3>
+            <p id="why-w1-text">Кожен AI-проєкт стартує з KPI: accuracy, latency, adoption, cost savings, containment rate. Фіксуємо baseline до launch, відстежуємо метрики в production і звітуємо про бізнес-ефект щомісяця — не лише про «точність моделі». ROI-модель узгоджуємо з CFO і product owner до старту розробки.</p>
           </article>
           <article class="why-card reveal">
             <span class="why-card__num">02</span>
-            <h3 data-i18n="why.w2title">Повний цикл delivery</h3>
-            <p data-i18n="why.w2text">Data science, backend, frontend, QA, DevOps і підтримка — в одній команді. Не потрібно координувати п'ять підрядників: від PoC до production і L2/L3 support під SLA.</p>
+            <h3 id="why-w2-title">Повний цикл delivery</h3>
+            <p id="why-w2-text">Data science, backend, frontend, QA, DevOps і підтримка — в одній команді. Не потрібно координувати п'ять підрядників: від PoC до production і L2/L3 support під SLA.</p>
           </article>
           <article class="why-card reveal">
             <span class="why-card__num">03</span>
-            <h3 data-i18n="why.w3title">Безпека та compliance</h3>
-            <p data-i18n="why.w3text">NDA, IP transfer, on-prem і hybrid deployment, audit trails, GDPR/HIPAA-ready процеси. Досвід у fintech, banking, insurance, healthtech і miltech — розуміємо вимоги регуляторів.</p>
+            <h3 id="why-w3-title">Безпека та compliance</h3>
+            <p id="why-w3-text">NDA, IP transfer, on-prem і hybrid deployment, audit trails, GDPR/HIPAA-ready процеси. Досвід у fintech, banking, insurance та healthtech — розуміємо вимоги регуляторів.</p>
           </article>
           <article class="why-card reveal">
             <span class="why-card__num">04</span>
-            <h3 data-i18n="why.w4title">Прозорість і передбачуваність</h3>
-            <p data-i18n="why.w4text">Weekly demo, доступ до backlog, burn-down і ризики — без «чорної скриньки». PM з досвідом у вашій галузі, англомовна комунікація, зручні години для EU та US клієнтів.</p>
+            <h3 id="why-w4-title">Прозорість і передбачуваність</h3>
+            <p id="why-w4-text">Weekly demo, доступ до backlog, burn-down і ризики — без «чорної скриньки». PM з досвідом у вашій галузі, англомовна комунікація, зручні години для EU та US клієнтів.</p>
           </article>
         </div>
       </div>
@@ -156,7 +172,7 @@
           <span class="section-label" data-i18n="showcase.label">ШІ в дії</span>
           <h2 class="section-title" data-i18n="showcase.title">Високі технології, які ми впроваджуємо</h2>
           <div class="section-line section-line--center"></div>
-          <p class="text-body text-center" data-i18n="showcase.subtitle">LLM, computer vision, голосові AI та MLOps — від лабораторії до production</p>
+          <p class="text-body text-center" data-i18n="showcase.subtitle">LLM, computer vision, голосові AI та MLOps — від лабораторії до production. Реальні кейси з метриками для fintech, manufacturing, legal, insurance і EdTech.</p>
         </div>
         <div class="ai-showcase__grid">
           <article class="ai-showcase__card reveal">
@@ -166,7 +182,7 @@
             <div class="ai-showcase__body">
               <span class="ai-showcase__tag" data-i18n="showcase.llmTag">LLM · RAG</span>
               <h3 data-i18n="showcase.llmTitle">Розумні асистенти та чат-боти</h3>
-              <p data-i18n="showcase.llmText">Fine-tuned LLM, RAG на корпоративних даних, безпечна ескалація до людини.</p>
+              <p data-i18n="showcase.llmText">Fine-tuned LLM, RAG на корпоративних даних, intent-класифікація, moderation і безпечна ескалація до оператора з повним контекстом діалогу.</p>
             </div>
           </article>
           <article class="ai-showcase__card reveal">
@@ -176,7 +192,7 @@
             <div class="ai-showcase__body">
               <span class="ai-showcase__tag" data-i18n="showcase.cvTag">Computer Vision</span>
               <h3 data-i18n="showcase.cvTitle">Комп'ютерний зір на виробництві</h3>
-              <p data-i18n="showcase.cvText">Object detection, OCR, відеоаналітика та edge-inference у реальному часі.</p>
+              <p data-i18n="showcase.cvText">Object detection, OCR, відеоаналітика, change detection і edge-inference у реальному часі — від конвеєра до аналізу аерофото.</p>
             </div>
           </article>
           <article class="ai-showcase__card reveal">
@@ -186,7 +202,7 @@
             <div class="ai-showcase__body">
               <span class="ai-showcase__tag" data-i18n="showcase.voiceTag">Voice AI</span>
               <h3 data-i18n="showcase.voiceTitle">Голосові інтерфейси</h3>
-              <p data-i18n="showcase.voiceText">Speech-to-Text, Text-to-Speech, IVR та call analytics для кол-центрів.</p>
+              <p data-i18n="showcase.voiceText">Whisper ASR, Speech-to-Text, Text-to-Speech, IVR, call analytics і багатомовні голосові інтерфейси для кол-центрів і логістики.</p>
             </div>
           </article>
           <article class="ai-showcase__card reveal">
@@ -196,7 +212,7 @@
             <div class="ai-showcase__body">
               <span class="ai-showcase__tag" data-i18n="showcase.mlopsTag">MLOps</span>
               <h3 data-i18n="showcase.mlopsTitle">ML у production</h3>
-              <p data-i18n="showcase.mlopsText">CI/CD для моделей, моніторинг drift, A/B-тести та масштабування inference.</p>
+              <p data-i18n="showcase.mlopsText">CI/CD для моделей, feature store, моніторинг drift, A/B-тести, canary deploys і масштабування inference на GPU-кластерах.</p>
             </div>
           </article>
         </div>
@@ -217,18 +233,18 @@
           <span class="section-label" data-i18n="about.label">Про нас</span>
           <h2 class="section-title" data-i18n="about.title">AI-first IT-компанія повного циклу</h2>
           <div class="section-line"></div>
-          <p class="text-lead" data-i18n="about.lead">Ми допомагаємо бізнесу впроваджувати технології з вимірюваним результатом: скорочуємо time-to-market, знижуємо operational cost і підвищуємо uptime критичних систем.</p>
-          <p class="text-body" data-i18n="about.body">Partnerio з офісами в Києві та Львові працює з 2010 року. Спеціалізуємося на розробці ПЗ, комплексному тестуванні, DevOps, хмарній інфраструктурі та ШІ-рішеннях для корпоративного та середнього бізнесу.</p>
-          <p class="text-body" data-i18n="about.body2">Працюємо за моделями dedicated team, fixed price і T&M — підбираємо формат під ваш бюджет, stage продукту та внутрішні процеси.</p>
-          <p class="text-body" data-i18n="about.body3">Маємо досвід у fintech, retail, manufacturing, healthtech, logistics і miltech — розуміємо regulated-середовище та вимоги до безпеки даних.</p>
-          <p class="text-body" data-i18n="about.body4">Після запуску не зникаємо — беремо підтримку проектів на себе: L2/L3 support, моніторинг, інциденти та розвиток за SLA.</p>
+          <p class="text-lead" data-i18n="about.lead">Ми допомагаємо бізнесу впроваджувати штучний інтелект з вимірюваним результатом: автоматизація процесів, зниження cost-to-serve, нові AI-продукти та швидший time-to-market. Кожен AI-проєкт — з KPI: accuracy, latency, adoption, ROI.</p>
+          <p class="text-body" data-i18n="about.body">Partnerio — компанія, орієнтована на ШІ. З офісами в Києві та Львові працюємо з 2010 року: LLM, RAG, NLP, computer vision, голосові AI та класичний ML — як основний фокус. Поруч — розробка ПЗ, QA, DevOps і хмара, щоб довести AI-рішення до production і підтримувати їх. У команді 50+ інженерів, з них 35+ — ML/NLP/CV і data science.</p>
+          <p class="text-body" data-i18n="about.body2">Працюємо за моделями dedicated team, fixed price і T&M — підбираємо формат під ваш бюджет, stage продукту та внутрішні процеси. Кожен проєкт супроводжує PM з досвідом у вашій галузі: weekly status, burn-down, ризики та доступ до backlog у Jira, Linear або вашій системі.</p>
+          <p class="text-body" data-i18n="about.body3">Маємо досвід у fintech, retail, manufacturing, healthtech і logistics — розуміємо regulated-середовище, аудит, compliance-звіти та вимоги до безпеки даних. Будуємо архітектуру «на вирост»: від MVP і PoC до high-load платформ з мільйонами транзакцій на добу.</p>
+          <p class="text-body" data-i18n="about.body4">Після запуску не зникаємо — беремо підтримку проектів на себе: L2/L3 support, моніторинг 24/7 або в робочі години, інцидент-менеджмент, CI/CD, security patches і плановий розвиток функціоналу за SLA. Ведемо runbook, on-call, monthly health-check і roadmap оновлень. Більшість клієнтів працюють з нами 3+ роки — розширюють команди та запускають нові модулі.</p>
           <ul class="check-list">
             <li data-i18n="about.check1">Enterprise, scale-up і стартап-проєкти — від MVP до core banking</li>
             <li data-i18n="about.check2">Agile / Scrum: sprint demo, retrospectives, прогнозовані релізи</li>
             <li data-i18n="about.check3">Прозора звітність, KPI, burn rate і SLA на кожному етапі</li>
             <li data-i18n="about.check4">NDA, IP transfer, security-by-design і audit-ready документація</li>
             <li data-i18n="about.check5">Dedicated team — інженери під ваш бренд або embedded у ваш процес</li>
-            <li data-i18n="about.check6">Повний цикл: розробка, QA, DevOps, ML і підтримка в одному партнері</li>
+            <li data-i18n="about.check6">AI-first: LLM, NLP, CV, голос + розробка, QA і DevOps в одному партнері</li>
             <li data-i18n="about.check7">Офіси в Україні, англомовна комунікація, зручні години для EU та US</li>
             <li data-i18n="about.check8">Підтримка проектів після запуску — SLA, моніторинг, інциденти та розвиток продукту</li>
           </ul>
@@ -240,17 +256,17 @@
     <section class="section section--gray" id="process">
       <div class="container">
         <div class="section-head reveal">
-          <span class="section-label" data-i18n="process.label">Процес</span>
-          <h2 class="section-title" data-i18n="process.title">Як ми працюємо</h2>
+          <span class="section-label" id="process-label">Процес</span>
+          <h2 class="section-title" id="process-title">Як ми працюємо</h2>
           <div class="section-line section-line--center"></div>
-          <p class="text-body text-center" data-i18n="process.subtitle">Структурований підхід від discovery до production і довгострокової підтримки проектів</p>
+          <p class="text-body text-center" id="process-subtitle">Структурований підхід від discovery і data audit до production, масштабування та довгострокової підтримки AI-рішень. Кожен етап — з deliverables, acceptance criteria і sign-off від вашого product owner.</p>
         </div>
         <div class="process-row">
-          <div class="process-item reveal"><span class="process-item__num">01</span><h3 data-i18n="process.s1title">Аналіз</h3><p data-i18n="process.s1text">Дослідження цілей, аудит та формування roadmap.</p></div>
-          <div class="process-item reveal"><span class="process-item__num">02</span><h3 data-i18n="process.s2title">Розробка</h3><p data-i18n="process.s2text">Ітеративна реалізація з регулярними демо.</p></div>
-          <div class="process-item reveal"><span class="process-item__num">03</span><h3 data-i18n="process.s3title">Тестування</h3><p data-i18n="process.s3text">QA, автотести та контроль якості на кожному етапі.</p></div>
-          <div class="process-item reveal"><span class="process-item__num">04</span><h3 data-i18n="process.s4title">Запуск</h3><p data-i18n="process.s4text">Деплой, документація та handoff на support-групу.</p></div>
-          <div class="process-item reveal"><span class="process-item__num">05</span><h3 data-i18n="process.s5title">Підтримка проектів</h3><p data-i18n="process.s5text">Моніторинг, інциденти, SLA та розвиток після launch.</p></div>
+          <div class="process-item reveal"><span class="process-item__num">01</span><h3 id="process-s1-title">Аналіз</h3><p id="process-s1-text">Workshop з бізнесом і IT, аудит даних і систем, user stories, оцінка AI-readiness, ризиків і roadmap з milestones та KPI. Результат: scope document, TCO-оцінка, architecture vision і prioritized backlog на перші 2–3 спринти.</p></div>
+          <div class="process-item reveal"><span class="process-item__num">02</span><h3 id="process-s2-title">Розробка</h3><p id="process-s2-text">2-тижневі спринти, PoC → MVP → production, code review, CI/CD, регулярні демо для product owner і stakeholders. ML: experiment tracking, evaluation sets, A/B shadow mode перед повним rollout.</p></div>
+          <div class="process-item reveal"><span class="process-item__num">03</span><h3 id="process-s3-title">Тестування</h3><p id="process-s3-text">Test plan, manual + automated QA, evaluation набори для ML, performance, security і bias checks перед кожним релізом. Regression для API/UI, load tests для inference, red teaming для LLM у regulated domains.</p></div>
+          <div class="process-item reveal"><span class="process-item__num">04</span><h3 id="process-s4-title">Запуск</h3><p id="process-s4-text">Blue-green/canary deploy, smoke-тести у production, моніторинг моделей, документація, навчання команди клієнта та handoff на support. Runbook, on-call rotation і rollback playbook — до go-live, не після.</p></div>
+          <div class="process-item reveal"><span class="process-item__num">05</span><h3 id="process-s5-title">Підтримка проектів</h3><p id="process-s5-text">L1/L2/L3 супровід: drift monitoring, retrain, інциденти, security patches, масштабування inference і розвиток функціоналу за SLA. Monthly health-check, roadmap оновлень і quarterly business review з метриками adoption та ROI.</p></div>
         </div>
       </div>
     </section>
@@ -261,7 +277,7 @@
           <span class="section-label" data-i18n="services.label">Послуги</span>
           <h2 class="section-title" data-i18n="services.title">Напрямки роботи</h2>
           <div class="section-line section-line--center"></div>
-          <p class="text-body text-center" data-i18n="services.subtitle">Повний спектр IT-послуг для вашого бізнесу</p>
+          <p class="text-body text-center" data-i18n="services.subtitle">ШІ в центрі — LLM, RAG, computer vision, голос, ML agents + розробка, QA, DevOps і підтримка. Кожна послуга — з детальним описом, стеком, deliverables і списком можливостей.</p>
         </div>
         <div class="services-grid" id="services-grid"></div>
       </div>
@@ -277,64 +293,24 @@
           <span class="section-label" data-i18n="projects.label">Портфоліо</span>
           <h2 class="section-title" data-i18n="projects.title">Реалізовані проєкти</h2>
           <div class="section-line section-line--center"></div>
-          <p class="text-body text-center" data-i18n="projects.subtitle">AI-кейси з метриками: LLM, RAG, computer vision, голос, MilTech, HealthTech, retail ML і DevOps</p>
+          <p class="text-body text-center" data-i18n="projects.subtitle">13+ AI-кейсів і enterprise-проєктів з метриками: LLM для кол-центру, RAG для insurance, CV на виробництві, fraud ML, voice AI для logistics, multi-agent legal ops, EdTech та cloud migration. Кожен кейс — з описом задачі, підходу, стеку і вимірюваних результатів.</p>
+          <h3 class="projects-group__title" data-i18n="projects.aiTitle">ШІ-кейси</h3>
         </div>
-        <div class="projects-grid" id="projects-grid"></div>
+        <div class="projects-grid" id="ai-projects-grid"></div>
+        <h3 class="projects-group__title projects-group__title--secondary" data-i18n="projects.otherTitle" hidden>Інші реалізовані проєкти</h3>
+        <div class="projects-grid projects-grid--all" id="projects-grid"></div>
       </div>
     </section>
 
     <section class="section" id="tech">
       <div class="container">
         <div class="section-head reveal">
-          <span class="section-label" data-i18n="tech.label">Технології</span>
-          <h2 class="section-title" data-i18n="tech.title">Технологічний стек</h2>
+          <span class="section-label" id="tech-label">Технології</span>
+          <h2 class="section-title" id="tech-title">Технологічний стек</h2>
           <div class="section-line section-line--center"></div>
-          <p class="text-body text-center" data-i18n="tech.subtitle">Production-ready стек ШІ: LLM, RAG, computer vision, голос, agents, MLOps та векторні бази даних</p>
+          <p class="text-body text-center" id="tech-subtitle">Production-ready стек ШІ: LLM, RAG, computer vision, голос, agents, MLOps та векторні бази даних</p>
         </div>
-        <div class="tech-stacks reveal">
-          <div class="tech-group tech-group--ai">
-            <h3 class="tech-group__title" data-i18n="tech.groupAI">ШІ та машинне навчання</h3>
-            <div class="tech-grid">
-              <span>TensorFlow</span><span>PyTorch</span><span>JAX</span><span>Keras</span><span>scikit-learn</span><span>XGBoost</span><span>LightGBM</span><span>CatBoost</span><span>Ray</span><span>Polars</span><span>Pandas</span><span>MLflow</span><span>Kubeflow</span><span>DVC</span><span>Weights &amp; Biases</span><span>Neptune</span><span>Evidently AI</span><span>ONNX</span><span>TensorRT</span><span>Triton Inference</span><span>CUDA</span><span>ROCm</span><span>MLOps</span>
-            </div>
-          </div>
-          <div class="tech-group tech-group--ai">
-            <h3 class="tech-group__title" data-i18n="tech.groupNLP">NLP та LLM</h3>
-            <div class="tech-grid">
-              <span>OpenAI</span><span>GPT-4</span><span>Claude</span><span>Gemini</span><span>Mistral</span><span>Llama 3</span><span>Azure OpenAI</span><span>AWS Bedrock</span><span>Hugging Face</span><span>Transformers</span><span>LangChain</span><span>LangGraph</span><span>LlamaIndex</span><span>Semantic Kernel</span><span>spaCy</span><span>NLTK</span><span>Sentence Transformers</span><span>BERT</span><span>Fine-tuning</span><span>LoRA</span><span>QLoRA</span><span>Embeddings</span><span>Prompt Engineering</span><span>Function Calling</span>
-            </div>
-          </div>
-          <div class="tech-group tech-group--ai">
-            <h3 class="tech-group__title" data-i18n="tech.groupRAG">RAG та векторні БД</h3>
-            <div class="tech-grid">
-              <span>RAG</span><span>Qdrant</span><span>Pinecone</span><span>Weaviate</span><span>Chroma</span><span>Milvus</span><span>FAISS</span><span>pgvector</span><span>Elasticsearch</span><span>Redis Vector</span><span>Document AI</span><span>Chunking</span><span>Hybrid Search</span><span>Re-ranking</span><span>Knowledge Graph</span><span>Cohere Embed</span>
-            </div>
-          </div>
-          <div class="tech-group tech-group--ai">
-            <h3 class="tech-group__title" data-i18n="tech.groupCV">Computer Vision</h3>
-            <div class="tech-grid">
-              <span>OpenCV</span><span>YOLO</span><span>YOLOv8</span><span>Ultralytics</span><span>Detectron2</span><span>MediaPipe</span><span>SAM</span><span>CLIP</span><span>OCR</span><span>Tesseract</span><span>PaddleOCR</span><span>EasyOCR</span><span>Segmentation</span><span>Object Detection</span><span>Pose Estimation</span><span>Video Analytics</span><span>Edge AI</span><span>NVIDIA DeepStream</span><span>ONNX Runtime</span>
-            </div>
-          </div>
-          <div class="tech-group tech-group--ai">
-            <h3 class="tech-group__title" data-i18n="tech.groupVoice">Голосові технології</h3>
-            <div class="tech-grid">
-              <span>Whisper</span><span>Speech-to-Text</span><span>Text-to-Speech</span><span>Azure Speech</span><span>Google Speech</span><span>Amazon Polly</span><span>ElevenLabs</span><span>Deepgram</span><span>Coqui TTS</span><span>Voice AI</span><span>ASR</span><span>TTS</span><span>IVR</span><span>Call Analytics</span><span>Real-time STT</span><span>Voice Cloning</span>
-            </div>
-          </div>
-          <div class="tech-group tech-group--ai">
-            <h3 class="tech-group__title" data-i18n="tech.groupAgents">AI Agents та автоматизація</h3>
-            <div class="tech-grid">
-              <span>LangGraph</span><span>CrewAI</span><span>AutoGen</span><span>AI Agents</span><span>Tool Use</span><span>Multi-agent</span><span>Workflow Automation</span><span>n8n</span><span>MCP</span><span>Guardrails AI</span><span>Moderation API</span><span>Agent Orchestration</span><span>Human-in-the-loop</span>
-            </div>
-          </div>
-          <div class="tech-group">
-            <h3 class="tech-group__title" data-i18n="tech.groupDev">Розробка та інфраструктура</h3>
-            <div class="tech-grid">
-              <span>Python</span><span>React</span><span>TypeScript</span><span>Node.js</span><span>FastAPI</span><span>GraphQL</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>Kubernetes</span><span>AWS</span><span>Azure</span><span>GCP</span><span>Terraform</span><span>Playwright</span><span>Selenium</span>
-            </div>
-          </div>
-        </div>
+        <div class="tech-bento reveal" id="tech-stacks" aria-live="polite"></div>
       </div>
     </section>
 
@@ -470,8 +446,8 @@
   <button class="back-top" id="back-top" data-i18n-aria="backTop" aria-label="Нагору">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
   </button>
-  <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/i18n.js?v=20250707i"></script>
+  <script src="js/main.js?v=20250707i"></script>
 </body>
 </html>
 

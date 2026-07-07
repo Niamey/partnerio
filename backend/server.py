@@ -104,6 +104,13 @@ class PartnerioHandler(BaseHTTPRequestHandler):
             self._send_json(api_routes[path])
             return
 
+        if path.startswith('/data/') and path.endswith('.json'):
+            file_path = (BASE_DIR.parent / path.lstrip('/')).resolve()
+            data_root = (BASE_DIR.parent / 'data').resolve()
+            if str(file_path).startswith(str(data_root)) and file_path.is_file():
+                self._serve_file(file_path)
+                return
+
         self._serve_static(path)
 
     def do_POST(self) -> None:
@@ -155,6 +162,16 @@ class PartnerioHandler(BaseHTTPRequestHandler):
         except sqlite3.Error:
             self._send_error_json(get_message(lang, "contact_error"), 500)
 
+    def _serve_file(self, file_path: Path) -> None:
+        content_type, _ = mimetypes.guess_type(str(file_path))
+        content_type = content_type or 'application/octet-stream'
+        data = file_path.read_bytes()
+        self.send_response(200)
+        self.send_header('Content-Type', content_type)
+        self.send_header('Content-Length', str(len(data)))
+        self.end_headers()
+        self.wfile.write(data)
+
     def _serve_static(self, path: str) -> None:
         if path in ("/", ""):
             file_path = FRONTEND_DIR / "index.html"
@@ -167,18 +184,22 @@ class PartnerioHandler(BaseHTTPRequestHandler):
                 file_path = file_path / "index.html"
 
         if not file_path.exists() or not file_path.is_file():
+            requested = (FRONTEND_DIR / path.lstrip("/")).resolve()
+            if path not in ("", "/") and requested.suffix and requested.suffix.lower() != ".html":
+                self.send_error(404)
+                return
             file_path = FRONTEND_DIR / "index.html"
             if not file_path.exists():
                 self.send_error(404)
                 return
 
         content_type, _ = mimetypes.guess_type(str(file_path))
-        content_type = content_type or "application/octet-stream"
+        content_type = content_type or 'application/octet-stream'
 
         data = file_path.read_bytes()
         self.send_response(200)
-        self.send_header("Content-Type", content_type)
-        self.send_header("Content-Length", str(len(data)))
+        self.send_header('Content-Type', content_type)
+        self.send_header('Content-Length', str(len(data)))
         self.end_headers()
         self.wfile.write(data)
 

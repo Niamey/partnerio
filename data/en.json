@@ -1,41 +1,516 @@
 {
   "services": [
-    {"id":"development","title":"Software Development","description":"We design and build web, mobile, and enterprise systems — from MVP to scalable enterprise-grade platforms.","details":"We follow an architecture-first approach: modularity, security, and scalability are built in from day one. Teams include backend, frontend, mobile, and DevOps engineers led by a Lead Architect.","icon":"code","features":["Web apps, SaaS, and admin panels","iOS and Android mobile apps","Microservices and event-driven architecture","REST / GraphQL APIs and integrations","Legacy modernization and data migrations","Code review, documentation, and knowledge transfer"]},
-    {"id":"testing","title":"Software Testing","description":"End-to-end QA for products where a production failure costs money, reputation, or compliance penalties.","details":"We combine manual and automated testing: test strategy, regression suites, CI/CD integration, and audit-ready reporting. Experienced in fintech, e-commerce, healthtech, and other regulated industries.","icon":"shield","features":["Functional, regression, and exploratory QA","Automation: Selenium, Playwright, Cypress","API and integration testing","Load and stress testing","Security checks and OWASP practices","CI/CD integration and Allure reporting"]},
-    {"id":"ai","title":"AI Projects","description":"We deploy ML, NLP, and computer vision where they deliver measurable business impact — not hype.","details":"From discovery and PoC to production: data preparation, model training, LLM fine-tuning, drift monitoring, and post-launch support. Experience across fintech, retail, manufacturing, and logistics.","icon":"brain","features":["LLM assistants and chatbots for support/sales","NLP: classification, summarization, search","Computer vision, OCR, and video analytics","Forecasting and recommendation systems","LLM fine-tuning on corporate data","MLOps: deployment, monitoring, A/B testing"]},
-    {"id":"devops","title":"DevOps & Cloud","description":"We set up infrastructure and delivery pipelines so releases are predictable and systems stay resilient under load.","details":"Cloud architecture (AWS, Azure, GCP), containerization, CI/CD, monitoring, and disaster recovery. We help teams move from manual deploys to automated pipelines with rollback and alerting.","icon":"cloud","features":["AWS, Azure, GCP — design and migrations","Docker, Kubernetes, Helm","CI/CD: GitHub Actions, GitLab, Jenkins","Prometheus, Grafana, ELK / CloudWatch","Infrastructure as Code (Terraform)","Security hardening and cost optimization"]},
-    {"id":"consulting","title":"IT Consulting","description":"We help you make the right technology decisions before development starts — and fix course when the product is already struggling.","details":"Technical audits, architecture reviews, delivery process assessment, and team evaluation. Roadmaps, TCO estimates, and build vs buy recommendations. From one-off sessions to 3–6 month embedded consulting.","icon":"chart","features":["Code, architecture, and process audits","Architecture design and ADRs","Timeline, budget, and risk estimation","In-house team mentoring","Due diligence for M&A and investors","SOC2 / ISO-ready process preparation"]},
-    {"id":"support","title":"Post-launch project support","description":"We take ownership after launch: stability, monitoring, incidents, updates, and feature evolution under SLA — standalone or after development with Partnerio.","details":"L1/L2/L3 support with clear SLA on response and resolution times. We set up monitoring and alerting, maintain runbooks, run post-mortems, plan capacity, apply security patches, and help evolve the product — new features, integrations, optimization — without downtime on business-critical functions.","icon":"support","features":["24/7 or business-hours SLA support","Monitoring, alerting, and on-call","Incident management and post-mortems","Security patches and dependency updates","Scaling under peak load","Post-launch feature evolution and update roadmaps"]}
+    {
+      "id": "development",
+      "title": "Software Development",
+      "description": "We design and build web, mobile, and enterprise systems — from MVP to scalable enterprise solutions with a clear roadmap, SLA, and audit-ready documentation.",
+      "details": "Architecture-first: modularity, security, and scalability from day one. Backend, frontend, mobile, and DevOps engineers led by a Lead Architect. Experience in fintech, e-commerce, SaaS, internal tools, and high-load platforms. Every release includes code review, CI/CD, tests, and knowledge transfer to your team.",
+      "icon": "code",
+      "features": [
+        "Web apps, SaaS, admin panels, and customer portals",
+        "Mobile apps iOS and Android (native and cross-platform)",
+        "Microservices, event-driven, and domain-driven architecture",
+        "REST / GraphQL API, webhooks, ERP/CRM integrations",
+        "Legacy modernization, strangler pattern, data migrations",
+        "Performance tuning, caching, and observability",
+        "Security-by-design, OWASP, and penetration-ready code",
+        "Code review, ADR, documentation, and knowledge transfer"
+      ]
+    },
+    {
+      "id": "testing",
+      "title": "Software Testing",
+      "description": "Comprehensive QA for products where production errors cost money, reputation, or compliance penalties — with audit-ready reporting and traceability.",
+      "details": "Manual and automated testing combined: test strategy, regression suites, CI/CD integration, and audit reporting. We work in fintech, e-commerce, healthtech, and other regulated industries. QA engineers embedded in your sprint — bugs fixed before release, not after.",
+      "icon": "shield",
+      "features": [
+        "Functional, regression, and exploratory QA",
+        "Automation: Selenium, Playwright, Cypress, Appium",
+        "API, contract, and integration testing",
+        "Load, stress, and soak testing",
+        "Security checks, OWASP Top 10, SAST/DAST",
+        "Test data management and synthetic data",
+        "CI/CD integration, Allure reports, Jira traceability",
+        "UAT support and compliance release sign-off"
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI Projects",
+      "description": "We deploy ML, NLP, LLM, RAG, computer vision, and voice AI with measurable business impact. Every project includes KPIs, an ROI model, and a scaling plan.",
+      "details": "Full cycle: discovery, data audit, PoC → MVP → production. LLM fine-tuning, RAG, MLOps, drift monitoring, human-in-the-loop, and post-launch support. Experience in fintech, retail, manufacturing, insurance, legal, EdTech, logistics. On-prem, hybrid, cloud — GDPR/HIPAA-ready. We help with build vs buy, data readiness, and a 6–12 month roadmap.",
+      "icon": "brain",
+      "features": [
+        "LLM assistants for support, sales, HR, and internal ops",
+        "RAG: semantic search, cited Q&A, hybrid search",
+        "NLP: classification, summarization, NER, sentiment",
+        "Computer vision: OCR, detection, video analytics, edge AI",
+        "Voice AI: Whisper ASR, TTS, IVR, call analytics",
+        "LLM fine-tuning, LoRA/QLoRA, embeddings, prompt engineering",
+        "Multi-agent: LangGraph, CrewAI, tool use, human-in-the-loop",
+        "MLOps: model CI/CD, drift, A/B tests, GPU scaling",
+        "Evaluation frameworks, red teaming, and moderation",
+        "Explainability: SHAP, LIME, cited answers for regulated domains"
+      ]
+    },
+    {
+      "id": "devops",
+      "title": "DevOps & Cloud",
+      "description": "We set up infrastructure and delivery so releases are predictable and systems stay resilient, secure, and cost-efficient under load.",
+      "details": "Cloud architecture (AWS, Azure, GCP), containerization, CI/CD, monitoring, and disaster recovery. We help teams move from manual deploys to GitOps pipelines with rollback, alerting, autoscaling, and cost optimization. Runbooks, on-call playbooks, and SLO/SLI for production-ready operations.",
+      "icon": "cloud",
+      "features": [
+        "AWS, Azure, GCP — design, migrations, landing zones",
+        "Docker, Kubernetes, Helm, service mesh",
+        "CI/CD: GitHub Actions, GitLab, Jenkins, ArgoCD",
+        "Prometheus, Grafana, ELK, OpenTelemetry, CloudWatch",
+        "Infrastructure as Code: Terraform, Pulumi, Ansible",
+        "Security hardening, secrets management, zero-trust",
+        "Disaster recovery, backup strategy, RTO/RPO planning",
+        "FinOps: cost dashboards, rightsizing, spot/preemptible workloads"
+      ]
+    },
+    {
+      "id": "consulting",
+      "title": "IT Consulting",
+      "description": "We help you make the right technology decisions before development starts — and fix course when the product struggles or an AI pilot won't scale.",
+      "details": "Technical audits, architecture and delivery process review, data readiness, and team assessment. Roadmap, TCO estimates, build vs buy analysis, and AI adoption recommendations. From one-off executive sessions to 3–6 month embedded consulting with weekly deliverables.",
+      "icon": "chart",
+      "features": [
+        "Code, architecture, ML pipeline, and process audits",
+        "Architecture design, C4, ADR, and threat modeling",
+        "AI readiness assessment and data maturity review",
+        "Timeline, budget, risk, and team topology estimates",
+        "In-house team mentoring and hiring support",
+        "Due diligence for M&A, investors, and vendor selection",
+        "SOC2 / ISO-ready process preparation",
+        "Vendor evaluation: LLM, cloud, observability, vector DB"
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Post-launch project support",
+      "description": "Post-launch project support: stability, monitoring, incidents, updates, model retraining, and feature evolution under SLA.",
+      "details": "L1/L2/L3 support with clear response and resolution SLAs. Monitoring, alerting, runbooks, post-mortems, capacity planning, security patches, and product evolution — new features, integrations, inference optimization — without downtime on business-critical functions. Monthly health checks and update roadmaps for stakeholders.",
+      "icon": "support",
+      "features": [
+        "24/7 or business-hours support under SLA",
+        "Monitoring, alerting, on-call, escalation matrix",
+        "Incident management, RCA, and post-mortems",
+        "Security patches, dependency updates, CVE triage",
+        "Drift monitoring, model retrain, evaluation regression",
+        "Scaling for peak load",
+        "Post-launch feature development and product roadmap",
+        "Knowledge base, runbooks, and L1 team training"
+      ]
+    }
   ],
   "projects": [
-    {"id":"p1","category":"AI / NLP","title":"Smart call center assistant","description":"LLM assistant for a fintech call center with CRM and telephony integration and secure handoff to live agents.","details":"FinTech Ukraine handled over 15,000 requests per month; agents spent up to 70% of their time on routine payment, limit, and card-block inquiries. Partnerio ran discovery with business and compliance, built an intent catalog, and developed a fine-tuned LLM with RAG on a knowledge base. The assistant verifies customers via KYC, responds in dialog context, and escalates with full transcription.","stack":["Python","FastAPI","OpenAI","PostgreSQL","Redis","Docker"],"results":["60% of routine requests automated","MVP launched in 3 months","Salesforce CRM and ACD integration","First response time: 4 min → 40 sec","Call center NPS +12 pp in 6 months"],"client":"FinTech Ukraine","date":"2025","image":"images/ai/gallery-llm.jpg"},
-    {"id":"p2","category":"Web Development","title":"E-commerce platform","description":"Omnichannel marketplace for a retail chain: B2C and B2B, payments, logistics, and analytics for 50,000+ SKUs.","details":"Retail Group was scaling offline stores and had fragmented systems for shops, wholesale, and online sales. We designed a microservices platform: catalog, cart, orders, payments, promos, and reporting with a unified customer profile. Focus on Black Friday performance and a category manager module with ABC analytics.","stack":["React","Node.js","PostgreSQL","Redis","Stripe","AWS"],"results":["50,000+ SKUs in one catalog","2,000+ orders per day at peak","99.9% uptime during sales season","Catalog load time < 1.2 sec","B2B channel without a separate platform"],"client":"Retail Group","date":"2024","image":"images/ai/about-data.jpg"},
-    {"id":"p3","category":"QA / Automation","title":"Banking system test automation","description":"Enterprise test framework for core banking: API, UI, production smoke, and audit-ready reporting.","details":"NovaBank shipped core banking releases every 2 weeks, but regression took 5 business days and blocked delivery. Partnerio built a layered framework: contract API tests, Playwright scenarios for 40+ critical user flows, nightly staging smoke, and post-deploy checks. Allure reports integrated with Jira for the compliance team.","stack":["Java","Playwright","Selenium","Jenkins","PostgreSQL","Allure"],"results":["Regression: 5 days → 4 hours","850+ automated tests in CI/CD","80% fewer production incidents","95% critical path coverage","Saved 2 FTE QA on regression"],"client":"NovaBank","date":"2024","image":"images/ai/gallery-mlops.jpg"},
-    {"id":"p4","category":"Computer Vision","title":"Manufacturing quality control system","description":"Real-time CV for conveyor defect detection with edge inference and MES integration.","details":"IndustrialTech relied on manual inspection — causing delays, human error, and scaling issues on new lines. We collected a defect dataset, trained a PyTorch model, optimized inference with TensorRT on edge servers, and connected MES alerts for automatic batch stops. Added a QA dashboard with defect heatmaps.","stack":["Python","PyTorch","OpenCV","TensorRT","Docker","MQTT"],"results":["98.5% detection accuracy","30 FPS on the production line","35% scrap reduction","ROI in 8 months","Deployed on 3 lines without downtime"],"client":"IndustrialTech","date":"2025","image":"images/ai/gallery-cv.jpg"},
-    {"id":"p5","category":"Voice AI","title":"Voice AI for logistics call center","description":"Speech-to-text, IVR, and voice assistant for shipment tracking with TMS and CRM integration.","details":"LogiTrans EU handled 8,000+ calls per month about delivery status, address changes, and claims. Agents could not keep up during peak season. Partnerio deployed Whisper ASR, intent classification, TTS responses, and TMS integration for automatic status updates. Complex cases escalate with full transcription and order context.","stack":["Python","Whisper","Azure Speech","FastAPI","PostgreSQL","Redis"],"results":["45% of calls resolved without an agent","Average handle time: 6 min → 90 sec","TMS and Salesforce integration","Support for 6 languages for EU clients","Launched in 4 months"],"client":"LogiTrans EU","date":"2025","image":"images/ai/gallery-voice.jpg"},
-    {"id":"p6","category":"AI / RAG","title":"Enterprise document search","description":"RAG platform for an insurance company: semantic search across policies, regulations, and compliance documents.","details":"SecureInsurance had 120,000+ PDF and Word files across silos; lawyers and underwriters spent hours finding wording and precedents. We built an ingestion pipeline with OCR, chunking, Azure OpenAI embeddings, a vector store, and LLM answers with source citations. Role-based access and audit logs for regulators.","stack":["Python","LangChain","Azure OpenAI","Qdrant","FastAPI","PostgreSQL"],"results":["Document search time: 40 min → 2 min","92% relevance in top-3 results","12,000+ documents in knowledge base","GDPR-ready architecture","78% adoption in 3 months"],"client":"SecureInsurance","date":"2024","image":"images/ai/about-ai.jpg"},
-    {"id":"p7","category":"MilTech / CV","title":"Computer vision for aerial imagery analysis","description":"ML platform for automatic detection of infrastructure changes from satellite and UAV imagery.","details":"Defense Analytics UA needed faster image analysis — manual review took days. Partnerio built a pipeline: preprocessing, tile segmentation, YOLO object detection, change detection across time-series imagery, and an analyst dashboard. GPU cluster inference with job queues and priority for critical zones.","stack":["Python","PyTorch","YOLO","OpenCV","Kubernetes","MinIO"],"results":["Image processing: 4 hours → 12 minutes","94.2% detection F1 on validation","Scale to 500+ images per day","On-prem deployment for data security","Integration with client GIS system"],"client":"Defense Analytics UA","date":"2025","image":"images/ai/about-main.jpg"},
-    {"id":"p8","category":"HealthTech / NLP","title":"NLP for medical record processing","description":"PHI anonymization, diagnosis classification, and clinical note summarization for a hospital network.","details":"MediCore processed millions of records for reporting and research, but manual anonymization blocked analytics. We deployed NER for PHI, a de-identification pipeline, ICD-10 classification, and LLM summarization for discharge notes. All models on-prem with HIPAA-aligned processes and human-in-the-loop for edge cases.","stack":["Python","spaCy","Transformers","FastAPI","PostgreSQL","Docker"],"results":["99.1% PHI detection accuracy","50,000 records processed per day","Report preparation time −70%","Audit trail for every request","Pilot launched in 5 months"],"client":"MediCore","date":"2024","image":"images/projects/p5.png"},
-    {"id":"p9","category":"AI / ML","title":"Demand forecasting for retail","description":"ML models for sales forecasting, inventory optimization, and automatic reorder for a supermarket chain.","details":"FreshMarket had overstock and out-of-stock simultaneously across categories — legacy Excel did not scale to 180+ stores. Partnerio built a feature store, ensemble models (XGBoost + Prophet), ERP integration, and a dashboard for buyers. Weekly retrain, MAPE monitoring, and drift alerts.","stack":["Python","XGBoost","Prophet","Airflow","PostgreSQL","AWS"],"results":["Forecast MAPE — 8.4%","22% reduction in write-offs","15% lower out-of-stock rate","Automatic reorder for 80% of SKUs","ROI in 6 months"],"client":"FreshMarket","date":"2024","image":"images/ai/about-data.jpg"},
-    {"id":"p10","category":"DevOps / Cloud","title":"Fintech migration to Kubernetes","description":"Moving a payment platform from on-prem to AWS EKS: CI/CD, observability, zero-downtime migration.","details":"PayStream processed 500K+ transactions daily on aging infrastructure; deploys took hours and scaling was manual. Partnerio designed an EKS cluster, GitOps with ArgoCD, service mesh, canary deploys, and blue-green migration with no downtime. Added Prometheus/Grafana, centralized logs, and on-call runbooks.","stack":["AWS","EKS","Terraform","ArgoCD","Prometheus","GitHub Actions"],"results":["Deploy time: 2 hours → 15 minutes","99.95% uptime after migration","Auto-scaling for Black Friday","40% cloud cost reduction (rightsizing)","PCI-DSS ready infrastructure"],"client":"PayStream","date":"2025","image":"images/ai/gallery-mlops.jpg"},
-    {"id":"p11","category":"EdTech / AI","title":"AI tutor with adaptive learning","description":"LLM platform for personalized explanations, assignment checking, and exercise generation for an online school.","details":"EduSmart had 25,000 students but teachers could not provide individual feedback at scale. We built RAG on curriculum materials, a fine-tuned LLM for plain-language explanations, an auto-grader for tests, and adaptive learning paths based on student mistakes. Content moderation layer and parental controls.","stack":["Python","OpenAI","LangChain","React","PostgreSQL","Redis"],"results":["3× more feedback per student","Course completion rate +28%","Average response time < 5 sec","Moderation blocks 99.7% unsafe content","MVP launched in 4 months"],"client":"EduSmart","date":"2025","image":"images/projects/p6.png"},
-    {"id":"p12","category":"AI / ML","title":"Fraud detection for a payment platform","description":"Real-time ML to detect fraudulent transactions, chargeback patterns, and anomalies in high-load fintech.","details":"ClearPay processed 2M+ transactions per day; rule-based antifraud missed sophisticated fraud and blocked legitimate payments. Partnerio built a Kafka streaming pipeline, a feature store with 200+ signals, an ensemble model (XGBoost + isolation forest), and explainability for the compliance team. Scoring under 50 ms, human review queue for borderline cases, and a feedback loop for retraining.","stack":["Python","XGBoost","Kafka","Spark","Redis","MLflow"],"results":["Fraud detection rate +41%","False positives −33%","Scoring latency < 50 ms","$1.2M/year saved on chargebacks","Daily retrain pipeline"],"client":"ClearPay","date":"2025","image":"images/ai/hero.jpg"},
-    {"id":"p13","category":"AI / Agents","title":"Multi-agent system for contract processing","description":"AI agents for legal ops: clause extraction, version comparison, risk scoring, and draft replies to counterparty requests.","details":"LegalTech Pro managed 3,000+ active contracts; lawyers spent up to 6 hours reviewing a single agreement. We built LangGraph orchestration: extraction agent, playbook comparison agent, risk scoring agent, and redline draft agent. RAG on internal wiki + CRM, human approval before sending, full audit log.","stack":["Python","LangGraph","OpenAI","Qdrant","FastAPI","PostgreSQL"],"results":["Contract review time: 6 hours → 45 minutes","92% clause extraction accuracy","Risk flags on 100% of high-value contracts","Lawyers focus on 20% of edge cases","Pilot — 200 contracts/month"],"client":"LegalTech Pro","date":"2025","image":"images/ai/gallery-llm.jpg"}
+    {
+      "id": "p1",
+      "category": "AI / NLP",
+      "title": "Smart call center assistant",
+      "description": "LLM assistant for a fintech call center with RAG, CRM/telephony integration, KYC verification, and secure agent handoff with full context.",
+      "details": "FinTech Ukraine handled 15,000+ monthly requests; agents spent 70% of time on routine inquiries. We built a 40+ intent catalog and fine-tuned LLM with RAG on policies and FAQ. KYC verification, UA/EN support, full transcription on escalation, moderation layer, audit log, and adoption dashboard. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "OpenAI",
+        "PostgreSQL",
+        "Redis",
+        "Docker"
+      ],
+      "results": [
+        "60% of routine requests automated",
+        "MVP launched in 3 months",
+        "Salesforce CRM and ACD integration",
+        "First response time: 4 min → 40 sec",
+        "Call center NPS +12 pp in 6 months"
+      ],
+      "client": "FinTech Ukraine",
+      "date": "2025",
+      "image": "images/ai/gallery-llm.jpg"
+    },
+    {
+      "id": "p2",
+      "category": "Web Development",
+      "title": "E-commerce platform",
+      "description": "Omnichannel marketplace for a retail chain: unified B2C and B2B catalog, payments, logistics, promos, and ABC analytics for 50,000+ SKUs.",
+      "details": "Retail Group scaled offline stores but had fragmented systems for shops, wholesale, and e-commerce. We designed a microservices platform: catalog, cart, orders, payments, promos, and reporting with a single customer profile. Focus on Black Friday performance (< 1.2s catalog), category manager module with ABC analytics, ERP and WMS integration. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "Stripe",
+        "AWS"
+      ],
+      "results": [
+        "50,000+ SKUs in one catalog",
+        "2,000+ orders per day at peak",
+        "99.9% uptime during sales season",
+        "Catalog load time < 1.2 sec",
+        "B2B channel without a separate platform"
+      ],
+      "client": "Retail Group",
+      "date": "2024",
+      "image": "images/ai/about-data.jpg"
+    },
+    {
+      "id": "p3",
+      "category": "QA / Automation",
+      "title": "Banking system test automation",
+      "description": "Enterprise test framework for core banking: API, UI, production smoke tests, and audit-ready reporting for compliance teams.",
+      "details": "NovaBank released core banking every 2 weeks, but regression took 5 business days and blocked delivery. We built a layered framework: contract API tests, Playwright for 40+ critical flows, nightly staging smoke, and post-deploy checks. Allure reports integrated into Jira with traceability from user story to test case. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "Java",
+        "Playwright",
+        "Selenium",
+        "Jenkins",
+        "PostgreSQL",
+        "Allure"
+      ],
+      "results": [
+        "Regression: 5 days → 4 hours",
+        "850+ automated tests in CI/CD",
+        "80% fewer production incidents",
+        "95% critical path coverage",
+        "Saved 2 FTE QA on regression"
+      ],
+      "client": "NovaBank",
+      "date": "2024",
+      "image": "images/ai/gallery-mlops.jpg"
+    },
+    {
+      "id": "p4",
+      "category": "Computer Vision",
+      "title": "Manufacturing quality control system",
+      "description": "Real-time CV for conveyor defect detection: TensorRT edge inference, MES integration, and defect heatmap dashboard.",
+      "details": "IndustrialTech relied on manual inspection. We collected 12,000+ defect images, trained PyTorch, optimized TensorRT on edge servers, and connected MES for batch stops. 30 FPS, 8 defect types, operator alerts, trend analytics, and quality audit export. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "Python",
+        "PyTorch",
+        "OpenCV",
+        "TensorRT",
+        "Docker",
+        "MQTT"
+      ],
+      "results": [
+        "98.5% detection accuracy",
+        "30 FPS on the production line",
+        "35% scrap reduction",
+        "ROI in 8 months",
+        "Deployed on 3 lines without downtime"
+      ],
+      "client": "IndustrialTech",
+      "date": "2025",
+      "image": "images/ai/gallery-cv.jpg"
+    },
+    {
+      "id": "p5",
+      "category": "Voice AI",
+      "title": "Voice AI for logistics call center",
+      "description": "Voice AI for logistics: Whisper ASR, NLU, TTS, IVR, and TMS/CRM integration for shipment tracking.",
+      "details": "LogiTrans EU — 8,000+ calls/month, 15-minute queues at peak. Whisper ASR, 25+ intents, TTS, TMS with SMS confirmations. Escalation with transcription and next-best-action. Six languages, call analytics, weekly ops reports. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "Python",
+        "Whisper",
+        "Azure Speech",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "results": [
+        "45% of calls resolved without an agent",
+        "Average handle time: 6 min → 90 sec",
+        "TMS and Salesforce integration",
+        "Support for 6 languages for EU clients",
+        "Launched in 4 months"
+      ],
+      "client": "LogiTrans EU",
+      "date": "2025",
+      "image": "images/ai/gallery-voice.jpg"
+    },
+    {
+      "id": "p6",
+      "category": "AI / RAG",
+      "title": "Enterprise document search",
+      "description": "Enterprise insurance RAG: semantic search across 120,000+ documents with cited LLM answers and role-based access.",
+      "details": "SecureInsurance — up to 40 minutes to find legal wording. OCR ingestion, smart chunking, Azure OpenAI embeddings, Qdrant, mandatory citations. Role-based access, audit log, hybrid search + re-ranking, Word citation export. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "Python",
+        "LangChain",
+        "Azure OpenAI",
+        "Qdrant",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "results": [
+        "Document search time: 40 min → 2 min",
+        "92% relevance in top-3 results",
+        "12,000+ documents in knowledge base",
+        "GDPR-ready architecture",
+        "78% adoption in 3 months"
+      ],
+      "client": "SecureInsurance",
+      "date": "2024",
+      "image": "images/ai/about-ai.jpg"
+    },
+    {
+      "id": "p7",
+      "category": "Computer Vision / GIS",
+      "title": "Computer vision for satellite imagery analysis",
+      "description": "CV/GIS platform for agrotech and logistics: satellite monitoring, change detection, object detection, and analytics dashboard.",
+      "details": "GeoInsight EU analyzed satellite imagery for agrotech and logistics — manual processing took days. We built preprocessing, tile segmentation, YOLO detection, time-series change detection, and an analyst dashboard. GPU cluster inference with job queue, critical zone prioritization, and client report export. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "Python",
+        "PyTorch",
+        "YOLO",
+        "OpenCV",
+        "Kubernetes",
+        "MinIO"
+      ],
+      "results": [
+        "Image processing: 4 hours → 12 minutes",
+        "94.2% detection F1 on validation",
+        "Scale to 500+ images per day",
+        "On-prem deployment for data security",
+        "Integration with client GIS system"
+      ],
+      "client": "GeoInsight EU",
+      "date": "2025",
+      "image": "images/ai/about-main.jpg"
+    },
+    {
+      "id": "p8",
+      "category": "HealthTech / NLP",
+      "title": "NLP for medical record processing",
+      "description": "Medical record NLP: PHI de-identification, ICD-10 classification, LLM summarization — on-prem, HIPAA-aligned.",
+      "details": "MediCore — manual anonymization blocked analytics for 2–3 weeks. PHI NER, human-in-the-loop, ICD-10 across 200+ categories, discharge LLM summaries. On-prem, audit trail, 50,000 records/day, EMR API. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "Python",
+        "spaCy",
+        "Transformers",
+        "FastAPI",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "results": [
+        "99.1% PHI detection accuracy",
+        "50,000 records processed per day",
+        "Report preparation time −70%",
+        "Audit trail for every request",
+        "Pilot launched in 5 months"
+      ],
+      "client": "MediCore",
+      "date": "2024",
+      "image": "images/projects/p5.png"
+    },
+    {
+      "id": "p9",
+      "category": "AI / ML",
+      "title": "Demand forecasting for retail",
+      "description": "Retail demand forecasting: XGBoost + Prophet ensemble, feature store, ERP integration, auto-reorder for 180+ stores.",
+      "details": "FreshMarket — overstock and out-of-stock on 15,000 SKUs. Feature store (seasonality, promo, weather), what-if buyer dashboard, weekly retrain, MAPE by category, explainability for managers. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "Python",
+        "XGBoost",
+        "Prophet",
+        "Airflow",
+        "PostgreSQL",
+        "AWS"
+      ],
+      "results": [
+        "Forecast MAPE — 8.4%",
+        "22% reduction in write-offs",
+        "15% lower out-of-stock rate",
+        "Automatic reorder for 80% of SKUs",
+        "ROI in 6 months"
+      ],
+      "client": "FreshMarket",
+      "date": "2024",
+      "image": "images/ai/about-data.jpg"
+    },
+    {
+      "id": "p10",
+      "category": "DevOps / Cloud",
+      "title": "Fintech migration to Kubernetes",
+      "description": "Payment platform migration to AWS EKS: GitOps, service mesh, canary deploys, and zero-downtime blue-green migration.",
+      "details": "PayStream processed 500K+ daily transactions on legacy infra; deploys took hours, scaling was manual. We designed EKS, ArgoCD GitOps, service mesh, canary deploys, and blue-green migration with no downtime. Added Prometheus/Grafana, centralized logs, on-call runbooks, and cost optimization. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "AWS",
+        "EKS",
+        "Terraform",
+        "ArgoCD",
+        "Prometheus",
+        "GitHub Actions"
+      ],
+      "results": [
+        "Deploy time: 2 hours → 15 minutes",
+        "99.95% uptime after migration",
+        "Auto-scaling for Black Friday",
+        "40% cloud cost reduction (rightsizing)",
+        "PCI-DSS ready infrastructure"
+      ],
+      "client": "PayStream",
+      "date": "2025",
+      "image": "images/ai/gallery-mlops.jpg"
+    },
+    {
+      "id": "p11",
+      "category": "EdTech / AI",
+      "title": "AI tutor with adaptive learning",
+      "description": "AI tutor: curriculum RAG, fine-tuned LLM, auto-grader, and adaptive paths for 25,000 students.",
+      "details": "EduSmart — 1 teacher per 120 students. RAG on textbooks, plain-language LLM, rubric auto-grader, mistake-based adaptive paths. Moderation, parental controls, teacher dashboard. Response under 5 seconds. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "Python",
+        "OpenAI",
+        "LangChain",
+        "React",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "results": [
+        "3× more feedback per student",
+        "Course completion rate +28%",
+        "Average response time < 5 sec",
+        "Moderation blocks 99.7% unsafe content",
+        "MVP launched in 4 months"
+      ],
+      "client": "EduSmart",
+      "date": "2025",
+      "image": "images/projects/p6.png"
+    },
+    {
+      "id": "p12",
+      "category": "AI / ML",
+      "title": "Fraud detection for a payment platform",
+      "description": "Real-time fraud ML: Kafka streaming, 200+ features, ensemble model, SHAP explainability — scoring under 50 ms.",
+      "details": "ClearPay — 2M+ daily transactions, 8% false positives. Kafka pipeline, feature store, XGBoost + isolation forest, human review queue, daily retrain. $1.2M/year saved on chargebacks. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "Python",
+        "XGBoost",
+        "Kafka",
+        "Spark",
+        "Redis",
+        "MLflow"
+      ],
+      "results": [
+        "Fraud detection rate +41%",
+        "False positives −33%",
+        "Scoring latency < 50 ms",
+        "$1.2M/year saved on chargebacks",
+        "Daily retrain pipeline"
+      ],
+      "client": "ClearPay",
+      "date": "2025",
+      "image": "images/ai/hero.jpg"
+    },
+    {
+      "id": "p13",
+      "category": "AI / Agents",
+      "title": "Multi-agent system for contract processing",
+      "description": "Multi-agent legal ops: clause extraction, playbook comparison, risk scoring, redlines — LangGraph + RAG.",
+      "details": "LegalTech Pro — 6 hours per contract review. LangGraph agents for extraction, 50+ clause playbook, risk scoring, redlines. Human approval, audit log, Word track-changes export. 200 contracts/month in pilot. Partnerio delivered end-to-end: discovery, architecture, integrations, MLOps, and post-launch support with transparent business reporting.",
+      "stack": [
+        "Python",
+        "LangGraph",
+        "OpenAI",
+        "Qdrant",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "results": [
+        "Contract review time: 6 hours → 45 minutes",
+        "92% clause extraction accuracy",
+        "Risk flags on 100% of high-value contracts",
+        "Lawyers focus on 20% of edge cases",
+        "Pilot — 200 contracts/month"
+      ],
+      "client": "LegalTech Pro",
+      "date": "2025",
+      "image": "images/ai/gallery-llm.jpg"
+    }
   ],
   "team": [
-    {"id":"t1","name":"Anton Fil","role":"CEO & Lead Architect","experience":"20 years of experience","bio":"Founder and CEO of Partnerio, Lead Architect with 20 years of enterprise development experience. Defines company architecture strategy, engineering standards, and technical due diligence for key projects. Directly involved in fintech, banking, and high-load platforms. Leads architecture committees, critical code reviews, and mentors team leads.","image":"images/anton-fil.png"},
-    {"id":"t2","name":"Olga Kornieva","role":"CTO","experience":"17 years of experience","bio":"Chief Technology Officer at Partnerio. Owns technology strategy, stack selection, platform architecture, and AI/ML adoption in client products. Experienced in building R&D processes, scaling 50+ engineer teams, and monolith → microservices migrations. Oversees security, performance, and delivery quality.","image":"images/olga-kornieva.png"},
-    {"id":"t3","name":"Serhii Mazur","role":"CFO","experience":"14 years of experience","bio":"Chief Financial Officer at Partnerio. Manages financial planning, project budgeting, management accounting, and IT company cost optimization. Experience with international contracts (EU, US), FX risk, and financial reporting for enterprise clients. Ensures transparency across T&M, fixed price, and dedicated team models.","image":"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"},
-    {"id":"t4","name":"Kateryna Levchenko","role":"COO","experience":"12 years of experience","bio":"Chief Operating Officer at Partnerio. Owns delivery processes, team scaling, service quality, and SLA compliance. Implemented Agile/Scrum practices, PM KPIs, and regular client reporting. Experience managing a portfolio of 15+ parallel enterprise projects and onboarding new clients within 2 weeks.","image":"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"}
+    {
+      "id": "t1",
+      "name": "Anton Fil",
+      "role": "CEO & Lead Architect",
+      "experience": "20 years of experience",
+      "bio": "Founder and CEO of Partnerio, Lead Architect with 20 years of enterprise development. Sets architecture strategy, engineering standards, and technical due diligence for key projects. Directly involved in fintech, banking, and high-load platforms — from core banking to payment gateways. Leads architecture committees, critical code reviews, and mentors team leads. Last 5 years focused on AI-first architecture, LLM/RAG integration in enterprise, and secure deployment in regulated environments.",
+      "image": "images/anton-fil.png"
+    },
+    {
+      "id": "t2",
+      "name": "Olga Kornieva",
+      "role": "CTO",
+      "experience": "17 years of experience",
+      "bio": "CTO of Partnerio. Owns technology strategy, stack selection, platform architecture, and AI/ML adoption in client products. Built R&D processes, scaled teams of 50+ engineers, and led monolith → microservices → event-driven migrations. Oversees security, performance, and delivery quality. Leads ML/NLP/CV practice, MLOps, and evaluation frameworks. Runs internal AI guilds sharing fine-tuning, RAG, and production ML best practices.",
+      "image": "images/olga-kornieva.png"
+    },
+    {
+      "id": "t3",
+      "name": "Serhii Mazur",
+      "role": "CFO",
+      "experience": "14 years of experience",
+      "bio": "CFO of Partnerio. Manages financial planning, project budgeting, management accounting, and IT cost optimization. Experience with international contracts (EU, US), currency risk, and enterprise financial reporting. Ensures transparency for T&M, fixed price, and dedicated team models — monthly burn reports with no surprises. Helps clients build ROI models for AI projects and compare build vs buy costs.",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+    },
+    {
+      "id": "t4",
+      "name": "Kateryna Levchenko",
+      "role": "COO",
+      "experience": "12 years of experience",
+      "bio": "COO of Partnerio. Owns delivery processes, team scaling, service quality, and SLA execution. Implemented Agile/Scrum, PM KPIs, and regular client reporting — weekly status, risk register, capacity planning. Managed portfolios of 15+ parallel enterprise projects and onboarded new clients within 2 weeks. Ensures predictable timelines, stakeholder transparency, and smooth handoff between discovery, delivery, and support.",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+    }
   ],
   "testimonials": [
-    {"id":"r1","name":"Ihor Petrenko","company":"FinTech Ukraine","text":"We needed an AI assistant for our call center before peak season — timelines were tight. Partnerio delivered an MVP in 3 months, integrated CRM and telephony. Now 60% of routine dialogs are automated, and agents get full context on escalation. Weekly demos, transparent backlog, no end-of-project surprises — exactly what we expect from a vendor.","date":"October 2025","image":"images/reviews/ihor-petrenko.jpg"},
-    {"id":"r2","name":"Olena Sydorenko","company":"Retail Group","text":"After launching the e-commerce platform with Partnerio, we process 2,000+ orders per day at peak. We especially value the architecture — B2B and B2C in one system without data duplication. Partnerio's QA team built automation and production bugs dropped 80%. Communication at product owner level, not a black-box dev shop.","date":"May 2025","image":"images/reviews/olena-sydorenko.jpg"},
-    {"id":"r3","name":"Viktor Lysenko","company":"NovaBank","text":"Core banking is not a project where you can gamble on timelines. Partnerio assembled a team that understands regulated environments: audit trails, compliance reports, documentation. Regression went from 5 days to 4 hours — that changed our release cadence. Architecture scales, and technical docs let our internal team take over support quickly.","date":"June 2025","image":"images/reviews/viktor-lysenko.jpg"}
+    {
+      "id": "r1",
+      "name": "Ihor Petrenko",
+      "company": "FinTech Ukraine",
+      "text": "We needed an AI assistant for our call center before peak season — tight timelines and our internal team was busy with core banking. Partnerio delivered an MVP in 3 months, integrated with Salesforce CRM and telephony, and ran UAT with agents. Now 60% of routine dialogs are automated, first response time dropped from 4 min to 40 sec, NPS +12 pp. Agents get full context on escalation. Weekly demos, transparent backlog, no surprises — exactly what we wanted. After launch, the team stayed on support: drift monitoring, model retrain, moderation updates under SLA.",
+      "date": "October 2025",
+      "image": "images/reviews/ihor-petrenko.jpg"
+    },
+    {
+      "id": "r2",
+      "name": "Olena Sydorenko",
+      "company": "Retail Group",
+      "text": "After launching Partnerio's e-commerce platform, we handle 2,000+ orders per day at peak — Black Friday with zero incidents. We especially value the architecture: B2B and B2C in one system without data duplication, unified customer profile, ERP and WMS integration. Partnerio's QA built 400+ automated tests — production bugs dropped 80%. Product-owner-level communication: backlog, priorities, risks — all visible. We recommend them for complex retail platforms and long-term support.",
+      "date": "May 2025",
+      "image": "images/reviews/olena-sydorenko.jpg"
+    },
+    {
+      "id": "r3",
+      "name": "Viktor Lysenko",
+      "company": "NovaBank",
+      "text": "Core banking is not a project where you experiment with timelines. Partnerio assembled a team that understands regulated environments: audit trails, compliance reports, regulator documentation. Regression went from 5 days to 4 hours — that changed our release cadence from monthly to bi-weekly. Architecture scales; technical docs let our internal team take over L2 support quickly. We've worked with Partnerio for three years — expanded scope to DevOps and a new fraud ML module.",
+      "date": "June 2025",
+      "image": "images/reviews/viktor-lysenko.jpg"
+    }
   ],
   "stats": [
-    {"value":"120+","label":"Specialists","description":"Backend, frontend, mobile, QA, DevOps, and ML engineers. Average team experience — 7+ years. 40% at senior and lead level."},
-    {"value":"250+","label":"Projects","description":"Successfully delivered solutions for clients in 15 countries: fintech, retail, manufacturing, healthtech, logistics, miltech."},
-    {"value":"98%","label":"Satisfied clients","description":"Return with new tasks, extend support contracts, and recommend Partnerio to partners and investors."}
-  ]
+    {
+      "value": "50+",
+      "label": "Specialists",
+      "description": "Backend, frontend, mobile, QA, DevOps, ML/NLP/CV engineers, and data scientists. Average experience 7+ years, 40% senior/lead. Team scales to your project without long onboarding."
+    },
+    {
+      "value": "250+",
+      "label": "Projects",
+      "description": "Successful deliveries for clients in 15 countries: fintech, retail, manufacturing, healthtech, insurance, legal, logistics, and EdTech — from MVP to enterprise scale."
+    },
+    {
+      "value": "98%",
+      "label": "Satisfied clients",
+      "description": "They return with new challenges, continue support contracts for 3+ years, and recommend Partnerio to partners, investors, and industry peers."
+    }
+  ],
+  "messages": {
+    "contact_success": "Thank you! We received your request. A manager will contact you within one business day.",
+    "contact_error": "Could not submit the form. Please try again or email olyakorneva09@gmail.com."
+  }
 }

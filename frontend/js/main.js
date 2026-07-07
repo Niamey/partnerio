@@ -18,29 +18,142 @@ const ICONS = {
   globe: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-globe" x1="8" y1="8" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#1648c8"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs><circle cx="24" cy="24" r="16" fill="url(#ic-globe)" fill-opacity=".1" stroke="url(#ic-globe)" stroke-width="2"/><ellipse cx="24" cy="24" rx="7" ry="16" stroke="url(#ic-globe)" stroke-width="1.8"/><path d="M8 24h32M11 16h26M11 32h26" stroke="url(#ic-globe)" stroke-width="1.8" stroke-linecap="round"/><circle cx="32" cy="16" r="3" fill="url(#ic-globe)"/></svg>`,
   layers: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-layers" x1="10" y1="10" x2="38" y2="38" gradientUnits="userSpaceOnUse"><stop stop-color="#0f766e"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient></defs><path d="M24 8L8 17l16 9 16-9-16-9z" fill="url(#ic-layers)" fill-opacity=".18" stroke="url(#ic-layers)" stroke-width="2" stroke-linejoin="round"/><path d="M8 24l16 9 16-9M8 31l16 9 16-9" stroke="url(#ic-layers)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
   team: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-team" x1="8" y1="12" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#9333ea"/><stop offset="1" stop-color="#c084fc"/></linearGradient></defs><circle cx="18" cy="18" r="5" fill="url(#ic-team)" fill-opacity=".25" stroke="url(#ic-team)" stroke-width="2"/><path d="M8 36c0-5.5 4.5-9 10-9s10 3.5 10 9" stroke="url(#ic-team)" stroke-width="2" stroke-linecap="round"/><circle cx="33" cy="20" r="4" fill="url(#ic-team)" fill-opacity=".18" stroke="url(#ic-team)" stroke-width="2"/><path d="M28 36c.6-3.8 3.4-6 8-6 2.2 0 4.2.7 5.5 2.2" stroke="url(#ic-team)" stroke-width="2" stroke-linecap="round"/></svg>`,
+  ml: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`,
+  nlp: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="19" cy="12" r="2" fill="currentColor"/></svg>`,
+  rag: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3" stroke="currentColor" stroke-width="1.8"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" stroke="currentColor" stroke-width="1.8"/></svg>`,
+  cv: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/></svg>`,
+  voice: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`,
+  agents: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="2.5" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="6" r="2.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="18" r="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M8 7.5l3 7M16 7.5l-3 7M8.5 6h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`,
+  dev: `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M14 6l-4 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
 };
+
+const TECH_STACKS = [
+  {
+    id: 'ai',
+    icon: 'ml',
+    titleKey: 'tech.groupAI',
+    tags: ['TensorFlow', 'PyTorch', 'scikit-learn', 'XGBoost', 'MLflow', 'Kubeflow', 'ONNX', 'TensorRT', 'CUDA', 'MLOps', 'Ray', 'W&B'],
+  },
+  {
+    id: 'nlp',
+    icon: 'nlp',
+    titleKey: 'tech.groupNLP',
+    tags: ['OpenAI', 'GPT-4', 'Claude', 'Gemini', 'Llama 3', 'Hugging Face', 'LangChain', 'LangGraph', 'Fine-tuning', 'LoRA', 'Embeddings', 'Function Calling'],
+  },
+  {
+    id: 'rag',
+    icon: 'rag',
+    titleKey: 'tech.groupRAG',
+    tags: ['RAG', 'Qdrant', 'Pinecone', 'Weaviate', 'Chroma', 'pgvector', 'FAISS', 'Hybrid Search', 'Re-ranking', 'Knowledge Graph'],
+  },
+  {
+    id: 'cv',
+    icon: 'cv',
+    titleKey: 'tech.groupCV',
+    tags: ['OpenCV', 'YOLO', 'Ultralytics', 'OCR', 'PaddleOCR', 'Object Detection', 'Video Analytics', 'Edge AI', 'DeepStream', 'SAM'],
+  },
+  {
+    id: 'voice',
+    icon: 'voice',
+    titleKey: 'tech.groupVoice',
+    tags: ['Whisper', 'Azure Speech', 'ElevenLabs', 'Deepgram', 'ASR', 'TTS', 'IVR', 'Call Analytics', 'Voice AI', 'Real-time STT'],
+  },
+  {
+    id: 'agents',
+    icon: 'agents',
+    titleKey: 'tech.groupAgents',
+    tags: ['LangGraph', 'CrewAI', 'AutoGen', 'Multi-agent', 'Tool Use', 'n8n', 'MCP', 'Guardrails AI', 'Agent Orchestration', 'Human-in-the-loop'],
+  },
+  {
+    id: 'dev',
+    icon: 'dev',
+    titleKey: 'tech.groupDev',
+    wide: true,
+    tags: ['Python', 'React', 'TypeScript', 'Node.js', 'FastAPI', 'GraphQL', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes', 'AWS', 'Azure', 'GCP', 'Terraform', 'Playwright'],
+  },
+];
+
+function escapeAttr(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+    .replace(/</g, '&lt;');
+}
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function bindImageFallbacks(root) {
+  if (!root) return;
+  root.querySelectorAll('img[data-fallback-class]').forEach((img) => {
+    img.addEventListener('error', () => {
+      const replacement = document.createElement('div');
+      replacement.className = img.dataset.fallbackClass || '';
+      replacement.textContent = img.dataset.fallbackInitials || '?';
+      const wrap = img.dataset.fallbackReplace === 'parent'
+        ? img.closest('.review-card__avatar--photo')
+        : null;
+      (wrap || img).replaceWith(replacement);
+    }, { once: true });
+  });
+}
+
+function renderTechStacks() {
+  const root = document.getElementById('tech-stacks');
+  if (!root) return;
+  root.innerHTML = TECH_STACKS.map((group) => {
+    const title = i18n.t(group.titleKey) || group.titleKey.split('.').pop();
+    const icon = ICONS[group.icon] || '';
+    const tags = group.tags.map((tag) => `<li>${escapeHtml(tag)}</li>`).join('');
+    const wideClass = group.wide ? ' tech-card--wide' : '';
+    return `
+      <article class="tech-card tech-card--${group.id}${wideClass}">
+        <header class="tech-card__head">
+          <span class="tech-card__icon" aria-hidden="true">${icon}</span>
+          <h3 class="tech-card__title">${escapeHtml(title)}</h3>
+        </header>
+        <ul class="tech-card__list">${tags}</ul>
+      </article>`;
+  }).join('');
+}
 
 function initials(name) {
   return name.split(' ').map((n) => n[0]).join('').slice(0, 2).toUpperCase();
 }
 
-function teamImageFallback(name) {
-  return `this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'team-card__initials',textContent:'${initials(name)}'}))`;
-}
-
 function resolveImage(url) {
   if (!url) return '';
   if (url.startsWith('http://') || url.startsWith('https://')) return url;
-  const path = url.startsWith('/') ? url : `/${url}`;
-  return `${API_BASE}${path}`;
+  return new URL(url.replace(/^\//, ''), window.location.href).href;
+}
+
+function isAiProject(project) {
+  const hay = `${project.category} ${project.title}`.toLowerCase();
+  return /ш\u0456|шi|\bai\b|ml|nlp|rag|cv|vision|voice|agent|llm|fraud|deep learning|computer vision|голос|forecast|прогноз|nlp|ocr|chatbot|асистент|recommendation|рекомендац/i.test(hay);
 }
 
 async function fetchStaticData(key) {
   const lang = i18n.getLang();
-  const res = await fetch(`${API_BASE}/data/${lang}.json`);
-  if (!res.ok) throw new Error('static data missing');
-  const data = await res.json();
-  return data[key];
+  const bases = [window.location.href];
+  if (IS_STATIC_HOST) bases.unshift(`${API_BASE}/`);
+  let lastError = null;
+  for (const base of bases) {
+    try {
+      const res = await fetch(new URL(`data/${lang}.json`, base), { cache: 'no-store' });
+      if (!res.ok) continue;
+      const data = await res.json();
+      if (data && key in data) return data[key];
+    } catch (err) {
+      lastError = err;
+    }
+  }
+  throw lastError || new Error(`static data missing: ${key}`);
 }
 
 async function fetchJSON(endpoint) {
@@ -74,11 +187,11 @@ function renderServices(services) {
   if (!services || !grid) return;
   grid.innerHTML = services.map((s, i) => `
     <article class="service-card reveal visible" style="transition-delay:${i * 0.06}s">
-      <div class="service-card__icon service-card__icon--${s.icon}">${ICONS[s.icon] || ICONS.code}</div>
-      <h3>${s.title}</h3>
-      <p class="service-card__lead">${s.description}</p>
-      ${s.details ? `<p class="service-card__details">${s.details}</p>` : ''}
-      <ul>${(s.features || []).map((f) => `<li>${f}</li>`).join('')}</ul>
+      <div class="service-card__icon service-card__icon--${escapeAttr(s.icon)}">${ICONS[s.icon] || ICONS.code}</div>
+      <h3>${escapeHtml(s.title)}</h3>
+      <p class="service-card__lead">${escapeHtml(s.description)}</p>
+      ${s.details ? `<p class="service-card__details">${escapeHtml(s.details)}</p>` : ''}
+      <ul>${(s.features || []).map((f) => `<li>${escapeHtml(f)}</li>`).join('')}</ul>
     </article>
   `).join('');
 }
@@ -107,9 +220,9 @@ function renderStats(stats) {
   if (!stats || !grid) return;
   grid.innerHTML = stats.map((s, i) => `
     <div class="stat-item reveal visible" style="transition-delay:${i * 0.1}s">
-      <div class="stat-item__value" data-value="${s.value}">${s.value}</div>
-      <div class="stat-item__label">${s.label}</div>
-      <p class="stat-item__desc">${s.description}</p>
+      <div class="stat-item__value" data-value="${escapeAttr(s.value)}">${escapeHtml(s.value)}</div>
+      <div class="stat-item__label">${escapeHtml(s.label)}</div>
+      <p class="stat-item__desc">${escapeHtml(s.description)}</p>
     </div>
   `).join('');
   const observer = new IntersectionObserver((entries) => {
@@ -122,26 +235,48 @@ function renderStats(stats) {
   grid.querySelectorAll('.stat-item__value').forEach((el) => observer.observe(el));
 }
 
-function renderProjects(projects) {
-  const grid = document.getElementById('projects-grid');
-  if (!projects || !grid) return;
-  const resultsLabel = i18n.t('projects.results');
-  grid.innerHTML = projects.map((p, i) => `
+function renderProjectCards(projects, resultsLabel) {
+  return projects.map((p, i) => `
     <article class="project-card reveal visible" style="transition-delay:${i * 0.08}s">
       <div class="project-card__image">
-        <img src="${resolveImage(p.image)}" alt="${p.title}" loading="lazy">
-        <span class="project-card__category">${p.category}</span>
+        <img src="${resolveImage(p.image)}" alt="${escapeHtml(p.title)}" loading="lazy">
+        <span class="project-card__category">${escapeHtml(p.category)}</span>
       </div>
       <div class="project-card__body">
-        <h3>${p.title}</h3>
-        <p class="project-card__lead">${p.description}</p>
-        ${p.details ? `<p class="project-card__details">${p.details}</p>` : ''}
-        ${p.stack?.length ? `<div class="project-card__stack">${p.stack.map((t) => `<span>${t}</span>`).join('')}</div>` : ''}
-        ${p.results?.length ? `<div class="project-card__results"><strong>${resultsLabel}</strong><ul>${p.results.map((r) => `<li>${r}</li>`).join('')}</ul></div>` : ''}
-        <div class="project-card__meta"><span>${p.client}</span><span>${p.date}</span></div>
+        <h3>${escapeHtml(p.title)}</h3>
+        <p class="project-card__lead">${escapeHtml(p.description)}</p>
+        ${p.details ? `<p class="project-card__details">${escapeHtml(p.details)}</p>` : ''}
+        ${p.stack?.length ? `<div class="project-card__stack">${p.stack.map((t) => `<span>${escapeHtml(t)}</span>`).join('')}</div>` : ''}
+        ${p.results?.length ? `<div class="project-card__results"><strong>${escapeHtml(resultsLabel)}</strong><ul>${p.results.map((r) => `<li>${escapeHtml(r)}</li>`).join('')}</ul></div>` : ''}
+        <div class="project-card__meta"><span>${escapeHtml(p.client)}</span><span>${escapeHtml(p.date)}</span></div>
       </div>
     </article>
   `).join('');
+}
+
+function renderProjects(projects) {
+  const aiGrid = document.getElementById('ai-projects-grid');
+  const grid = document.getElementById('projects-grid');
+  const otherTitle = document.querySelector('[data-i18n="projects.otherTitle"]');
+  if (!projects || (!aiGrid && !grid)) return;
+
+  const resultsLabel = i18n.t('projects.results');
+  const aiProjects = projects.filter(isAiProject);
+  const otherProjects = projects.filter((p) => !isAiProject(p));
+
+  if (aiGrid) {
+    aiGrid.innerHTML = aiProjects.length
+      ? renderProjectCards(aiProjects, resultsLabel)
+      : `<p class="projects-empty">${escapeHtml(i18n.t('projects.empty'))}</p>`;
+  }
+
+  if (grid) {
+    grid.innerHTML = otherProjects.length ? renderProjectCards(otherProjects, resultsLabel) : '';
+  }
+
+  if (otherTitle) {
+    otherTitle.hidden = otherProjects.length === 0;
+  }
 }
 
 function renderTeam(team) {
@@ -154,20 +289,18 @@ function renderTeam(team) {
   grid.innerHTML = team.map((m, i) => `
     <article class="team-card reveal visible" style="transition-delay:${i * 0.06}s">
       <div class="team-card__image">
-        <img src="${resolveImage(m.image)}" alt="${m.name}" loading="lazy" onerror="${teamImageFallback(m.name)}">
+        <img src="${resolveImage(m.image)}" alt="${escapeHtml(m.name)}" loading="lazy"
+          data-fallback-class="team-card__initials" data-fallback-initials="${escapeAttr(initials(m.name))}">
       </div>
       <div class="team-card__body">
-        <h3>${m.name}</h3>
-        <p class="team-card__role">${m.role}</p>
-        <p class="team-card__exp">${m.experience}</p>
-        <p class="team-card__bio">${m.bio}</p>
+        <h3>${escapeHtml(m.name)}</h3>
+        <p class="team-card__role">${escapeHtml(m.role)}</p>
+        <p class="team-card__exp">${escapeHtml(m.experience)}</p>
+        <p class="team-card__bio">${escapeHtml(m.bio)}</p>
       </div>
     </article>
   `).join('');
-}
-
-function reviewImageFallback(name) {
-  return `this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'review-card__avatar',textContent:'${initials(name)}'}))`;
+  bindImageFallbacks(grid);
 }
 
 function renderTestimonials(items) {
@@ -176,31 +309,47 @@ function renderTestimonials(items) {
   grid.innerHTML = items.map((t, i) => `
     <article class="review-card reveal visible" style="transition-delay:${i * 0.08}s">
       <div class="review-card__stars">★★★★★</div>
-      <p>${t.text}</p>
+      <p>${escapeHtml(t.text)}</p>
       <div class="review-card__author">
         ${t.image
-    ? `<div class="review-card__avatar review-card__avatar--photo"><img src="${resolveImage(t.image)}" alt="${t.name}" loading="lazy" onerror="${reviewImageFallback(t.name)}"></div>`
-    : `<div class="review-card__avatar">${initials(t.name)}</div>`}
-        <div><h4>${t.name}</h4><span>${t.company}</span></div>
+    ? `<div class="review-card__avatar review-card__avatar--photo"><img src="${resolveImage(t.image)}" alt="${escapeHtml(t.name)}" loading="lazy" data-fallback-class="review-card__avatar" data-fallback-initials="${escapeAttr(initials(t.name))}" data-fallback-replace="parent"></div>`
+    : `<div class="review-card__avatar">${escapeHtml(initials(t.name))}</div>`}
+        <div><h4>${escapeHtml(t.name)}</h4><span>${escapeHtml(t.company)}</span></div>
       </div>
-      <p class="review-card__date">${t.date}</p>
+      <p class="review-card__date">${escapeHtml(t.date)}</p>
     </article>
   `).join('');
+  bindImageFallbacks(grid);
 }
 
 async function loadApiContent() {
-  const [services, stats, projects, team, testimonials] = await Promise.all([
-    fetchJSON('/api/services'),
-    fetchJSON('/api/stats'),
-    fetchJSON('/api/projects'),
-    fetchJSON('/api/team'),
-    fetchJSON('/api/testimonials'),
-  ]);
-  renderServices(services);
-  renderStats(stats);
-  renderProjects(projects);
-  renderTeam(team);
-  renderTestimonials(testimonials);
+  const grids = ['services-grid', 'stats-grid', 'ai-projects-grid', 'projects-grid', 'team-grid', 'reviews-grid'];
+  try {
+    const [services, stats, projects, team, testimonials] = await Promise.all([
+      fetchJSON('/api/services'),
+      fetchJSON('/api/stats'),
+      fetchJSON('/api/projects'),
+      fetchJSON('/api/team'),
+      fetchJSON('/api/testimonials'),
+    ]);
+    renderServices(services);
+    renderStats(stats);
+    renderProjects(projects);
+    renderTeam(team);
+    renderTestimonials(testimonials);
+  } catch (err) {
+    console.error('Failed to load site content:', err);
+    grids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el && !el.innerHTML.trim()) {
+        el.innerHTML = `<p class="projects-empty">${escapeHtml(i18n.t('projects.empty'))}</p>`;
+      }
+    });
+  }
+  if (window.i18n?.applyWhySection) i18n.applyWhySection();
+  if (window.i18n?.applyProcessSection) i18n.applyProcessSection();
+  if (window.i18n?.applyTechSection) i18n.applyTechSection();
+  observeReveal();
 }
 
 function observeReveal() {
@@ -288,9 +437,7 @@ function initContactForm() {
         );
         window.location.href = `mailto:olyakorneva09@gmail.com?subject=${subject}&body=${body}`;
         messageEl.className = 'form-message success';
-        messageEl.textContent = i18n.getLang() === 'en'
-          ? 'Your email client has been opened. Please send the message.'
-          : 'Відкрито поштовий клієнт. Будь ласка, надішліть лист.';
+        messageEl.textContent = i18n.t('contact.mailtoSuccess');
         form.reset();
         return;
       }
@@ -313,7 +460,9 @@ function initContactForm() {
         form.reset();
       } else {
         messageEl.className = 'form-message error';
-        messageEl.textContent = result.message || i18n.t('contact.error');
+        const apiMsg = result.message
+          || (typeof result.detail === 'string' ? result.detail : null);
+        messageEl.textContent = apiMsg || i18n.t('contact.error');
       }
     } catch {
       messageEl.className = 'form-message error';
@@ -345,10 +494,12 @@ async function init() {
   initContactForm();
   initBackToTop();
   initFeatureIcons();
+  renderTechStacks();
   observeReveal();
   await loadApiContent();
   document.addEventListener('langchange', () => {
     i18n.applyTranslations();
+    renderTechStacks();
     loadApiContent();
   });
 }
