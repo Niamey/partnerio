@@ -228,12 +228,15 @@ function initHeader() {
   const header = document.getElementById('header');
   const burger = document.getElementById('burger');
   const nav = document.getElementById('nav');
+  if (!header || !burger || !nav) return;
+
   const links = nav.querySelectorAll('.nav__link[data-section]');
   const sections = [...links].map((l) => document.getElementById(l.dataset.section)).filter(Boolean);
+  const scrollOffset = () => header.offsetHeight + 24;
 
   window.addEventListener('scroll', () => {
     header.classList.toggle('header--scrolled', window.scrollY > 20);
-    const scrollPos = window.scrollY + 100;
+    const scrollPos = window.scrollY + scrollOffset();
     let current = '';
     sections.forEach((sec) => {
       if (scrollPos >= sec.offsetTop) current = sec.id;
@@ -275,6 +278,7 @@ function initHeader() {
 function initContactForm() {
   const form = document.getElementById('contact-form');
   const messageEl = document.getElementById('form-message');
+  if (!form || !messageEl) return;
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     messageEl.className = 'form-message';

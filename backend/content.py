@@ -135,8 +135,8 @@ CONTENT: dict[str, dict] = {
                 "id": "t1",
                 "name": "Антон Філь",
                 "role": "CEO & Lead Architect",
-                "experience": "15 років досвіду",
-                "bio": "Засновник компанії. Експерт з enterprise-архітектури та стратегії розвитку IT-продуктів.",
+                "experience": "20 років досвіду",
+                "bio": "Засновник і CEO Partnerio. Lead Architect з досвідом enterprise-розробки. Визначає архітектурну стратегію, стандарти інженерії, масштабування платформ і розвиток ключових продуктів компанії.",
                 "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
             },
             {
@@ -149,19 +149,19 @@ CONTENT: dict[str, dict] = {
             },
             {
                 "id": "t3",
-                "name": "Дмитро Бондаренко",
-                "role": "AI/ML Lead",
-                "experience": "8 років досвіду",
-                "bio": "PhD у машинному навчанні. Спеціалізується на NLP та computer vision.",
-                "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "name": "Сергій Мазур",
+                "role": "CFO",
+                "experience": "14 років досвіду",
+                "bio": "Фінансовий директор Partnerio. Відповідає за фінансове планування, бюджетування, управлінський облік та оптимізацію витрат. Досвід роботи з IT-компаніями, міжнародними контрактами та фінансовою звітністю для enterprise-клієнтів.",
+                "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
             },
             {
                 "id": "t4",
-                "name": "Анна Мельник",
-                "role": "Senior Full-Stack Developer",
-                "experience": "7 років досвіду",
-                "bio": "Експерт з React, Node.js та Python. Вела розробку 20+ успішних проєктів.",
-                "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "name": "Катерина Левченко",
+                "role": "COO",
+                "experience": "12 років досвіду",
+                "bio": "Операційний директор Partnerio. Відповідає за delivery-процеси, розвиток команд, якість сервісу та виконання SLA для клієнтів. Має досвід масштабування IT-компаній і управління проєктами enterprise-рівня.",
+                "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
             },
         ],
         "testimonials": [
@@ -319,8 +319,8 @@ CONTENT: dict[str, dict] = {
                 "id": "t1",
                 "name": "Anton Fil",
                 "role": "CEO & Lead Architect",
-                "experience": "15 years of experience",
-                "bio": "Company founder. Expert in enterprise architecture and IT product strategy.",
+                "experience": "20 years of experience",
+                "bio": "Founder and CEO of Partnerio. Lead Architect with enterprise development expertise. Defines architecture strategy, engineering standards, platform scaling, and growth of the company's key products.",
                 "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
             },
             {
@@ -333,19 +333,19 @@ CONTENT: dict[str, dict] = {
             },
             {
                 "id": "t3",
-                "name": "Dmytro Bondarenko",
-                "role": "AI/ML Lead",
-                "experience": "8 years of experience",
-                "bio": "PhD in machine learning. Specializes in NLP and computer vision.",
-                "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "name": "Serhii Mazur",
+                "role": "CFO",
+                "experience": "14 years of experience",
+                "bio": "Chief Financial Officer at Partnerio. Oversees financial planning, budgeting, management accounting, and cost optimization. Experienced with IT companies, international contracts, and financial reporting for enterprise clients.",
+                "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
             },
             {
                 "id": "t4",
-                "name": "Anna Melnyk",
-                "role": "Senior Full-Stack Developer",
-                "experience": "7 years of experience",
-                "bio": "Expert in React, Node.js, and Python. Led development of 20+ successful projects.",
-                "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "name": "Kateryna Levchenko",
+                "role": "COO",
+                "experience": "12 years of experience",
+                "bio": "Chief Operating Officer at Partnerio. Oversees delivery processes, team development, service quality, and SLA compliance for clients. Experienced in scaling IT companies and managing enterprise-level projects.",
+                "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
             },
         ],
         "testimonials": [
@@ -390,12 +390,16 @@ CONTENT: dict[str, dict] = {
 
 def _json_bundle(lang: str) -> dict:
     lang = normalize_lang(lang)
-    if lang not in _JSON_CACHE:
-        path = _DATA_ROOT / f"{lang}.json"
-        if path.is_file():
-            _JSON_CACHE[lang] = json.loads(path.read_text(encoding="utf-8"))
-        else:
-            _JSON_CACHE[lang] = {}
+    path = _DATA_ROOT / f"{lang}.json"
+    if path.is_file():
+        mtime = path.stat().st_mtime
+        cached = _JSON_CACHE.get(lang)
+        if not cached or cached.get("_mtime") != mtime:
+            bundle = json.loads(path.read_text(encoding="utf-8"))
+            bundle["_mtime"] = mtime
+            _JSON_CACHE[lang] = bundle
+    elif lang not in _JSON_CACHE:
+        _JSON_CACHE[lang] = {}
     return _JSON_CACHE[lang]
 
 
