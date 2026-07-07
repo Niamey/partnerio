@@ -20,41 +20,19 @@ const ICONS = {
   team: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-team" x1="8" y1="12" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#9333ea"/><stop offset="1" stop-color="#c084fc"/></linearGradient></defs><circle cx="18" cy="18" r="5" fill="url(#ic-team)" fill-opacity=".25" stroke="url(#ic-team)" stroke-width="2"/><path d="M8 36c0-5.5 4.5-9 10-9s10 3.5 10 9" stroke="url(#ic-team)" stroke-width="2" stroke-linecap="round"/><circle cx="33" cy="20" r="4" fill="url(#ic-team)" fill-opacity=".18" stroke="url(#ic-team)" stroke-width="2"/><path d="M28 36c.6-3.8 3.4-6 8-6 2.2 0 4.2.7 5.5 2.2" stroke="url(#ic-team)" stroke-width="2" stroke-linecap="round"/></svg>`,
 };
 
-const OLGA_KORNEVA = {
-  uk: {
-    id: 't2',
-    name: 'Ольга Корнєва',
-    role: 'СТО',
-    experience: '17 років досвіду',
-    bio: 'Технічний директор Partnerio. Відповідає за технологічну стратегію, вибір стеку, архітектуру платформ і впровадження AI/ML у продукти клієнтів. Має досвід побудови R&D-процесів, масштабування команд 50+ інженерів і міграцій monolith → microservices. Курирує безпеку, performance та технічну якість delivery.',
-    image: 'images/olga-korneva.png',
-  },
-  en: {
-    id: 't2',
-    name: 'Olga Korneva',
-    role: 'CTO',
-    experience: '17 years of experience',
-    bio: 'Chief Technology Officer at Partnerio. Owns technology strategy, stack selection, platform architecture, and AI/ML adoption in client products. Experienced in building R&D processes, scaling 50+ engineer teams, and monolith → microservices migrations. Oversees security, performance, and delivery quality.',
-    image: 'images/olga-korneva.png',
-  },
-};
+function initials(name) {
+  return name.split(' ').map((n) => n[0]).join('').slice(0, 2).toUpperCase();
+}
+
+function teamImageFallback(name) {
+  return `this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'team-card__initials',textContent:'${initials(name)}'}))`;
+}
 
 function resolveImage(url) {
   if (!url) return '';
   if (url.startsWith('http://') || url.startsWith('https://')) return url;
   const path = url.startsWith('/') ? url : `/${url}`;
   return `${API_BASE}${path}`;
-}
-
-function initials(name) {
-  return name.split(' ').map((n) => n[0]).join('').slice(0, 2).toUpperCase();
-}
-
-function patchTeam(team) {
-  const lang = i18n.getLang();
-  const olga = OLGA_KORNEVA[lang] || OLGA_KORNEVA.uk;
-  if (!team || !Array.isArray(team)) return [olga];
-  return team.map((member) => (member.id === 't2' ? olga : member));
 }
 
 async function fetchStaticData(key) {
@@ -100,7 +78,7 @@ function renderServices(services) {
       <h3>${s.title}</h3>
       <p class="service-card__lead">${s.description}</p>
       ${s.details ? `<p class="service-card__details">${s.details}</p>` : ''}
-      <ul>${s.features.map((f) => `<li>${f}</li>`).join('')}</ul>
+      <ul>${(s.features || []).map((f) => `<li>${f}</li>`).join('')}</ul>
     </article>
   `).join('');
 }
@@ -169,11 +147,14 @@ function renderProjects(projects) {
 function renderTeam(team) {
   const grid = document.getElementById('team-grid');
   if (!grid) return;
-  const members = patchTeam(team);
-  grid.innerHTML = members.map((m, i) => `
+  if (!team || !Array.isArray(team)) {
+    grid.innerHTML = '';
+    return;
+  }
+  grid.innerHTML = team.map((m, i) => `
     <article class="team-card reveal visible" style="transition-delay:${i * 0.06}s">
       <div class="team-card__image">
-        <img src="${resolveImage(m.image)}" alt="${m.name}" loading="lazy"${m.id === 't2' ? ` onerror="this.onerror=null;this.src='${resolveImage('images/olga-korneva.png')}'"` : ''}>
+        <img src="${resolveImage(m.image)}" alt="${m.name}" loading="lazy" onerror="${teamImageFallback(m.name)}">
       </div>
       <div class="team-card__body">
         <h3>${m.name}</h3>
@@ -185,6 +166,10 @@ function renderTeam(team) {
   `).join('');
 }
 
+function reviewImageFallback(name) {
+  return `this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'review-card__avatar',textContent:'${initials(name)}'}))`;
+}
+
 function renderTestimonials(items) {
   const grid = document.getElementById('reviews-grid');
   if (!items || !grid) return;
@@ -194,7 +179,7 @@ function renderTestimonials(items) {
       <p>${t.text}</p>
       <div class="review-card__author">
         ${t.image
-    ? `<div class="review-card__avatar review-card__avatar--photo"><img src="${resolveImage(t.image)}" alt="${t.name}" loading="lazy"></div>`
+    ? `<div class="review-card__avatar review-card__avatar--photo"><img src="${resolveImage(t.image)}" alt="${t.name}" loading="lazy" onerror="${reviewImageFallback(t.name)}"></div>`
     : `<div class="review-card__avatar">${initials(t.name)}</div>`}
         <div><h4>${t.name}</h4><span>${t.company}</span></div>
       </div>

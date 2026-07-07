@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Partnerio — розробка, тестування ПЗ та ШІ-проєкти. Ваш надійний технологічний партнер.">
+  <meta name="description" content="Partnerio — AI-first IT-компанія. LLM, NLP, Computer Vision, голосові AI та розробка ПЗ.">
   <meta name="theme-color" content="#1648c8">
-  <title>Partnerio | Розробка, тестування ПЗ та ШІ-рішення</title>
+  <title>Partnerio | ШІ-рішення: LLM, NLP, Computer Vision</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -60,24 +60,27 @@
     <section class="hero" id="hero">
       <div class="container hero__wrap">
         <div class="hero__content">
-          <p class="hero__eyebrow" data-i18n="hero.eyebrow">IT-компанія повного циклу · з 2010 року</p>
-          <h1 class="hero__title" data-i18n="hero.title">Інженерія програмного забезпечення та ШІ для бізнесу</h1>
-          <p class="hero__text" data-i18n="hero.text">Partnerio — технологічний партнер для компаній, яким потрібна надійна розробка, системне тестування та впровадження інтелектуальних рішень.</p>
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">AI-first компанія · LLM · NLP · Computer Vision · з 2010 року</p>
+          <h1 class="hero__title" data-i18n="hero.title">Штучний інтелект та інженерія ПЗ для вашого бізнесу</h1>
+          <p class="hero__tagline" data-i18n="hero.tagline">Від discovery і PoC до production ML — з KPI, SLA та підтримкою після запуску</p>
+          <p class="hero__text" data-i18n="hero.text">Partnerio — партнер для компаній, які будують продукти на ШІ: LLM, RAG, NLP, computer vision і голосові рішення.</p>
           <div class="hero__actions">
-            <a href="#contact" class="btn btn--primary" data-i18n="hero.cta1">Запросити консультацію</a>
-            <a href="#projects" class="btn btn--outline" data-i18n="hero.cta2">Переглянути кейси</a>
+            <a href="#contact" class="btn btn--primary" data-i18n="hero.cta1">Обговорити ШІ-проєкт</a>
+            <a href="#projects" class="btn btn--outline" data-i18n="hero.cta2">Переглянути AI-кейси</a>
           </div>
           <ul class="hero__certs">
-            <li data-i18n="hero.cert1">ISO-сумісні процеси</li>
-            <li data-i18n="hero.cert2">Agile / Scrum</li>
-            <li data-i18n="hero.cert3">NDA та SLA</li>
+            <li data-i18n="hero.cert1">LLM · RAG · fine-tuning</li>
+            <li data-i18n="hero.cert2">NLP · Computer Vision</li>
+            <li data-i18n="hero.cert3">Голосові AI · MLOps</li>
           </ul>
         </div>
         <div class="hero__visual">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" data-i18n-alt="hero.imgAlt" alt="Офіс Partnerio">
+          <img class="hero__visual-main" src="images/ai/hero.jpg" data-i18n-alt="hero.imgAlt" alt="ШІ, роботи та високі технології — Partnerio">
+          <img class="hero__visual-accent" src="images/ai/about-ai.jpg" data-i18n-alt="hero.accentAlt" alt="" aria-hidden="true">
+          <span class="hero__visual-badge" data-i18n="hero.visualBadge">AI · Robotics · High Tech</span>
           <div class="hero__stats">
             <div><strong>250+</strong><span data-i18n="hero.stat1">проєктів</span></div>
-            <div><strong>120+</strong><span data-i18n="hero.stat2">експертів</span></div>
+            <div><strong>120+</strong><span data-i18n="hero.stat2">ML/AI-експертів</span></div>
             <div><strong>98%</strong><span data-i18n="hero.stat3">клієнтів</span></div>
           </div>
         </div>
@@ -87,6 +90,7 @@
     <section class="trust-bar">
       <div class="container trust-bar__inner">
         <p class="trust-bar__title" data-i18n="trust.title">Галузі, з якими ми працюємо</p>
+        <p class="trust-bar__subtitle" data-i18n="trust.subtitle">15+ років досвіду в regulated-середовищах — fintech, banking, manufacturing, healthtech і defense</p>
         <div class="trust-bar__logos">
           <span>FinTech</span><span>Retail</span><span>HealthTech</span><span>Logistics</span><span>EdTech</span><span>Manufacturing</span><span>MilTech</span>
         </div>
@@ -96,41 +100,137 @@
     <section class="features-strip">
       <div class="container features-strip__grid">
         <article class="feature-card reveal">
-          <div class="feature-card__icon feature-card__icon--globe" data-icon="globe"></div>
-          <h3 data-i18n="features.f1title">Міжнародний досвід</h3>
-          <p data-i18n="features.f1text">Клієнти з 15 країн. Понад 250 проєктів для компаній з України, ЄС та США.</p>
+          <div class="feature-card__icon feature-card__icon--brain" data-icon="brain"></div>
+          <h3 data-i18n="features.f1title">ШІ в production</h3>
+          <p data-i18n="features.f1text">ML і LLM у production: PoC, fine-tuning, MLOps і моніторинг drift.</p>
         </article>
         <article class="feature-card reveal">
           <div class="feature-card__icon feature-card__icon--layers" data-icon="layers"></div>
-          <h3 data-i18n="features.f2title">Системний підхід</h3>
-          <p data-i18n="features.f2text">Від технічного аудиту до повного циклу розробки, тестування та підтримки.</p>
+          <h3 data-i18n="features.f2title">NLP, CV і голос</h3>
+          <p data-i18n="features.f2text">LLM, RAG, OCR, computer vision, Speech-to-Text і Text-to-Speech.</p>
         </article>
         <article class="feature-card reveal">
           <div class="feature-card__icon feature-card__icon--team" data-icon="team"></div>
-          <h3 data-i18n="features.f3title">Експертна команда</h3>
-          <p data-i18n="features.f3text">120+ розробників, QA-інженерів та ML-спеціалістів у 6 галузях.</p>
+          <h3 data-i18n="features.f3title">AI-команда + delivery</h3>
+          <p data-i18n="features.f3text">35+ ML/NLP/CV-інженерів + backend, QA і DevOps для end-to-end delivery.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="section section--why" id="why">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="why.label">Чому Partnerio</span>
+          <h2 class="section-title" data-i18n="why.title">Партнер, який говорить мовою бізнесу та ШІ</h2>
+          <div class="section-line section-line--center"></div>
+          <p class="text-body text-center text-center--wide" data-i18n="why.subtitle">Ми не продаємо «магію AI» — будуємо рішення з вимірюваним ефектом, прозорим процесом і командою, яка залишається з вами після launch</p>
+        </div>
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <span class="why-card__num">01</span>
+            <h3 data-i18n="why.w1title">Вимірюваний ROI</h3>
+            <p data-i18n="why.w1text">Кожен AI-проєкт стартує з KPI: accuracy, latency, adoption, cost savings. Фіксуємо baseline, відстежуємо метрики після launch і звітуємо про бізнес-ефект — не лише про «точність моделі».</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__num">02</span>
+            <h3 data-i18n="why.w2title">Повний цикл delivery</h3>
+            <p data-i18n="why.w2text">Data science, backend, frontend, QA, DevOps і підтримка — в одній команді. Не потрібно координувати п'ять підрядників: від PoC до production і L2/L3 support під SLA.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__num">03</span>
+            <h3 data-i18n="why.w3title">Безпека та compliance</h3>
+            <p data-i18n="why.w3text">NDA, IP transfer, on-prem і hybrid deployment, audit trails, GDPR/HIPAA-ready процеси. Досвід у fintech, banking, insurance, healthtech і miltech — розуміємо вимоги регуляторів.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__num">04</span>
+            <h3 data-i18n="why.w4title">Прозорість і передбачуваність</h3>
+            <p data-i18n="why.w4text">Weekly demo, доступ до backlog, burn-down і ризики — без «чорної скриньки». PM з досвідом у вашій галузі, англомовна комунікація, зручні години для EU та US клієнтів.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ai-showcase" id="ai-showcase">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="showcase.label">ШІ в дії</span>
+          <h2 class="section-title" data-i18n="showcase.title">Високі технології, які ми впроваджуємо</h2>
+          <div class="section-line section-line--center"></div>
+          <p class="text-body text-center" data-i18n="showcase.subtitle">LLM, computer vision, голосові AI та MLOps — від лабораторії до production</p>
+        </div>
+        <div class="ai-showcase__grid">
+          <article class="ai-showcase__card reveal">
+            <div class="ai-showcase__image">
+              <img src="images/ai/gallery-llm.jpg" data-i18n-alt="showcase.llmAlt" alt="LLM та RAG">
+            </div>
+            <div class="ai-showcase__body">
+              <span class="ai-showcase__tag" data-i18n="showcase.llmTag">LLM · RAG</span>
+              <h3 data-i18n="showcase.llmTitle">Розумні асистенти та чат-боти</h3>
+              <p data-i18n="showcase.llmText">Fine-tuned LLM, RAG на корпоративних даних, безпечна ескалація до людини.</p>
+            </div>
+          </article>
+          <article class="ai-showcase__card reveal">
+            <div class="ai-showcase__image">
+              <img src="images/ai/gallery-cv.jpg" data-i18n-alt="showcase.cvAlt" alt="Computer Vision">
+            </div>
+            <div class="ai-showcase__body">
+              <span class="ai-showcase__tag" data-i18n="showcase.cvTag">Computer Vision</span>
+              <h3 data-i18n="showcase.cvTitle">Комп'ютерний зір на виробництві</h3>
+              <p data-i18n="showcase.cvText">Object detection, OCR, відеоаналітика та edge-inference у реальному часі.</p>
+            </div>
+          </article>
+          <article class="ai-showcase__card reveal">
+            <div class="ai-showcase__image">
+              <img src="images/ai/gallery-voice.jpg" data-i18n-alt="showcase.voiceAlt" alt="Голосові AI">
+            </div>
+            <div class="ai-showcase__body">
+              <span class="ai-showcase__tag" data-i18n="showcase.voiceTag">Voice AI</span>
+              <h3 data-i18n="showcase.voiceTitle">Голосові інтерфейси</h3>
+              <p data-i18n="showcase.voiceText">Speech-to-Text, Text-to-Speech, IVR та call analytics для кол-центрів.</p>
+            </div>
+          </article>
+          <article class="ai-showcase__card reveal">
+            <div class="ai-showcase__image">
+              <img src="images/ai/gallery-mlops.jpg" data-i18n-alt="showcase.mlopsAlt" alt="MLOps">
+            </div>
+            <div class="ai-showcase__body">
+              <span class="ai-showcase__tag" data-i18n="showcase.mlopsTag">MLOps</span>
+              <h3 data-i18n="showcase.mlopsTitle">ML у production</h3>
+              <p data-i18n="showcase.mlopsText">CI/CD для моделей, моніторинг drift, A/B-тести та масштабування inference.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section about" id="about">
       <div class="container about__grid">
         <div class="about__visual reveal">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" data-i18n-alt="about.imgAlt" alt="Команда Partnerio">
+          <div class="about__collage">
+            <img class="about__collage-main" src="images/ai/robot-hero-accent.jpg" data-i18n-alt="about.imgAltMain" alt="Роботизовані технології та виробництво">
+            <img class="about__collage-side about__collage-side--top" src="images/ai/about-main.jpg" data-i18n-alt="about.imgAltAi" alt="Мікросхеми та високі технології">
+            <img class="about__collage-side about__collage-side--bottom" src="images/ai/gallery-llm.jpg" data-i18n-alt="about.imgAltData" alt="Штучний інтелект та LLM">
+          </div>
           <div class="about__badge"><strong>15+</strong><span data-i18n="about.badge">років на ринку</span></div>
         </div>
         <div class="about__content reveal">
           <span class="section-label" data-i18n="about.label">Про нас</span>
-          <h2 class="section-title" data-i18n="about.title">Провідна IT-компанія повного циклу</h2>
+          <h2 class="section-title" data-i18n="about.title">AI-first IT-компанія повного циклу</h2>
           <div class="section-line"></div>
-          <p class="text-lead" data-i18n="about.lead">Ми допомагаємо бізнесу впроваджувати технології з вимірюваним результатом.</p>
-          <p class="text-body" data-i18n="about.body">Partnerio з офісами в Києві та Львові працює з 2010 року. Спеціалізуємося на розробці ПЗ, комплексному тестуванні та створенні ШІ-рішень для корпоративного та середнього бізнесу.</p>
-          <p class="text-body" data-i18n="about.body2">Працюємо за моделями dedicated team, fixed price і T&M — підбираємо формат під ваш бюджет і stage продукту.</p>
+          <p class="text-lead" data-i18n="about.lead">Ми допомагаємо бізнесу впроваджувати технології з вимірюваним результатом: скорочуємо time-to-market, знижуємо operational cost і підвищуємо uptime критичних систем.</p>
+          <p class="text-body" data-i18n="about.body">Partnerio з офісами в Києві та Львові працює з 2010 року. Спеціалізуємося на розробці ПЗ, комплексному тестуванні, DevOps, хмарній інфраструктурі та ШІ-рішеннях для корпоративного та середнього бізнесу.</p>
+          <p class="text-body" data-i18n="about.body2">Працюємо за моделями dedicated team, fixed price і T&M — підбираємо формат під ваш бюджет, stage продукту та внутрішні процеси.</p>
+          <p class="text-body" data-i18n="about.body3">Маємо досвід у fintech, retail, manufacturing, healthtech, logistics і miltech — розуміємо regulated-середовище та вимоги до безпеки даних.</p>
+          <p class="text-body" data-i18n="about.body4">Після запуску не зникаємо — беремо підтримку проектів на себе: L2/L3 support, моніторинг, інциденти та розвиток за SLA.</p>
           <ul class="check-list">
-            <li data-i18n="about.check1">Enterprise та стартап-проєкти</li>
-            <li data-i18n="about.check2">Agile / Scrum методологія</li>
-            <li data-i18n="about.check3">Прозора звітність та SLA</li>
-            <li data-i18n="about.check4">NDA, IP transfer і security-by-design</li>
+            <li data-i18n="about.check1">Enterprise, scale-up і стартап-проєкти — від MVP до core banking</li>
+            <li data-i18n="about.check2">Agile / Scrum: sprint demo, retrospectives, прогнозовані релізи</li>
+            <li data-i18n="about.check3">Прозора звітність, KPI, burn rate і SLA на кожному етапі</li>
+            <li data-i18n="about.check4">NDA, IP transfer, security-by-design і audit-ready документація</li>
+            <li data-i18n="about.check5">Dedicated team — інженери під ваш бренд або embedded у ваш процес</li>
+            <li data-i18n="about.check6">Повний цикл: розробка, QA, DevOps, ML і підтримка в одному партнері</li>
+            <li data-i18n="about.check7">Офіси в Україні, англомовна комунікація, зручні години для EU та US</li>
+            <li data-i18n="about.check8">Підтримка проектів після запуску — SLA, моніторинг, інциденти та розвиток продукту</li>
           </ul>
           <a href="#contact" class="btn btn--primary" data-i18n="about.cta">Зв'язатися з нами</a>
         </div>
@@ -143,13 +243,14 @@
           <span class="section-label" data-i18n="process.label">Процес</span>
           <h2 class="section-title" data-i18n="process.title">Як ми працюємо</h2>
           <div class="section-line section-line--center"></div>
-          <p class="text-body text-center" data-i18n="process.subtitle">Структурований підхід від аналізу до production</p>
+          <p class="text-body text-center" data-i18n="process.subtitle">Структурований підхід від discovery до production і довгострокової підтримки проектів</p>
         </div>
         <div class="process-row">
           <div class="process-item reveal"><span class="process-item__num">01</span><h3 data-i18n="process.s1title">Аналіз</h3><p data-i18n="process.s1text">Дослідження цілей, аудит та формування roadmap.</p></div>
           <div class="process-item reveal"><span class="process-item__num">02</span><h3 data-i18n="process.s2title">Розробка</h3><p data-i18n="process.s2text">Ітеративна реалізація з регулярними демо.</p></div>
           <div class="process-item reveal"><span class="process-item__num">03</span><h3 data-i18n="process.s3title">Тестування</h3><p data-i18n="process.s3text">QA, автотести та контроль якості на кожному етапі.</p></div>
-          <div class="process-item reveal"><span class="process-item__num">04</span><h3 data-i18n="process.s4title">Запуск</h3><p data-i18n="process.s4text">Деплой, документація та технічна підтримка.</p></div>
+          <div class="process-item reveal"><span class="process-item__num">04</span><h3 data-i18n="process.s4title">Запуск</h3><p data-i18n="process.s4text">Деплой, документація та handoff на support-групу.</p></div>
+          <div class="process-item reveal"><span class="process-item__num">05</span><h3 data-i18n="process.s5title">Підтримка проектів</h3><p data-i18n="process.s5text">Моніторинг, інциденти, SLA та розвиток після launch.</p></div>
         </div>
       </div>
     </section>
@@ -175,9 +276,8 @@
         <div class="section-head reveal">
           <span class="section-label" data-i18n="projects.label">Портфоліо</span>
           <h2 class="section-title" data-i18n="projects.title">Реалізовані проєкти</h2>
-          <div class="section-divider"></div>
-          <p class="text-body text-center" data-i18n="projects.subtitle">Реальні кейси з метриками</p>
           <div class="section-line section-line--center"></div>
+          <p class="text-body text-center" data-i18n="projects.subtitle">AI-кейси з метриками: LLM, RAG, computer vision, голос, MilTech, HealthTech, retail ML і DevOps</p>
         </div>
         <div class="projects-grid" id="projects-grid"></div>
       </div>
@@ -188,12 +288,52 @@
         <div class="section-head reveal">
           <span class="section-label" data-i18n="tech.label">Технології</span>
           <h2 class="section-title" data-i18n="tech.title">Технологічний стек</h2>
-          <div class="section-divider"></div>
-          <p class="text-body text-center" data-i18n="tech.subtitle">Сучасний стек для high-load і regulated-продуктів</p>
           <div class="section-line section-line--center"></div>
+          <p class="text-body text-center" data-i18n="tech.subtitle">Production-ready стек ШІ: LLM, RAG, computer vision, голос, agents, MLOps та векторні бази даних</p>
         </div>
-        <div class="tech-grid reveal">
-          <span>Python</span><span>React</span><span>TypeScript</span><span>Node.js</span><span>FastAPI</span><span>Docker</span><span>Kubernetes</span><span>TensorFlow</span><span>PyTorch</span><span>PostgreSQL</span><span>Playwright</span><span>AWS</span><span>Azure</span><span>Selenium</span><span>GraphQL</span><span>OpenAI</span>
+        <div class="tech-stacks reveal">
+          <div class="tech-group tech-group--ai">
+            <h3 class="tech-group__title" data-i18n="tech.groupAI">ШІ та машинне навчання</h3>
+            <div class="tech-grid">
+              <span>TensorFlow</span><span>PyTorch</span><span>JAX</span><span>Keras</span><span>scikit-learn</span><span>XGBoost</span><span>LightGBM</span><span>CatBoost</span><span>Ray</span><span>Polars</span><span>Pandas</span><span>MLflow</span><span>Kubeflow</span><span>DVC</span><span>Weights &amp; Biases</span><span>Neptune</span><span>Evidently AI</span><span>ONNX</span><span>TensorRT</span><span>Triton Inference</span><span>CUDA</span><span>ROCm</span><span>MLOps</span>
+            </div>
+          </div>
+          <div class="tech-group tech-group--ai">
+            <h3 class="tech-group__title" data-i18n="tech.groupNLP">NLP та LLM</h3>
+            <div class="tech-grid">
+              <span>OpenAI</span><span>GPT-4</span><span>Claude</span><span>Gemini</span><span>Mistral</span><span>Llama 3</span><span>Azure OpenAI</span><span>AWS Bedrock</span><span>Hugging Face</span><span>Transformers</span><span>LangChain</span><span>LangGraph</span><span>LlamaIndex</span><span>Semantic Kernel</span><span>spaCy</span><span>NLTK</span><span>Sentence Transformers</span><span>BERT</span><span>Fine-tuning</span><span>LoRA</span><span>QLoRA</span><span>Embeddings</span><span>Prompt Engineering</span><span>Function Calling</span>
+            </div>
+          </div>
+          <div class="tech-group tech-group--ai">
+            <h3 class="tech-group__title" data-i18n="tech.groupRAG">RAG та векторні БД</h3>
+            <div class="tech-grid">
+              <span>RAG</span><span>Qdrant</span><span>Pinecone</span><span>Weaviate</span><span>Chroma</span><span>Milvus</span><span>FAISS</span><span>pgvector</span><span>Elasticsearch</span><span>Redis Vector</span><span>Document AI</span><span>Chunking</span><span>Hybrid Search</span><span>Re-ranking</span><span>Knowledge Graph</span><span>Cohere Embed</span>
+            </div>
+          </div>
+          <div class="tech-group tech-group--ai">
+            <h3 class="tech-group__title" data-i18n="tech.groupCV">Computer Vision</h3>
+            <div class="tech-grid">
+              <span>OpenCV</span><span>YOLO</span><span>YOLOv8</span><span>Ultralytics</span><span>Detectron2</span><span>MediaPipe</span><span>SAM</span><span>CLIP</span><span>OCR</span><span>Tesseract</span><span>PaddleOCR</span><span>EasyOCR</span><span>Segmentation</span><span>Object Detection</span><span>Pose Estimation</span><span>Video Analytics</span><span>Edge AI</span><span>NVIDIA DeepStream</span><span>ONNX Runtime</span>
+            </div>
+          </div>
+          <div class="tech-group tech-group--ai">
+            <h3 class="tech-group__title" data-i18n="tech.groupVoice">Голосові технології</h3>
+            <div class="tech-grid">
+              <span>Whisper</span><span>Speech-to-Text</span><span>Text-to-Speech</span><span>Azure Speech</span><span>Google Speech</span><span>Amazon Polly</span><span>ElevenLabs</span><span>Deepgram</span><span>Coqui TTS</span><span>Voice AI</span><span>ASR</span><span>TTS</span><span>IVR</span><span>Call Analytics</span><span>Real-time STT</span><span>Voice Cloning</span>
+            </div>
+          </div>
+          <div class="tech-group tech-group--ai">
+            <h3 class="tech-group__title" data-i18n="tech.groupAgents">AI Agents та автоматизація</h3>
+            <div class="tech-grid">
+              <span>LangGraph</span><span>CrewAI</span><span>AutoGen</span><span>AI Agents</span><span>Tool Use</span><span>Multi-agent</span><span>Workflow Automation</span><span>n8n</span><span>MCP</span><span>Guardrails AI</span><span>Moderation API</span><span>Agent Orchestration</span><span>Human-in-the-loop</span>
+            </div>
+          </div>
+          <div class="tech-group">
+            <h3 class="tech-group__title" data-i18n="tech.groupDev">Розробка та інфраструктура</h3>
+            <div class="tech-grid">
+              <span>Python</span><span>React</span><span>TypeScript</span><span>Node.js</span><span>FastAPI</span><span>GraphQL</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>Kubernetes</span><span>AWS</span><span>Azure</span><span>GCP</span><span>Terraform</span><span>Playwright</span><span>Selenium</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -203,9 +343,8 @@
         <div class="section-head reveal">
           <span class="section-label" data-i18n="team.label">Команда</span>
           <h2 class="section-title" data-i18n="team.title">Ключові експерти</h2>
-          <div class="section-divider"></div>
-          <p class="text-body text-center" data-i18n="team.subtitle">Керівництво з 12–20 роками досвіду</p>
           <div class="section-line section-line--center"></div>
+          <p class="text-body text-center" data-i18n="team.subtitle">Керівництво з 12–20 роками досвіду</p>
         </div>
         <div class="team-grid" id="team-grid"></div>
       </div>
@@ -216,9 +355,8 @@
         <div class="section-head reveal">
           <span class="section-label" data-i18n="reviews.label">Відгуки</span>
           <h2 class="section-title" data-i18n="reviews.title">Рекомендації клієнтів</h2>
-          <div class="section-divider"></div>
-          <p class="text-body text-center" data-i18n="reviews.subtitle">Відгуки product owner і CTO</p>
           <div class="section-line section-line--center"></div>
+          <p class="text-body text-center" data-i18n="reviews.subtitle">Відгуки product owner і CTO</p>
         </div>
         <div class="reviews-grid" id="reviews-grid"></div>
       </div>
@@ -229,6 +367,11 @@
         <div>
           <h2 data-i18n="cta.title">Обговоримо ваш проєкт?</h2>
           <p data-i18n="cta.text">Підготуємо комерційну пропозицію протягом 1–2 робочих днів.</p>
+          <div class="cta-band__list">
+            <span data-i18n="cta.b1">Безкоштовний discovery call</span>
+            <span data-i18n="cta.b2">Оцінка data readiness</span>
+            <span data-i18n="cta.b3">Пропозиція з командою та термінами</span>
+          </div>
         </div>
         <a href="#contact" class="btn btn--white" data-i18n="cta.btn">Зв'язатися</a>
       </div>
@@ -307,7 +450,7 @@
           <p data-i18n="footer.tagline">Розробка, тестування ПЗ та ШІ-рішення для бізнесу.</p>
         </div>
         <div class="footer__nav"><h4 data-i18n="footer.company">Компанія</h4><ul><li><a href="#about" data-i18n="nav.about">Про нас</a></li><li><a href="#services" data-i18n="nav.services">Послуги</a></li><li><a href="#projects" data-i18n="nav.projects">Проєкти</a></li><li><a href="#contact" data-i18n="contact.label">Контакти</a></li></ul></div>
-        <div class="footer__nav"><h4 data-i18n="footer.services">Послуги</h4><ul><li><a href="#services" data-i18n="footer.dev">Розробка</a></li><li><a href="#services" data-i18n="footer.testing">Тестування</a></li><li><a href="#services" data-i18n="footer.ai">ШІ-проєкти</a></li><li><a href="#services">DevOps</a></li></ul></div>
+        <div class="footer__nav"><h4 data-i18n="footer.services">Послуги</h4><ul><li><a href="#services" data-i18n="footer.dev">Розробка</a></li><li><a href="#services" data-i18n="footer.testing">Тестування</a></li><li><a href="#services" data-i18n="footer.ai">ШІ-проєкти</a></li><li><a href="#services" data-i18n="contact.serviceDevops">DevOps</a></li></ul></div>
         <div class="footer__contact">
           <h4 data-i18n="footer.contacts">Контакти</h4>
           <a href="mailto:olyakorneva09@gmail.com">olyakorneva09@gmail.com</a>

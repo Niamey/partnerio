@@ -97,7 +97,6 @@ class PartnerioHandler(BaseHTTPRequestHandler):
             "/api/team": get_content(lang, "team"),
             "/api/testimonials": get_content(lang, "testimonials"),
             "/api/stats": get_content(lang, "stats"),
-            "/api/faq": get_content(lang, "faq"),
             "/health": {"status": "ok", "app": "Partnerio"},
         }
 

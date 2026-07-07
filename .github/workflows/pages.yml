@@ -28,7 +28,9 @@ jobs:
           test -f docs/index.html
           test -f docs/css/style.css
           test -f docs/js/main.js
-          test -f docs/images/olga-korneva.png
+          test -f docs/images/olga-kornieva.png
+          test -f docs/images/anton-fil.png
+          test -f docs/images/reviews/ihor-petrenko.jpg
 
       - uses: actions/configure-pages@v5
 

@@ -157,7 +157,7 @@ CONTENT: dict[str, dict] = {
                 "role": "СТО",
                 "experience": "17 років досвіду",
                 "bio": "Технічний директор Partnerio. Відповідає за технологічну стратегію, вибір стеку, архітектуру платформ і впровадження AI/ML у продукти клієнтів. Має досвід побудови R&D-процесів, масштабування команд 50+ інженерів і міграцій monolith → microservices.",
-                "image": "images/olga-korneva.png",
+                "image": "images/olga-kornieva.png",
             },
             {
                 "id": "t3",
@@ -183,7 +183,7 @@ CONTENT: dict[str, dict] = {
                 "company": "FinTech Ukraine",
                 "text": "Partnerio допомогла нам запустити ШІ-асистента за 3 місяці. Команда професійна, комунікація на найвищому рівні. Рекомендую!",
                 "date": "Жовтень 2025",
-                "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80",
+                "image": "images/reviews/ihor-petrenko.jpg",
             },
             {
                 "id": "r2",
@@ -191,7 +191,7 @@ CONTENT: dict[str, dict] = {
                 "company": "Retail Group",
                 "text": "Завдяки автотестам від Partnerio ми скоротили кількість багів у продакшені на 80%. QA-команда — справжні професіонали.",
                 "date": "Травень 2025",
-                "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+                "image": "images/reviews/olena-sydorenko.jpg",
             },
             {
                 "id": "r3",
@@ -199,7 +199,7 @@ CONTENT: dict[str, dict] = {
                 "company": "NovaBank",
                 "text": "Розробили складну банківську систему вчасно та в бюджеті. Архітектура масштабується, документація — на висоті.",
                 "date": "Червень 2025",
-                "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+                "image": "images/reviews/viktor-lysenko.jpg",
             },
         ],
         "stats": [
@@ -352,11 +352,11 @@ CONTENT: dict[str, dict] = {
             },
             {
                 "id": "t2",
-                "name": "Olga Korneva",
+                "name": "Olga Kornieva",
                 "role": "CTO",
                 "experience": "17 years of experience",
                 "bio": "Chief Technology Officer at Partnerio. Owns technology strategy, stack selection, platform architecture, and AI/ML adoption in client products. Experienced in building R&D processes and scaling 50+ engineer teams.",
-                "image": "images/olga-korneva.png",
+                "image": "images/olga-kornieva.png",
             },
             {
                 "id": "t3",
@@ -382,7 +382,7 @@ CONTENT: dict[str, dict] = {
                 "company": "FinTech Ukraine",
                 "text": "Partnerio helped us launch an AI assistant in 3 months. Professional team, excellent communication. Highly recommended!",
                 "date": "October 2025",
-                "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80",
+                "image": "images/reviews/ihor-petrenko.jpg",
             },
             {
                 "id": "r2",
@@ -390,7 +390,7 @@ CONTENT: dict[str, dict] = {
                 "company": "Retail Group",
                 "text": "Thanks to Partnerio's test automation, we reduced production bugs by 80%. The QA team are true professionals.",
                 "date": "May 2025",
-                "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+                "image": "images/reviews/olena-sydorenko.jpg",
             },
             {
                 "id": "r3",
@@ -398,7 +398,7 @@ CONTENT: dict[str, dict] = {
                 "company": "NovaBank",
                 "text": "They delivered a complex banking system on time and on budget. Scalable architecture and excellent documentation.",
                 "date": "June 2025",
-                "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+                "image": "images/reviews/viktor-lysenko.jpg",
             },
         ],
         "stats": [
@@ -438,8 +438,15 @@ def get_content(lang: str | None, key: str):
     bundle = _json_bundle(lang)
     if key in bundle:
         return bundle[key]
-    return CONTENT[lang][key]
+    content = CONTENT.get(lang, {})
+    if key in content:
+        return content[key]
+    return []
 
 
 def get_message(lang: str | None, key: str) -> str:
-    return get_content(lang, "messages")[key]
+    messages = get_content(lang, "messages")
+    if isinstance(messages, dict) and key in messages:
+        return messages[key]
+    fallback = CONTENT.get(normalize_lang(lang), {}).get("messages", {})
+    return fallback.get(key, "")
