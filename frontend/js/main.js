@@ -200,7 +200,7 @@ function renderProjectCards(projects, resultsLabel) {
         ${p.details ? `<p class="project-card__details">${escapeHtml(p.details)}</p>` : ''}
         ${p.stack?.length ? `<div class="project-card__stack">${p.stack.map((t) => `<span>${escapeHtml(t)}</span>`).join('')}</div>` : ''}
         ${p.results?.length ? `<div class="project-card__results"><strong>${escapeHtml(resultsLabel)}</strong><ul>${p.results.map((r) => `<li>${escapeHtml(r)}</li>`).join('')}</ul></div>` : ''}
-        <div class="project-card__meta"><span>${escapeHtml(p.date)}</span></div>
+        ${p.date ? `<div class="project-card__meta"><span>${escapeHtml(p.date)}</span></div>` : ''}
       </div>
     </article>
   `).join('');
