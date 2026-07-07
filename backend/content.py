@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 SUPPORTED_LANGS = ("uk", "en")
@@ -192,14 +193,6 @@ CONTENT: dict[str, dict] = {
                 "text": "Завдяки автотестам від Partnerio ми скоротили кількість багів у продакшені на 80%. QA-команда — справжні професіонали.",
                 "date": "Травень 2025",
                 "image": "images/reviews/olena-sydorenko.jpg",
-            },
-            {
-                "id": "r3",
-                "name": "Віктор Лисенко",
-                "company": "NovaBank",
-                "text": "Розробили складну банківську систему вчасно та в бюджеті. Архітектура масштабується, документація — на висоті.",
-                "date": "Червень 2025",
-                "image": "images/reviews/viktor-lysenko.jpg",
             },
         ],
         "stats": [
@@ -392,14 +385,6 @@ CONTENT: dict[str, dict] = {
                 "date": "May 2025",
                 "image": "images/reviews/olena-sydorenko.jpg",
             },
-            {
-                "id": "r3",
-                "name": "Viktor Lysenko",
-                "company": "NovaBank",
-                "text": "They delivered a complex banking system on time and on budget. Scalable architecture and excellent documentation.",
-                "date": "June 2025",
-                "image": "images/reviews/viktor-lysenko.jpg",
-            },
         ],
         "stats": [
             {"value": "50+", "label": "Specialists", "description": "Developers, QA engineers, and ML experts on our team."},
@@ -437,11 +422,29 @@ def get_content(lang: str | None, key: str):
     lang = normalize_lang(lang)
     bundle = _json_bundle(lang)
     if key in bundle:
-        return bundle[key]
-    content = CONTENT.get(lang, {})
-    if key in content:
-        return content[key]
-    return []
+        data = bundle[key]
+    else:
+        content = CONTENT.get(lang, {})
+        data = content.get(key, [])
+    if key == "projects" and isinstance(data, list):
+        hidden_ids = {"p10"}
+        hidden_re = re.compile(
+            r"міграція fintech|paystream|payment-платформи в aws eks|kubernetes.*eks",
+            re.I,
+        )
+        filtered = []
+        for project in data:
+            if project.get("id") in hidden_ids:
+                continue
+            hay = " ".join(
+                str(project.get(field, ""))
+                for field in ("title", "description", "details")
+            )
+            if hidden_re.search(hay):
+                continue
+            filtered.append(project)
+        return filtered
+    return data
 
 
 def get_message(lang: str | None, key: str) -> str:

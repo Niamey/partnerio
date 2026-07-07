@@ -129,7 +129,7 @@
       ],
       "client": "FinTech Ukraine",
       "date": "2025",
-      "image": "images/ai/gallery-llm.jpg"
+      "image": "images/projects/p1.jpg"
     },
     {
       "id": "p2",
@@ -154,7 +154,7 @@
       ],
       "client": "Retail Group",
       "date": "2024",
-      "image": "images/ai/about-data.jpg"
+      "image": "images/projects/p2.jpg"
     },
     {
       "id": "p3",
@@ -179,7 +179,7 @@
       ],
       "client": "NovaBank",
       "date": "2024",
-      "image": "images/ai/gallery-mlops.jpg"
+      "image": "images/projects/p3.jpg"
     },
     {
       "id": "p4",
@@ -204,7 +204,7 @@
       ],
       "client": "IndustrialTech",
       "date": "2025",
-      "image": "images/ai/gallery-cv.jpg"
+      "image": "images/projects/p4.jpg"
     },
     {
       "id": "p5",
@@ -229,7 +229,7 @@
       ],
       "client": "LogiTrans EU",
       "date": "2025",
-      "image": "images/ai/gallery-voice.jpg"
+      "image": "images/projects/p5.jpg"
     },
     {
       "id": "p6",
@@ -254,7 +254,7 @@
       ],
       "client": "SecureInsurance",
       "date": "2024",
-      "image": "images/ai/about-ai.jpg"
+      "image": "images/projects/p6.jpg"
     },
     {
       "id": "p7",
@@ -279,7 +279,7 @@
       ],
       "client": "GeoInsight EU",
       "date": "2025",
-      "image": "images/ai/about-main.jpg"
+      "image": "images/projects/p7.jpg"
     },
     {
       "id": "p8",
@@ -304,7 +304,7 @@
       ],
       "client": "MediCore",
       "date": "2024",
-      "image": "images/projects/p5.png"
+      "image": "images/projects/p8.jpg"
     },
     {
       "id": "p9",
@@ -329,7 +329,7 @@
       ],
       "client": "FreshMarket",
       "date": "2024",
-      "image": "images/ai/about-data.jpg"
+      "image": "images/projects/p9.jpg"
     },
     {
       "id": "p11",
@@ -354,7 +354,7 @@
       ],
       "client": "EduSmart",
       "date": "2025",
-      "image": "images/projects/p6.png"
+      "image": "images/projects/p11.jpg"
     },
     {
       "id": "p12",
@@ -379,7 +379,7 @@
       ],
       "client": "ClearPay",
       "date": "2025",
-      "image": "images/ai/hero.jpg"
+      "image": "images/projects/p12.jpg"
     },
     {
       "id": "p13",
@@ -404,7 +404,7 @@
       ],
       "client": "LegalTech Pro",
       "date": "2025",
-      "image": "images/ai/gallery-llm.jpg"
+      "image": "images/projects/p13.jpg"
     }
   ],
   "team": [
@@ -430,7 +430,7 @@
       "role": "CFO",
       "experience": "14 років досвіду",
       "bio": "Фінансовий директор Partnerio. Керує фінансовим плануванням, бюджетуванням проєктів, управлінським обліком і оптимізацією витрат IT-компанії. Досвід роботи з міжнародними контрактами (EU, US), валютними ризиками та фінансовою звітністю для enterprise-клієнтів. Забезпечує прозорість T&M, fixed price і dedicated team моделей — щомісячні burn reports без сюрпризів. Допомагає клієнтам будувати ROI-моделі для AI-проєктів і порівнювати cost of build vs buy.",
-      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+      "image": "images/team/sergiy-mazur.jpg"
     },
     {
       "id": "t4",
@@ -438,7 +438,7 @@
       "role": "COO",
       "experience": "12 років досвіду",
       "bio": "Операційний директор Partnerio. Відповідає за delivery-процеси, scaling команд, якість сервісу та виконання SLA. Впровадила Agile/Scrum практики, KPI для PM і систему регулярної звітності для клієнтів — weekly status, risk register, capacity planning. Досвід управління portfolio з 15+ паралельних enterprise-проєктів і onboarding нових клієнтів за 2 тижні. Забезпечує передбачуваність термінів, прозорість для stakeholders і smooth handoff між discovery, delivery і support.",
-      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+      "image": "images/team/kateryna-levchenko.jpg"
     }
   ],
   "testimonials": [
@@ -459,20 +459,12 @@
       "image": "images/reviews/olena-sydorenko.jpg"
     },
     {
-      "id": "r3",
-      "name": "Віктор Лисенко",
-      "company": "NovaBank",
-      "text": "Core banking — не проєкт, де можна експериментувати з термінами. Partnerio зібрали команду, яка розуміє regulated-середовище: audit trails, compliance-звіти, документація для регулятора. Регресія скоротилась з 5 днів до 4 годин — це змінило наш release cadence з monthly на bi-weekly. Архітектура масштабується, технічна документація дозволила внутрішній команді швидко підхопити L2 support. Працюємо з Partnerio вже третій рік — розширили scope на DevOps і новий fraud ML модуль.",
-      "date": "Червень 2025",
-      "image": "images/reviews/viktor-lysenko.jpg"
-    },
-    {
       "id": "r4",
       "name": "Марина Коваленко",
       "company": "SecureInsurance",
       "text": "RAG для insurance — складний кейс: 120 000+ документів, role-based доступ, обов'язкові цитати для юристів. Partnerio зробили PoC за 6 тижнів, потім production з audit log і export цитат у Word. Час пошуку відповіді скоротився з 40 хв до 3 хв. Особливо цінуємо обережність з даними — on-prem embeddings, NDA, IP transfer. Команда говорить мовою compliance, а не лише ML metrics.",
       "date": "Листопад 2025",
-      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"
+      "image": "images/reviews/marina-kovalenko.jpg"
     }
   ],
   "stats": [

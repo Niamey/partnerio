@@ -416,7 +416,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .hero__visual-main {
   width: 100%;
   height: 440px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
 }
 .hero__visual-accent {
   position: absolute;
@@ -424,7 +425,9 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   left: -36px;
   width: 152px;
   height: 152px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
+  background: rgba(15, 23, 42, 0.85);
   border-radius: var(--radius-lg);
   border: 4px solid var(--white);
   box-shadow:
@@ -570,14 +573,19 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 .feature-card__media {
   position: relative;
-  height: 168px;
+  height: 200px;
   overflow: hidden;
   flex-shrink: 0;
+  background: linear-gradient(180deg, #f0f4ff 0%, #e8eef8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .feature-card__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
   transition: transform .55s var(--ease);
 }
 .feature-card--media:hover .feature-card__media img { transform: scale(1.07); }
@@ -758,7 +766,9 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .about__photo img {
   width: 100%;
   height: 420px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
+  background: #0f172a;
   border-radius: calc(var(--radius-xl) - 3px);
   display: block;
 }
@@ -863,12 +873,17 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .ai-showcase__image {
   position: relative;
   overflow: hidden;
-  height: 200px;
+  height: 220px;
+  background: linear-gradient(180deg, #f0f4ff 0%, #e8eef8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .ai-showcase__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
   transition: transform .5s var(--ease);
 }
 .ai-showcase__card:hover .ai-showcase__image img { transform: scale(1.08); }
@@ -1197,16 +1212,21 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 .project-card__image {
   position: relative;
-  height: 220px;
+  height: 260px;
   overflow: hidden;
+  background: linear-gradient(180deg, #f0f4ff 0%, #e8eef8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project-card__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
   transition: transform .4s var(--ease);
 }
-.project-card:hover .project-card__image img { transform: scale(1.05); }
+.project-card:hover .project-card__image img { transform: scale(1.03); }
 .project-card__category {
   position: absolute;
   top: 16px;
@@ -1323,8 +1343,20 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   box-shadow: 0 20px 44px rgba(22, 72, 200, 0.1);
   transform: translateY(-5px);
 }
-.team-card__image { height: 280px; overflow: hidden; }
-.team-card__image img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.team-card__image {
+  height: 320px;
+  overflow: hidden;
+  background: #f8faff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
 .team-card__initials {
   width: 100%;
   height: 100%;
@@ -1785,9 +1817,10 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   .hero__visual-badge { top: 12px; right: 12px; font-size: 0.62rem; padding: 6px 10px; }
   .hero__visual img,
   .hero__visual-main {
-    height: 220px;
+    height: 280px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center center;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   }
   .hero__stats {
@@ -1809,18 +1842,18 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   .process-row { grid-template-columns: 1fr; }
   .section { padding: 56px 0; }
   .section-head { margin-bottom: 32px; }
-  .about__photo img { height: 280px; }
+  .about__photo img { height: 320px; }
   .about__highlights { grid-template-columns: 1fr; }
   .check-list--grid { grid-template-columns: 1fr; }
   .about__grid { gap: 32px; }
-  .project-card__image { height: 200px; }
+  .project-card__image { height: 240px; }
   .project-card__body { padding: 20px; }
   .project-card__meta {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
   }
-  .team-card__image { height: 260px; }
+  .team-card__image { height: 300px; }
   .review-card { padding: 24px 20px; }
   .cta-band { padding: 0 0 56px; }
   .cta-band__inner {

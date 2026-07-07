@@ -416,7 +416,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .hero__visual-main {
   width: 100%;
   height: 440px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
 }
 .hero__visual-accent {
   position: absolute;
@@ -424,7 +425,9 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   left: -36px;
   width: 152px;
   height: 152px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
+  background: rgba(15, 23, 42, 0.85);
   border-radius: var(--radius-lg);
   border: 4px solid var(--white);
   box-shadow:
@@ -570,14 +573,19 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 .feature-card__media {
   position: relative;
-  height: 168px;
+  height: 200px;
   overflow: hidden;
   flex-shrink: 0;
+  background: linear-gradient(180deg, #f0f4ff 0%, #e8eef8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .feature-card__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
   transition: transform .55s var(--ease);
 }
 .feature-card--media:hover .feature-card__media img { transform: scale(1.07); }
@@ -758,7 +766,9 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .about__photo img {
   width: 100%;
   height: 420px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
+  background: #0f172a;
   border-radius: calc(var(--radius-xl) - 3px);
   display: block;
 }

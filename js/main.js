@@ -60,7 +60,7 @@ function resolveImage(url) {
   if (url.startsWith('http://') || url.startsWith('https://')) return url;
   const resolved = new URL(url.replace(/^\//, ''), window.location.href).href;
   if (/images\/(anton-fil|olga-kornieva|olga-korneva)\.png$/i.test(url)) {
-    return `${resolved}${resolved.includes('?') ? '&' : '?'}v=20250707t`;
+    return `${resolved}${resolved.includes('?') ? '&' : '?'}v=20250707x`;
   }
   return resolved;
 }
@@ -68,6 +68,20 @@ function resolveImage(url) {
 function isAiProject(project) {
   const hay = `${project.category} ${project.title}`.toLowerCase();
   return /ш\u0456|шi|\bai\b|ml|nlp|rag|cv|vision|voice|agent|llm|fraud|deep learning|computer vision|голос|forecast|прогноз|nlp|ocr|chatbot|асистент|recommendation|рекомендац/i.test(hay);
+}
+
+const HIDDEN_PROJECT_IDS = new Set(['p10']);
+const HIDDEN_PROJECT_RE = /міграція fintech|paystream|payment-платформи в aws eks|kubernetes.*eks/i;
+
+function isVisibleProject(project) {
+  if (!project) return false;
+  if (HIDDEN_PROJECT_IDS.has(project.id)) return false;
+  const hay = `${project.title || ''} ${project.description || ''} ${project.details || ''}`.toLowerCase();
+  return !HIDDEN_PROJECT_RE.test(hay);
+}
+
+function filterProjects(projects) {
+  return (projects || []).filter(isVisibleProject);
 }
 
 async function fetchStaticData(key) {
@@ -175,11 +189,10 @@ function renderProjectCards(projects, resultsLabel) {
   return projects.map((p, i) => `
     <article class="project-card reveal visible" style="transition-delay:${i * 0.08}s">
       <div class="project-card__image">
-        <img src="${resolveImage(p.image)}" alt="${escapeHtml(p.title)}" loading="lazy">
+        <img src="${resolveImage(p.image)}" alt="${escapeHtml(p.category)}" loading="lazy">
         <span class="project-card__category">${escapeHtml(p.category)}</span>
       </div>
       <div class="project-card__body">
-        <h3>${escapeHtml(p.title)}</h3>
         <p class="project-card__lead">${escapeHtml(p.description)}</p>
         ${p.details ? `<p class="project-card__details">${escapeHtml(p.details)}</p>` : ''}
         ${p.stack?.length ? `<div class="project-card__stack">${p.stack.map((t) => `<span>${escapeHtml(t)}</span>`).join('')}</div>` : ''}
@@ -196,7 +209,7 @@ function renderProjects(projects) {
   const otherTitle = document.querySelector('[data-i18n="projects.otherTitle"]');
   if (!projects || (!aiGrid && !grid)) return;
 
-  const visible = projects.filter((p) => p.id !== 'p10');
+  const visible = filterProjects(projects);
   const resultsLabel = i18n.t('projects.results');
   const aiProjects = visible.filter(isAiProject);
   const otherProjects = visible.filter((p) => !isAiProject(p));

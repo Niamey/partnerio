@@ -129,7 +129,7 @@
       ],
       "client": "FinTech Ukraine",
       "date": "2025",
-      "image": "images/ai/gallery-llm.jpg"
+      "image": "images/projects/p1.jpg"
     },
     {
       "id": "p2",
@@ -154,7 +154,7 @@
       ],
       "client": "Retail Group",
       "date": "2024",
-      "image": "images/ai/about-data.jpg"
+      "image": "images/projects/p2.jpg"
     },
     {
       "id": "p3",
@@ -179,7 +179,7 @@
       ],
       "client": "NovaBank",
       "date": "2024",
-      "image": "images/ai/gallery-mlops.jpg"
+      "image": "images/projects/p3.jpg"
     },
     {
       "id": "p4",
@@ -204,7 +204,7 @@
       ],
       "client": "IndustrialTech",
       "date": "2025",
-      "image": "images/ai/gallery-cv.jpg"
+      "image": "images/projects/p4.jpg"
     },
     {
       "id": "p5",
@@ -229,7 +229,7 @@
       ],
       "client": "LogiTrans EU",
       "date": "2025",
-      "image": "images/ai/gallery-voice.jpg"
+      "image": "images/projects/p5.jpg"
     },
     {
       "id": "p6",
@@ -254,7 +254,7 @@
       ],
       "client": "SecureInsurance",
       "date": "2024",
-      "image": "images/ai/about-ai.jpg"
+      "image": "images/projects/p6.jpg"
     },
     {
       "id": "p7",
@@ -279,7 +279,7 @@
       ],
       "client": "GeoInsight EU",
       "date": "2025",
-      "image": "images/ai/about-main.jpg"
+      "image": "images/projects/p7.jpg"
     },
     {
       "id": "p8",
@@ -304,7 +304,7 @@
       ],
       "client": "MediCore",
       "date": "2024",
-      "image": "images/projects/p5.png"
+      "image": "images/projects/p8.jpg"
     },
     {
       "id": "p9",
@@ -329,7 +329,7 @@
       ],
       "client": "FreshMarket",
       "date": "2024",
-      "image": "images/ai/about-data.jpg"
+      "image": "images/projects/p9.jpg"
     },
     {
       "id": "p11",
@@ -354,7 +354,7 @@
       ],
       "client": "EduSmart",
       "date": "2025",
-      "image": "images/projects/p6.png"
+      "image": "images/projects/p11.jpg"
     },
     {
       "id": "p12",
@@ -379,7 +379,7 @@
       ],
       "client": "ClearPay",
       "date": "2025",
-      "image": "images/ai/hero.jpg"
+      "image": "images/projects/p12.jpg"
     },
     {
       "id": "p13",
@@ -404,7 +404,7 @@
       ],
       "client": "LegalTech Pro",
       "date": "2025",
-      "image": "images/ai/gallery-llm.jpg"
+      "image": "images/projects/p13.jpg"
     }
   ],
   "team": [
@@ -430,7 +430,7 @@
       "role": "CFO",
       "experience": "14 years of experience",
       "bio": "CFO of Partnerio. Manages financial planning, project budgeting, management accounting, and IT cost optimization. Experience with international contracts (EU, US), currency risk, and enterprise financial reporting. Ensures transparency for T&M, fixed price, and dedicated team models — monthly burn reports with no surprises. Helps clients build ROI models for AI projects and compare build vs buy costs.",
-      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+      "image": "images/team/sergiy-mazur.jpg"
     },
     {
       "id": "t4",
@@ -438,7 +438,7 @@
       "role": "COO",
       "experience": "12 years of experience",
       "bio": "COO of Partnerio. Owns delivery processes, team scaling, service quality, and SLA execution. Implemented Agile/Scrum, PM KPIs, and regular client reporting — weekly status, risk register, capacity planning. Managed portfolios of 15+ parallel enterprise projects and onboarded new clients within 2 weeks. Ensures predictable timelines, stakeholder transparency, and smooth handoff between discovery, delivery, and support.",
-      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+      "image": "images/team/kateryna-levchenko.jpg"
     }
   ],
   "testimonials": [
@@ -457,14 +457,6 @@
       "text": "After launching Partnerio's e-commerce platform, we handle 2,000+ orders per day at peak — Black Friday with zero incidents. We especially value the architecture: B2B and B2C in one system without data duplication, unified customer profile, ERP and WMS integration. Partnerio's QA built 400+ automated tests — production bugs dropped 80%. Product-owner-level communication: backlog, priorities, risks — all visible. We recommend them for complex retail platforms and long-term support.",
       "date": "May 2025",
       "image": "images/reviews/olena-sydorenko.jpg"
-    },
-    {
-      "id": "r3",
-      "name": "Viktor Lysenko",
-      "company": "NovaBank",
-      "text": "Core banking is not a project where you experiment with timelines. Partnerio assembled a team that understands regulated environments: audit trails, compliance reports, regulator documentation. Regression went from 5 days to 4 hours — that changed our release cadence from monthly to bi-weekly. Architecture scales; technical docs let our internal team take over L2 support quickly. We've worked with Partnerio for three years — expanded scope to DevOps and a new fraud ML module.",
-      "date": "June 2025",
-      "image": "images/reviews/viktor-lysenko.jpg"
     }
   ],
   "stats": [
