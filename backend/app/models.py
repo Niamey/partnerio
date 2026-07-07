@@ -7,6 +7,7 @@ class ServiceItem(BaseModel):
     description: str
     icon: str
     features: list[str]
+    details: str | None = None
 
 
 class ProjectItem(BaseModel):
@@ -17,6 +18,9 @@ class ProjectItem(BaseModel):
     client: str
     date: str
     image: str
+    details: str | None = None
+    stack: list[str] | None = None
+    results: list[str] | None = None
 
 
 class TeamMember(BaseModel):
@@ -34,6 +38,7 @@ class TestimonialItem(BaseModel):
     company: str
     text: str
     date: str
+    image: str | None = None
 
 
 class StatItem(BaseModel):

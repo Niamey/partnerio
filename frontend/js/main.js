@@ -9,12 +9,15 @@ const API_BASE = (() => {
 const IS_STATIC_HOST = window.location.hostname.endsWith('github.io');
 
 const ICONS = {
-  code: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
-  shield: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
-  brain: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.5 2A5.5 5.5 0 0 0 4 7.5c0 .9.2 1.75.57 2.5A4 4 0 0 0 5 18a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4 4 4 0 0 0 .43-8A5.5 5.5 0 0 0 14.5 2 5.5 5.5 0 0 0 12 3a5.5 5.5 0 0 0-2.5-1z"/></svg>',
-  cloud: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>',
-  chart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>',
-  support: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>',
+  code: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-code" x1="8" y1="8" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#1648c8"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs><rect x="7" y="11" width="34" height="26" rx="5" fill="url(#ic-code)" fill-opacity=".12"/><rect x="7" y="11" width="34" height="26" rx="5" stroke="url(#ic-code)" stroke-width="2"/><path d="M3 15h4M3 24h4M3 33h4" stroke="url(#ic-code)" stroke-width="2" stroke-linecap="round"/><path d="M19 30l-5-6 5-6M29 18l5 6-5 6M27 32l-4-16" stroke="url(#ic-code)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  shield: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-shield" x1="10" y1="6" x2="38" y2="42" gradientUnits="userSpaceOnUse"><stop stop-color="#059669"/><stop offset="1" stop-color="#34d399"/></linearGradient></defs><path d="M24 4l14 5v12c0 9.5-6.2 16.8-14 19-7.8-2.2-14-9.5-14-19V9l14-5z" fill="url(#ic-shield)" fill-opacity=".14" stroke="url(#ic-shield)" stroke-width="2" stroke-linejoin="round"/><path d="M17 24l4 4 10-10" stroke="url(#ic-shield)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  brain: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-brain" x1="8" y1="8" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#7c3aed"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs><path d="M24 8c-4 0-7 2.5-8 6.2-3.2.6-5.5 3.4-5 6.8.4 2.8 2.6 4.8 5.2 5.1-.3 4.2 2.8 7.9 7 7.9h1.6c4.2 0 7.3-3.7 7-7.9 2.6-.3 4.8-2.3 5.2-5.1.5-3.4-1.8-6.2-5-6.8C31 10.5 28 8 24 8z" fill="url(#ic-brain)" fill-opacity=".14" stroke="url(#ic-brain)" stroke-width="2"/><circle cx="18" cy="22" r="1.8" fill="url(#ic-brain)"/><circle cx="24" cy="19" r="1.8" fill="url(#ic-brain)"/><circle cx="30" cy="22" r="1.8" fill="url(#ic-brain)"/><path d="M18 28c2 2 4.5 3 6 3s4-1 6-3" stroke="url(#ic-brain)" stroke-width="2" stroke-linecap="round"/><path d="M24 36v4M16 38l2-3M32 38l-2-3" stroke="url(#ic-brain)" stroke-width="2" stroke-linecap="round"/></svg>`,
+  cloud: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-cloud" x1="6" y1="14" x2="42" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#0891b2"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><path d="M14 34h22a7 7 0 0 0 .8-14 9 9 0 0 0-17.2-2.8A6.5 6.5 0 0 0 14 34z" fill="url(#ic-cloud)" fill-opacity=".14" stroke="url(#ic-cloud)" stroke-width="2" stroke-linejoin="round"/><rect x="18" y="24" width="5" height="5" rx="1" fill="url(#ic-cloud)"/><rect x="25" y="24" width="5" height="5" rx="1" fill="url(#ic-cloud)"/><path d="M20.5 31h7" stroke="url(#ic-cloud)" stroke-width="2" stroke-linecap="round"/></svg>`,
+  chart: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-chart" x1="8" y1="32" x2="40" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#ea580c"/><stop offset="1" stop-color="#fb923c"/></linearGradient></defs><rect x="8" y="30" width="6" height="10" rx="2" fill="url(#ic-chart)" fill-opacity=".35"/><rect x="21" y="22" width="6" height="18" rx="2" fill="url(#ic-chart)" fill-opacity=".55"/><rect x="34" y="14" width="6" height="26" rx="2" fill="url(#ic-chart)"/><path d="M10 18l10 6 8-8 10 5" stroke="url(#ic-chart)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  support: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-support" x1="8" y1="10" x2="40" y2="38" gradientUnits="userSpaceOnUse"><stop stop-color="#db2777"/><stop offset="1" stop-color="#f472b6"/></linearGradient></defs><path d="M10 22a14 14 0 1 1 28 0v6a3 3 0 0 1-3 3h-2.2a3 3 0 0 1-2.8-2.1l-.6-1.8a3 3 0 0 0-2.8-2.1H22a3 3 0 0 0-2.8 2.1l-.6 1.8A3 3 0 0 1 15.8 31H14a3 3 0 0 1-3-3v-6z" fill="url(#ic-support)" fill-opacity=".12" stroke="url(#ic-support)" stroke-width="2"/><circle cx="24" cy="22" r="3.5" stroke="url(#ic-support)" stroke-width="2"/><path d="M24 36v4" stroke="url(#ic-support)" stroke-width="2" stroke-linecap="round"/></svg>`,
+  globe: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-globe" x1="8" y1="8" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#1648c8"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs><circle cx="24" cy="24" r="16" fill="url(#ic-globe)" fill-opacity=".1" stroke="url(#ic-globe)" stroke-width="2"/><ellipse cx="24" cy="24" rx="7" ry="16" stroke="url(#ic-globe)" stroke-width="1.8"/><path d="M8 24h32M11 16h26M11 32h26" stroke="url(#ic-globe)" stroke-width="1.8" stroke-linecap="round"/><circle cx="32" cy="16" r="3" fill="url(#ic-globe)"/></svg>`,
+  layers: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-layers" x1="10" y1="10" x2="38" y2="38" gradientUnits="userSpaceOnUse"><stop stop-color="#0f766e"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient></defs><path d="M24 8L8 17l16 9 16-9-16-9z" fill="url(#ic-layers)" fill-opacity=".18" stroke="url(#ic-layers)" stroke-width="2" stroke-linejoin="round"/><path d="M8 24l16 9 16-9M8 31l16 9 16-9" stroke="url(#ic-layers)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  team: `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><defs><linearGradient id="ic-team" x1="8" y1="12" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#9333ea"/><stop offset="1" stop-color="#c084fc"/></linearGradient></defs><circle cx="18" cy="18" r="5" fill="url(#ic-team)" fill-opacity=".25" stroke="url(#ic-team)" stroke-width="2"/><path d="M8 36c0-5.5 4.5-9 10-9s10 3.5 10 9" stroke="url(#ic-team)" stroke-width="2" stroke-linecap="round"/><circle cx="33" cy="20" r="4" fill="url(#ic-team)" fill-opacity=".18" stroke="url(#ic-team)" stroke-width="2"/><path d="M28 36c.6-3.8 3.4-6 8-6 2.2 0 4.2.7 5.5 2.2" stroke="url(#ic-team)" stroke-width="2" stroke-linecap="round"/></svg>`,
 };
 
 const OLGA_KORNEVA = {
@@ -23,7 +26,7 @@ const OLGA_KORNEVA = {
     name: 'Ольга Корнєва',
     role: 'СТО',
     experience: '17 років досвіду',
-    bio: 'Технічний директор компанії. Визначає технологічну стратегію, архітектуру платформ та впровадження інновацій у продукти.',
+    bio: 'Технічний директор Partnerio. Відповідає за технологічну стратегію, вибір стеку, архітектуру платформ і впровадження AI/ML у продукти клієнтів. Має досвід побудови R&D-процесів, масштабування команд 50+ інженерів і міграцій monolith → microservices. Курирує безпеку, performance та технічну якість delivery.',
     image: 'images/olga-korneva.png',
   },
   en: {
@@ -31,7 +34,7 @@ const OLGA_KORNEVA = {
     name: 'Olga Korneva',
     role: 'CTO',
     experience: '17 years of experience',
-    bio: 'Chief Technology Officer. Defines technology strategy, platform architecture, and drives innovation across products.',
+    bio: 'Chief Technology Officer at Partnerio. Owns technology strategy, stack selection, platform architecture, and AI/ML adoption in client products. Experienced in building R&D processes, scaling 50+ engineer teams, and monolith → microservices migrations. Oversees security, performance, and delivery quality.',
     image: 'images/olga-korneva.png',
   },
 };
@@ -93,9 +96,10 @@ function renderServices(services) {
   if (!services || !grid) return;
   grid.innerHTML = services.map((s, i) => `
     <article class="service-card reveal visible" style="transition-delay:${i * 0.06}s">
-      <div class="service-card__icon">${ICONS[s.icon] || ICONS.code}</div>
+      <div class="service-card__icon service-card__icon--${s.icon}">${ICONS[s.icon] || ICONS.code}</div>
       <h3>${s.title}</h3>
-      <p>${s.description}</p>
+      <p class="service-card__lead">${s.description}</p>
+      ${s.details ? `<p class="service-card__details">${s.details}</p>` : ''}
       <ul>${s.features.map((f) => `<li>${f}</li>`).join('')}</ul>
     </article>
   `).join('');
@@ -143,15 +147,19 @@ function renderStats(stats) {
 function renderProjects(projects) {
   const grid = document.getElementById('projects-grid');
   if (!projects || !grid) return;
+  const resultsLabel = i18n.t('projects.results');
   grid.innerHTML = projects.map((p, i) => `
     <article class="project-card reveal visible" style="transition-delay:${i * 0.08}s">
       <div class="project-card__image">
-        <img src="${p.image}" alt="${p.title}" loading="lazy">
+        <img src="${resolveImage(p.image)}" alt="${p.title}" loading="lazy">
         <span class="project-card__category">${p.category}</span>
       </div>
       <div class="project-card__body">
         <h3>${p.title}</h3>
-        <p>${p.description}</p>
+        <p class="project-card__lead">${p.description}</p>
+        ${p.details ? `<p class="project-card__details">${p.details}</p>` : ''}
+        ${p.stack?.length ? `<div class="project-card__stack">${p.stack.map((t) => `<span>${t}</span>`).join('')}</div>` : ''}
+        ${p.results?.length ? `<div class="project-card__results"><strong>${resultsLabel}</strong><ul>${p.results.map((r) => `<li>${r}</li>`).join('')}</ul></div>` : ''}
         <div class="project-card__meta"><span>${p.client}</span><span>${p.date}</span></div>
       </div>
     </article>
@@ -185,7 +193,9 @@ function renderTestimonials(items) {
       <div class="review-card__stars">★★★★★</div>
       <p>${t.text}</p>
       <div class="review-card__author">
-        <div class="review-card__avatar">${initials(t.name)}</div>
+        ${t.image
+    ? `<div class="review-card__avatar review-card__avatar--photo"><img src="${resolveImage(t.image)}" alt="${t.name}" loading="lazy"></div>`
+    : `<div class="review-card__avatar">${initials(t.name)}</div>`}
         <div><h4>${t.name}</h4><span>${t.company}</span></div>
       </div>
       <p class="review-card__date">${t.date}</p>
@@ -337,11 +347,19 @@ function initBackToTop() {
   btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 }
 
+function initFeatureIcons() {
+  document.querySelectorAll('[data-icon]').forEach((el) => {
+    const icon = ICONS[el.dataset.icon];
+    if (icon) el.innerHTML = icon;
+  });
+}
+
 async function init() {
   i18n.initLangSwitch();
   initHeader();
   initContactForm();
   initBackToTop();
+  initFeatureIcons();
   observeReveal();
   await loadApiContent();
   document.addEventListener('langchange', () => {
